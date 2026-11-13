@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+articulo/*.aux
+articulo/*.log
+articulo/*.out
+articulo/*.fls
+articulo/*.fdb_latexmk
