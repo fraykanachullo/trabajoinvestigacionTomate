@@ -1,0 +1,15 @@
+{
+  "imagenes": 192,
+  "movil_ms_media": 755.5130890052357,
+  "movil_ms_de": 497.4585818108377,
+  "movil_ms_mediana": 673,
+  "movil_carga_modelo_ms": 12,
+  "servidor_pc_ms_media": 143.51367853436844,
+  "servidor_pc_ms_de": 56.38661179234925,
+  "concordancia_clase_principal": 0.828125,
+  "cajas_servidor": 178,
+  "cajas_movil": 167,
+  "cajas_emparejadas_iou50": 137,
+  "recall_cajas_movil_vs_servidor": 0.7696629213483146,
+  "precision_cajas_movil_vs_servidor": 0.8203592814371258
+}

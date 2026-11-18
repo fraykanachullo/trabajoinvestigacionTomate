@@ -74,7 +74,7 @@ Las comparaciones v4–v5 usan las mismas imágenes y las etiquetas de la v5. La
 - CLAHE no ayuda.
 - Ninguna estrategia rescata la mosca blanca por encima de +1.5 pasos.
 
-Detalle en `documentacion/15_resultados_v6.md`. En el celular (Samsung Galaxy A56, TFLite float16), el modelo procesa una foto en unos 0.5 s sin internet.
+Detalle en `documentacion/15_resultados_v6.md`. En el celular (Samsung Galaxy A56, TFLite float16), el modelo procesa una foto en unos 0.6 s sin internet (modelo v6; detalle en `analisis/v6/celular/`).
 
 ## Entrenar
 

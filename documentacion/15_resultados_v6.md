@@ -107,7 +107,12 @@ Las mismas 180 fotos de prueba se sobreexpusieron artificialmente, de −1 a +2 
   - Coincide con ONNX en 96/96 imágenes (Δ máx. de confianza 0.004).
   - `metadata.json` y `labels.txt` tienen 4 clases; `flutter analyze` sin errores.
   - "sana" queda solo como marcador de "sin detecciones".
-- **Pendiente:** instalar en el celular y correr `integration_test/benchmark_test.dart` para medir latencia y coincidencia con el servidor.
+- **Celular (Galaxy A56):** `integration_test/benchmark_test.dart` con las 192 imágenes de prueba de Roboflow. Resultados en `analisis_revision/v6/celular/`.
+  - Latencia: 574 ± 186 ms (mediana 596) en la 2.ª corrida; 756 ± 497 ms (mediana 673) en la 1.ª, recién instalada. Detecciones idénticas en ambas.
+  - Por tamaño: 271 ms con fotos < 1 MP frente a 678 ms con fotos de 50 MP. El tiempo lo domina decodificar y reducir la foto.
+  - Frente al servidor (best.pt en la PC, 144 ms por foto): misma clase principal 82.8 % (IC 95 % 76.8–87.5).
+  - Cajas: recall 77.0 % y precisión 82.0 % (misma clase, IoU ≥ 0.5).
+- **App de producción:** APK release instalado. Se probó el login contra el backend por USB (`adb reverse tcp:8000`).
 
 ## 3c. Validación del aviso "Mucha luz" de la app
 
