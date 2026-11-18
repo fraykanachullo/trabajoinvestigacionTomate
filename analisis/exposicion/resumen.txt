@@ -1,0 +1,32 @@
+=== Exposicion por franja y sesion (todas las imagenes; mediana) ===
+              brillo  saturados  especular  contraste
+franja                                               
+manana    127.639999       0.81       0.95  48.740002
+mediodia  124.250000       3.63       2.28  58.750000
+tarde     127.589996       0.97       2.15  51.000000
+              brillo  saturados  especular  contraste
+sesion                                               
+20260503  124.629997       2.37       2.22  54.389999
+20260712  129.380005       0.36       0.62  46.029999
+20260729  128.559998       0.73       2.45  51.959999
+Imagenes por sesion y franja:
+franja    manana  mediodia  tarde
+sesion                           
+20260503     262       397    485
+20260712     293         0     50
+20260729       0         0    479
+
+=== Prueba: rendimiento por tercil (9 modelos v5, IC bootstrap por grupo) ===
+ variable tercil       rango  imagenes  acierto  acierto_ic  falso_sano falso_sano_ic                                         sesiones
+saturados   bajo     0.0-0.5        60 0.672222 0.509-0.826    0.452575   0.342-0.556 {'20260729': 28, '20260712': 22, '20260503': 10}
+saturados  medio     0.6-2.3        60 0.570370 0.431-0.730    0.395299   0.264-0.500  {'20260503': 35, '20260729': 18, '20260712': 7}
+saturados   alto    2.3-12.8        60 0.551852 0.448-0.648    0.331155   0.252-0.431                  {'20260503': 55, '20260729': 5}
+   brillo   bajo  68.5-122.9        60 0.509259 0.404-0.637    0.380658   0.264-0.493  {'20260503': 41, '20260729': 18, '20260712': 1}
+   brillo  medio 123.1-129.2        60 0.703704 0.560-0.815    0.333333   0.246-0.427 {'20260503': 32, '20260712': 17, '20260729': 11}
+   brillo   alto 129.3-154.3        60 0.581481 0.461-0.696    0.449173   0.342-0.546 {'20260503': 27, '20260729': 22, '20260712': 11}
+especular   bajo     0.0-0.8        60 0.629630 0.480-0.785    0.406566   0.312-0.509 {'20260503': 22, '20260729': 21, '20260712': 17}
+especular  medio     0.8-2.6        60 0.666667 0.556-0.764    0.333333   0.255-0.419 {'20260503': 37, '20260712': 12, '20260729': 11}
+especular   alto    2.6-10.3        60 0.498148 0.379-0.645    0.423480   0.290-0.519                 {'20260503': 41, '20260729': 19}
+Logit acierto ~ z_saturados + sesion + modelo: OR por 1 DE = 0.82 (IC95 0.65-1.04), p = 0.106, n = 1620
+Logit acierto ~ z_brillo + sesion + modelo: OR por 1 DE = 1.00 (IC95 0.82-1.21), p = 0.982, n = 1620
+Logit acierto ~ z_especular + sesion + modelo: OR por 1 DE = 0.98 (IC95 0.80-1.20), p = 0.878, n = 1620

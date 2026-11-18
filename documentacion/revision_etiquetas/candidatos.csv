@@ -1,0 +1,1179 @@
+tipo,subconjunto,imagen,clase_etiqueta,clase_modelos,detalle,caja,puntaje
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 6 px a 640,"[0.6029, 0.355, 0.6159, 0.3823]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 6 px a 640,"[0.6986, 0.3704, 0.7109, 0.3938]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 15 px a 640,"[0.7497, 0.3853, 0.7803, 0.4087]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 8 px a 640,"[0.7904, 0.3723, 0.8203, 0.384]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 12 px a 640,"[0.6956, 0.3118, 0.7197, 0.3303]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 8 px a 640,"[0.709, 0.4207, 0.7454, 0.4324]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 9 px a 640,"[0.7646, 0.3694, 0.7835, 0.3835]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 15 px a 640,"[0.709, 0.3425, 0.7409, 0.3669]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 16 px a 640,"[0.1924, 0.5601, 0.2249, 0.5977]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 14 px a 640,"[0.4554, 0.4648, 0.4854, 0.4976]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 15 px a 640,"[0.6868, 0.4753, 0.7181, 0.5105]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 10 px a 640,"[0.3646, 0.3757, 0.3854, 0.4119]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 8 px a 640,"[0.4222, 0.4045, 0.4404, 0.4172]",
+DIMINUTA,train,12__g001__20260503_115659,mildiu,,lado 11 px a 640,"[0.3535, 0.3032, 0.3763, 0.3218]",
+ENORME,train,12__g002__20260503_120027,mildiu,,34 % de la imagen,"[0.2425, 0.1147, 0.7129, 0.8414]",
+DIMINUTA,train,12__g002__20260503_120029,mildiu,,lado 11 px a 640,"[0.4834, 0.4976, 0.5068, 0.5234]",
+DIMINUTA,train,12__g003__20260503_120212,oidio,,lado 15 px a 640,"[0.7233, 0.2969, 0.7546, 0.3252]",
+DIMINUTA,train,12__g003__20260503_120212,oidio,,lado 16 px a 640,"[0.7337, 0.2605, 0.7663, 0.2864]",
+DIMINUTA,train,12__g003__20260503_120212,oidio,,lado 11 px a 640,"[0.7972, 0.2715, 0.82, 0.2939]",
+DIMINUTA,train,12__g003__20260503_120212,oidio,,lado 16 px a 640,"[0.5703, 0.4097, 0.6029, 0.4355]",
+DIMINUTA,train,12__g003__20260503_120212,oidio,,lado 13 px a 640,"[0.4557, 0.3066, 0.4831, 0.3369]",
+DIMINUTA,train,12__g003__20260503_120212,oidio,,lado 9 px a 640,"[0.4557, 0.2661, 0.474, 0.2949]",
+DIMINUTA,train,12__g003__20260503_120216,oidio,,lado 11 px a 640,"[0.7116, 0.3977, 0.7337, 0.4226]",
+DIMINUTA,train,12__g006__20260503_120901,mildiu,,lado 16 px a 640,"[0.6128, 0.2865, 0.6372, 0.3451]",
+DIMINUTA,train,12__g006__20260503_120901,oidio,,lado 6 px a 640,"[0.6821, 0.8714, 0.6914, 0.8975]",
+DIMINUTA,train,12__g006__20260503_120901,oidio,,lado 10 px a 640,"[0.7898, 0.2708, 0.8069, 0.2917]",
+DIMINUTA,train,12__g006__20260503_120901,oidio,,lado 7 px a 640,"[0.7705, 0.252, 0.7812, 0.2715]",
+DIMINUTA,train,12__g006__20260503_120901,mildiu,,lado 16 px a 640,"[0.9463, 0.3174, 0.9707, 0.3734]",
+ENORME,train,12__g007__20260503_120953,mildiu,,42 % de la imagen,"[0.1556, 0.1423, 0.8079, 0.7881]",
+DIMINUTA,train,12__g007__20260503_121014,mildiu,,lado 15 px a 640,"[0.7178, 0.022, 0.7555, 0.0454]",
+DIMINUTA,train,12__g011__20260503_121733,mildiu,,lado 11 px a 640,"[0.9287, 0.5251, 0.9587, 0.5422]",
+DIMINUTA,train,12__g011__20260503_121733,mildiu,,lado 10 px a 640,"[0.3411, 0.6367, 0.362, 0.6553]",
+DIMINUTA,train,12__g011__20260503_121733,mildiu,,lado 15 px a 640,"[0.3659, 0.6492, 0.3965, 0.679]",
+ENORME,train,12__g018__20260503_123136,mildiu,,25 % de la imagen,"[0.1693, 0.2368, 0.7805, 0.6468]",
+DIMINUTA,train,12__g018__20260503_123316,mildiu,,lado 13 px a 640,"[0.3545, 0.8103, 0.3812, 0.843]",
+DIMINUTA,train,12__g018__20260503_123316,mildiu,,lado 14 px a 640,"[0.3018, 0.9443, 0.3512, 0.9668]",
+DIMINUTA,train,12__g018__20260503_123316,mildiu,,lado 9 px a 640,"[0.8659, 0.6218, 0.8854, 0.6501]",
+DIMINUTA,train,12__g018__20260503_123316,mildiu,,lado 13 px a 640,"[0.5713, 0.7014, 0.6175, 0.7219]",
+DIMINUTA,train,12__g018__20260503_123316,mildiu,,lado 15 px a 640,"[0.3285, 0.8684, 0.3604, 0.9143]",
+DIMINUTA,train,12__g018__20260503_123316,mildiu,,lado 15 px a 640,"[0.5483, 0.848, 0.5797, 0.8868]",
+DIMINUTA,train,12__g018__20260503_123532,mildiu,,lado 2 px a 640,"[0.5339, 0.4898, 0.5371, 0.5017]",
+ENORME,train,12__g018__20260503_123711,mildiu,,30 % de la imagen,"[0.4248, 0.3071, 0.9798, 0.8472]",
+DIMINUTA,train,12__g023__20260503_125306,oidio,,lado 11 px a 640,"[0.5221, 0.4531, 0.5449, 0.4766]",
+DIMINUTA,train,12__g023__20260503_125306,oidio,,lado 14 px a 640,"[0.2936, 0.302, 0.3613, 0.3245]",
+DIMINUTA,train,12__g023__20260503_125306,oidio,,lado 14 px a 640,"[0.4274, 0.2781, 0.471, 0.3]",
+DIMINUTA,train,12__g023__20260503_125306,oidio,,lado 16 px a 640,"[0.3887, 0.6523, 0.4284, 0.6772]",
+DIMINUTA,train,12__g023__20260503_125306,oidio,,lado 16 px a 640,"[0.2764, 0.7063, 0.3128, 0.7312]",
+DIMINUTA,train,12__g023__20260503_125306,oidio,,lado 9 px a 640,"[0.2493, 0.4954, 0.2676, 0.5188]",
+DIMINUTA,train,12__g023__20260503_125317,oidio,,lado 13 px a 640,"[0.4593, 0.5405, 0.486, 0.564]",
+DIMINUTA,train,12__g023__20260503_125317,oidio,,lado 14 px a 640,"[0.5231, 0.6309, 0.5518, 0.6675]",
+DIMINUTA,train,12__g023__20260503_125317,oidio,,lado 8 px a 640,"[0.3639, 0.4187, 0.403, 0.4314]",
+DIMINUTA,train,12__g023__20260503_125324,oidio,,lado 11 px a 640,"[0.3704, 0.5754, 0.3939, 0.5979]",
+DIMINUTA,train,12__g023__20260503_125347,oidio,,lado 15 px a 640,"[0.5153, 0.5088, 0.5459, 0.5352]",
+DIMINUTA,train,12__g023__20260503_125347,oidio,,lado 14 px a 640,"[0.3704, 0.4543, 0.4043, 0.4768]",
+DIMINUTA,train,12__g023__20260503_125347,oidio,,lado 8 px a 640,"[0.3818, 0.4331, 0.404, 0.4448]",
+DIMINUTA,train,12__g023__20260503_125347,oidio,,lado 12 px a 640,"[0.418, 0.4392, 0.4538, 0.4578]",
+DIMINUTA,train,12__g023__20260503_125347,oidio,,lado 11 px a 640,"[0.4225, 0.509, 0.4447, 0.5286]",
+DIMINUTA,train,12__g023__20260503_125347,oidio,,lado 8 px a 640,"[0.5277, 0.4163, 0.5661, 0.429]",
+ENORME,train,12__g023__20260503_125432,mildiu,,53 % de la imagen,"[0.1328, 0.1172, 0.7962, 0.917]",
+ENORME,train,12__g023__20260503_125503,mildiu,,31 % de la imagen,"[0.2057, 0.1819, 0.6937, 0.8171]",
+ENORME,train,12__g023__20260503_125525,mildiu,,44 % de la imagen,"[0.1292, 0.0029, 0.7503, 0.7148]",
+DIMINUTA,train,12__g023__20260503_125612,oidio,,lado 13 px a 640,"[0.4391, 0.5144, 0.4671, 0.5417]",
+DIMINUTA,train,12__g026__20260503_130153,sana,,lado 0 px a 640,"[0.4801, 0.47, 0.4834, 0.4703]",
+DIMINUTA,train,12__g026__20260503_130402,oidio,,lado 14 px a 640,"[0.5225, 0.4707, 0.5524, 0.5029]",
+DIMINUTA,train,12__g026__20260503_130402,oidio,,lado 15 px a 640,"[0.4316, 0.4329, 0.4824, 0.4563]",
+DIMINUTA,train,12__g036__20260503_133943,sana,,lado 4 px a 640,"[0.2897, 0.4419, 0.306, 0.4483]",
+DIMINUTA,train,12__g036__20260503_134008,sana,,lado 1 px a 640,"[0.376, 0.264, 0.3792, 0.2661]",
+DIMINUTA,train,12__g037__20260503_134214,oidio,,lado 13 px a 640,"[0.4463, 0.395, 0.4743, 0.4395]",
+DIMINUTA,train,12__g037__20260503_134230,oidio,,lado 13 px a 640,"[0.4329, 0.227, 0.4671, 0.2469]",
+DIMINUTA,train,12__g037__20260503_134230,oidio,,lado 13 px a 640,"[0.4248, 0.2527, 0.4574, 0.2737]",
+ENORME,train,12__g037__20260503_134307,mildiu,,44 % de la imagen,"[0.1986, 0.2161, 0.8219, 0.928]",
+DIMINUTA,train,12__g037__20260503_134541,polilla,,lado 11 px a 640,"[0.4847, 0.5796, 0.5075, 0.6067]",
+DIMINUTA,train,12__g037__20260503_134610,sana,,lado 2 px a 640,"[0.3857, 0.7349, 0.389, 0.7462]",
+DIMINUTA,train,12__g037__20260503_134610,polilla,,lado 11 px a 640,"[0.8166, 0.3865, 0.839, 0.4191]",
+DIMINUTA,train,12__g037__20260503_134723,mildiu,,lado 15 px a 640,"[0.4707, 0.5425, 0.5026, 0.584]",
+DIMINUTA,train,12__g037__20260503_134833,oidio,,lado 12 px a 640,"[0.3551, 0.4697, 0.4137, 0.4883]",
+DIMINUTA,train,12__g037__20260503_134838,oidio,,lado 14 px a 640,"[0.4821, 0.6023, 0.5133, 0.6243]",
+DIMINUTA,train,12__g037__20260503_134838,oidio,,lado 8 px a 640,"[0.5137, 0.6475, 0.5299, 0.6699]",
+DIMINUTA,train,12__g037__20260503_134838,oidio,,lado 16 px a 640,"[0.1214, 0.4597, 0.1676, 0.4841]",
+DIMINUTA,train,12__g037__20260503_134838,oidio,,lado 11 px a 640,"[0.1702, 0.4431, 0.208, 0.4602]",
+DIMINUTA,train,12__g037__20260503_134838,oidio,,lado 13 px a 640,"[0.2227, 0.45, 0.2493, 0.4705]",
+DIMINUTA,train,12__g037__20260503_134838,oidio,,lado 10 px a 640,"[0.3109, 0.4734, 0.3766, 0.489]",
+DIMINUTA,train,12__g037__20260503_134838,oidio,,lado 12 px a 640,"[0.3861, 0.4697, 0.4902, 0.4883]",
+DIMINUTA,train,12__g037__20260503_134838,oidio,,lado 12 px a 640,"[0.752, 0.314, 0.776, 0.3501]",
+DIMINUTA,train,12__g037__20260503_134838,oidio,,lado 13 px a 640,"[0.7438, 0.4387, 0.7718, 0.4973]",
+ENORME,train,12__g037__20260503_134918,mildiu,,28 % de la imagen,"[0.3431, 0.3025, 0.7884, 0.9297]",
+DIMINUTA,train,12__g039__20260503_135053,oidio,,lado 13 px a 640,"[0.5192, 0.5798, 0.5469, 0.6107]",
+DIMINUTA,train,12__g039__20260503_135103,oidio,,lado 15 px a 640,"[0.278, 0.5234, 0.3516, 0.5469]",
+DIMINUTA,train,12__g041__20260503_135512,oidio,,lado 11 px a 640,"[0.5674, 0.219, 0.5909, 0.2367]",
+DIMINUTA,train,12__g041__20260503_135512,oidio,,lado 6 px a 640,"[0.7256, 0.2411, 0.7386, 0.2543]",
+DIMINUTA,train,12__g041__20260503_135512,oidio,,lado 8 px a 640,"[0.8082, 0.2763, 0.8299, 0.2895]",
+DIMINUTA,train,12__g041__20260503_135523,oidio,,lado 10 px a 640,"[0.2395, 0.4487, 0.2607, 0.469]",
+DIMINUTA,train,12__g041__20260503_135548,oidio,,lado 13 px a 640,"[0.6283, 0.4944, 0.6576, 0.5154]",
+DIMINUTA,train,12__g041__20260503_135548,oidio,,lado 15 px a 640,"[0.5566, 0.4272, 0.5892, 0.4507]",
+DIMINUTA,train,12__g041__20260503_135557,oidio,,lado 10 px a 640,"[0.4557, 0.4749, 0.4769, 0.4947]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 13 px a 640,"[0.6624, 0.5945, 0.6917, 0.6143]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 9 px a 640,"[0.7975, 0.6238, 0.8301, 0.6375]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 12 px a 640,"[0.2143, 0.4121, 0.2479, 0.4315]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 14 px a 640,"[0.2943, 0.381, 0.3279, 0.4026]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 4 px a 640,"[0.3297, 0.4272, 0.3431, 0.4342]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 12 px a 640,"[0.0342, 0.3553, 0.0995, 0.3733]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 6 px a 640,"[0.2143, 0.3613, 0.2424, 0.3706]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 7 px a 640,"[0.3077, 0.8059, 0.3382, 0.817]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 9 px a 640,"[0.3486, 0.7899, 0.3785, 0.8047]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 7 px a 640,"[0.3126, 0.8329, 0.3309, 0.8436]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 5 px a 640,"[0.2967, 0.8732, 0.3077, 0.8834]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 11 px a 640,"[0.5641, 0.6713, 0.5873, 0.6883]",
+DIMINUTA,train,12__g041__20260503_135607,oidio,,lado 12 px a 640,"[0.708, 0.8191, 0.7324, 0.8389]",
+DIMINUTA,train,12__g041__20260503_135615,oidio,,lado 1 px a 640,"[0.5339, 0.5545, 0.5355, 0.5737]",
+DIMINUTA,train,12__g041__20260503_135622,oidio,,lado 15 px a 640,"[0.6554, 0.4915, 0.6922, 0.5153]",
+DIMINUTA,train,12__g046__20260503_140622,oidio,,lado 15 px a 640,"[0.3939, 0.4766, 0.4251, 0.5078]",
+ENORME,train,12__g046__20260503_140700,mildiu,,36 % de la imagen,"[0.2207, 0.0892, 0.8193, 0.696]",
+ENORME,train,12__g046__20260503_140704,mildiu,,28 % de la imagen,"[0.1846, 0.1732, 0.7139, 0.7087]",
+DIMINUTA,train,12__g047__20260503_140840,oidio,,lado 12 px a 640,"[0.2329, 0.4086, 0.2569, 0.4511]",
+DIMINUTA,train,12__g047__20260503_140840,oidio,,lado 11 px a 640,"[0.1845, 0.3783, 0.208, 0.3952]",
+DIMINUTA,train,12__g047__20260503_140840,oidio,,lado 14 px a 640,"[0.2029, 0.3127, 0.2329, 0.3411]",
+DIMINUTA,train,12__g047__20260503_140900,oidio,,lado 14 px a 640,"[0.5713, 0.5911, 0.5986, 0.6201]",
+DIMINUTA,train,12__g049__20260503_142111,oidio,,lado 1 px a 640,"[0.7389, 0.4056, 0.7406, 0.4114]",
+DIMINUTA,train,12__g056__20260503_143450,oidio,,lado 15 px a 640,"[0.2393, 0.3665, 0.2887, 0.3899]",
+DIMINUTA,train,12__g056__20260503_143500,oidio,,lado 15 px a 640,"[0.4525, 0.417, 0.4837, 0.4453]",
+ENORME,train,12__g056__20260503_143628,mildiu,,27 % de la imagen,"[0.2386, 0.1663, 0.833, 0.6179]",
+DIMINUTA,train,16__g002__20260503_160513,mosca_blanca,,lado 11 px a 640,"[0.2207, 0.3691, 0.2435, 0.3887]",
+DIMINUTA,train,16__g002__20260503_160513,mosca_blanca,,lado 9 px a 640,"[0.2926, 0.3076, 0.3122, 0.3223]",
+DIMINUTA,train,16__g002__20260503_160516,mosca_blanca,,lado 4 px a 640,"[0.3636, 0.3835, 0.374, 0.3899]",
+DIMINUTA,train,16__g002__20260503_160516,mosca_blanca,,lado 3 px a 640,"[0.3936, 0.3506, 0.4001, 0.3574]",
+DIMINUTA,train,16__g002__20260503_160523,mosca_blanca,,lado 11 px a 640,"[0.3376, 0.3752, 0.3643, 0.3918]",
+DIMINUTA,train,16__g002__20260503_160523,mosca_blanca,,lado 10 px a 640,"[0.4746, 0.2988, 0.4954, 0.3198]",
+DIMINUTA,train,16__g002__20260503_160534,mosca_blanca,,lado 9 px a 640,"[0.4284, 0.3533, 0.4479, 0.3704]",
+DIMINUTA,train,16__g002__20260503_160534,mosca_blanca,,lado 7 px a 640,"[0.613, 0.5503, 0.6292, 0.5605]",
+DIMINUTA,train,16__g002__20260503_160552,mildiu,,lado 9 px a 640,"[0.7463, 0.5882, 0.7878, 0.6071]",
+DIMINUTA,train,16__g003__20260503_160651,mosca_blanca,,lado 12 px a 640,"[0.3252, 0.4543, 0.3512, 0.4768]",
+DIMINUTA,train,16__g003__20260503_160651,mosca_blanca,,lado 11 px a 640,"[0.4463, 0.5186, 0.4691, 0.541]",
+DIMINUTA,train,16__g003__20260503_160658,mosca_blanca,,lado 4 px a 640,"[0.3493, 0.5723, 0.3662, 0.5791]",
+DIMINUTA,train,16__g003__20260503_160658,mosca_blanca,,lado 5 px a 640,"[0.446, 0.5503, 0.457, 0.562]",
+DIMINUTA,train,16__g003__20260503_160816,mosca_blanca,,lado 10 px a 640,"[0.541, 0.4531, 0.5618, 0.4717]",
+DIMINUTA,train,16__g005__20260503_161029,mosca_blanca,,lado 9 px a 640,"[0.3089, 0.4185, 0.3271, 0.4331]",
+DIMINUTA,train,16__g005__20260503_161038,mosca_blanca,,lado 11 px a 640,"[0.1533, 0.1504, 0.1813, 0.167]",
+DIMINUTA,train,16__g005__20260503_161038,mosca_blanca,,lado 10 px a 640,"[0.571, 0.4961, 0.5918, 0.521]",
+DIMINUTA,train,16__g005__20260503_161038,mosca_blanca,,lado 10 px a 640,"[0.6882, 0.2368, 0.709, 0.2554]",
+DIMINUTA,train,16__g005__20260503_161058,mosca_blanca,,lado 7 px a 640,"[0.4535, 0.5012, 0.4684, 0.5129]",
+DIMINUTA,train,16__g005__20260503_161058,mosca_blanca,,lado 8 px a 640,"[0.4268, 0.4856, 0.445, 0.4988]",
+DIMINUTA,train,16__g005__20260503_161141,mosca_blanca,,lado 12 px a 640,"[0.4723, 0.5012, 0.4964, 0.5237]",
+DIMINUTA,train,16__g005__20260503_161155,mosca_blanca,,lado 6 px a 640,"[0.5592, 0.4067, 0.5723, 0.4214]",
+DIMINUTA,train,16__g005__20260503_161208,mosca_blanca,,lado 8 px a 640,"[0.4694, 0.4954, 0.485, 0.511]",
+DIMINUTA,train,16__g005__20260503_161223,mosca_blanca,,lado 9 px a 640,"[0.5752, 0.4951, 0.6012, 0.5098]",
+DIMINUTA,train,16__g005__20260503_161238,mosca_blanca,,lado 8 px a 640,"[0.4622, 0.4954, 0.4753, 0.5111]",
+DIMINUTA,train,16__g008__20260503_161618,mosca_blanca,,lado 9 px a 640,"[0.291, 0.2732, 0.3105, 0.2878]",
+DIMINUTA,train,16__g008__20260503_161618,mosca_blanca,,lado 14 px a 640,"[0.485, 0.6162, 0.5163, 0.6387]",
+DIMINUTA,train,16__g009__20260503_161652,mosca_blanca,,lado 12 px a 640,"[0.4365, 0.5415, 0.4606, 0.5664]",
+DIMINUTA,train,16__g009__20260503_161654,mosca_blanca,,lado 11 px a 640,"[0.4282, 0.6284, 0.4512, 0.6479]",
+DIMINUTA,train,16__g009__20260503_161742,mosca_blanca,,lado 11 px a 640,"[0.598, 0.5378, 0.6208, 0.5652]",
+DIMINUTA,train,16__g009__20260503_161807,mosca_blanca,,lado 13 px a 640,"[0.6738, 0.4077, 0.7025, 0.4282]",
+DIMINUTA,train,16__g009__20260503_161807,mosca_blanca,,lado 6 px a 640,"[0.5938, 0.5464, 0.6094, 0.5552]",
+DIMINUTA,train,16__g011__20260503_162224,mosca_blanca,,lado 3 px a 640,"[0.4723, 0.3665, 0.4775, 0.3728]",
+DIMINUTA,train,16__g012__20260503_162321,polilla,,lado 15 px a 640,"[0.4938, 0.4822, 0.5251, 0.5398]",
+DIMINUTA,train,16__g019__20260503_163454,mosca_blanca,,lado 6 px a 640,"[0.609, 0.6433, 0.6208, 0.655]",
+DIMINUTA,train,16__g019__20260503_163501,mildiu,,lado 11 px a 640,"[0.3633, 0.3591, 0.3854, 0.3816]",
+DIMINUTA,train,16__g030__20260503_165536,polilla,,lado 12 px a 640,"[0.3284, 0.479, 0.3535, 0.5036]",
+DIMINUTA,train,16__g030__20260503_165546,polilla,,lado 15 px a 640,"[0.3079, 0.4973, 0.3392, 0.5325]",
+DIMINUTA,train,16__g038__20260503_171418,polilla,,lado 15 px a 640,"[0.4395, 0.2767, 0.4858, 0.3085]",
+DIMINUTA,train,16__g041__20260503_172025,polilla,,lado 11 px a 640,"[0.9271, 0.2971, 0.956, 0.3205]",
+DIMINUTA,train,16__g042__20260503_172148,polilla,,lado 11 px a 640,"[0.8768, 0.4226, 0.9095, 0.4455]",
+DIMINUTA,train,16__g043__20260503_172252,mosca_blanca,,lado 12 px a 640,"[0.4553, 0.2132, 0.4751, 0.2381]",
+DIMINUTA,train,16__g044__20260503_172528,mosca_blanca,,lado 9 px a 640,"[0.4114, 0.5566, 0.4253, 0.5834]",
+DIMINUTA,train,16__g044__20260503_172528,mosca_blanca,,lado 8 px a 640,"[0.5532, 0.5941, 0.5652, 0.6225]",
+DIMINUTA,train,16__g045__20260503_172857,polilla,,lado 12 px a 640,"[0.5002, 0.373, 0.5449, 0.3972]",
+DIMINUTA,train,16__g045__20260503_172924,polilla,,lado 14 px a 640,"[0.5042, 0.4427, 0.5486, 0.4713]",
+DIMINUTA,train,16__g046__20260503_173100,mosca_blanca,,lado 12 px a 640,"[0.4761, 0.2327, 0.4944, 0.2707]",
+DIMINUTA,train,16__g046__20260503_173100,mosca_blanca,,lado 13 px a 640,"[0.7861, 0.14, 0.8071, 0.1691]",
+DIMINUTA,train,16__g047__20260503_173148,mosca_blanca,,lado 10 px a 640,"[0.4321, 0.5192, 0.4497, 0.5391]",
+DIMINUTA,train,16__g047__20260503_173148,mosca_blanca,,lado 8 px a 640,"[0.3403, 0.5407, 0.3523, 0.5625]",
+DIMINUTA,train,16__g048__20260503_173422,mosca_blanca,,lado 12 px a 640,"[0.365, 0.5599, 0.3833, 0.5938]",
+DIMINUTA,train,16__g048__20260503_173422,mosca_blanca,,lado 14 px a 640,"[0.4956, 0.8838, 0.5181, 0.9156]",
+DIMINUTA,train,16__g048__20260503_173425,mosca_blanca,,lado 11 px a 640,"[0.2869, 0.4541, 0.3081, 0.4779]",
+DIMINUTA,train,16__g048__20260503_173425,mosca_blanca,,lado 8 px a 640,"[0.3394, 0.389, 0.3511, 0.4075]",
+DIMINUTA,train,16__g048__20260503_173425,mosca_blanca,,lado 12 px a 640,"[0.3735, 0.5469, 0.3931, 0.5795]",
+DIMINUTA,train,16__g048__20260503_173425,mosca_blanca,,lado 10 px a 640,"[0.2795, 0.568, 0.3013, 0.5899]",
+DIMINUTA,train,16__g048__20260503_173425,mosca_blanca,,lado 8 px a 640,"[0.415, 0.7324, 0.4282, 0.7619]",
+DIMINUTA,train,16__g048__20260503_173425,mosca_blanca,,lado 9 px a 640,"[0.4663, 0.7926, 0.4797, 0.8179]",
+DIMINUTA,train,16__g048__20260503_173425,mosca_blanca,,lado 13 px a 640,"[0.5415, 0.7812, 0.5615, 0.8075]",
+DIMINUTA,train,16__g048__20260503_173425,mosca_blanca,,lado 11 px a 640,"[0.0044, 0.7601, 0.022, 0.784]",
+DIMINUTA,train,16__g048__20260503_173434,mosca_blanca,,lado 12 px a 640,"[0.321, 0.5778, 0.3433, 0.6029]",
+ENORME,train,16__g048__20260503_173517,mildiu,,30 % de la imagen,"[0.4546, 0.0387, 0.7908, 0.9221]",
+DIMINUTA,train,16__g049__20260503_173737,polilla,,lado 14 px a 640,"[0.5005, 0.4639, 0.5239, 0.4935]",
+DIMINUTA,train,16__g049__20260503_173908,mosca_blanca,,lado 8 px a 640,"[0.8362, 0.7096, 0.8491, 0.7436]",
+DIMINUTA,train,16__g049__20260503_173908,mosca_blanca,,lado 8 px a 640,"[0.564, 0.4997, 0.5825, 0.5169]",
+DIMINUTA,train,16__g049__20260503_173908,mosca_blanca,,lado 8 px a 640,"[0.3235, 0.459, 0.3364, 0.4792]",
+DIMINUTA,train,16__g049__20260503_173913,mosca_blanca,,lado 12 px a 640,"[0.4834, 0.7178, 0.5034, 0.7423]",
+DIMINUTA,train,8__g002__20260503_080848,mosca_blanca,,lado 5 px a 640,"[0.445, 0.5132, 0.4567, 0.521]",
+DIMINUTA,train,8__g002__20260503_080848,mosca_blanca,,lado 5 px a 640,"[0.6383, 0.4526, 0.6494, 0.4629]",
+DIMINUTA,train,8__g002__20260503_080848,mosca_blanca,,lado 4 px a 640,"[0.6058, 0.7092, 0.6143, 0.7219]",
+DIMINUTA,train,8__g002__20260503_080848,mosca_blanca,,lado 3 px a 640,"[0.6829, 0.4458, 0.6921, 0.4512]",
+DIMINUTA,train,8__g002__20260503_080848,mosca_blanca,,lado 6 px a 640,"[0.4241, 0.4239, 0.4383, 0.4333]",
+DIMINUTA,train,8__g002__20260503_080918,mosca_blanca,,lado 6 px a 640,"[0.5163, 0.6099, 0.5293, 0.6245]",
+DIMINUTA,train,8__g002__20260503_080918,mosca_blanca,,lado 8 px a 640,"[0.4202, 0.698, 0.4404, 0.7112]",
+DIMINUTA,train,8__g002__20260503_080918,mosca_blanca,,lado 8 px a 640,"[0.5882, 0.4578, 0.6038, 0.4734]",
+DIMINUTA,train,8__g002__20260503_080918,mosca_blanca,,lado 7 px a 640,"[0.5007, 0.4792, 0.515, 0.491]",
+DIMINUTA,train,8__g002__20260503_080918,mosca_blanca,,lado 9 px a 640,"[0.627, 0.4895, 0.6452, 0.5076]",
+DIMINUTA,train,8__g002__20260503_080918,mosca_blanca,,lado 5 px a 640,"[0.71, 0.4109, 0.721, 0.4265]",
+DIMINUTA,train,8__g009__20260503_081719,mosca_blanca,,lado 11 px a 640,"[0.2646, 0.4421, 0.2868, 0.4626]",
+DIMINUTA,train,8__g009__20260503_081719,mosca_blanca,,lado 7 px a 640,"[0.6598, 0.541, 0.6761, 0.5513]",
+DIMINUTA,train,8__g009__20260503_081726,mosca_blanca,,lado 4 px a 640,"[0.5326, 0.5684, 0.5443, 0.5752]",
+DIMINUTA,train,8__g010__20260503_081919,mosca_blanca,,lado 6 px a 640,"[0.5156, 0.4281, 0.5303, 0.441]",
+DIMINUTA,train,8__g010__20260503_081944,mosca_blanca,,lado 10 px a 640,"[0.5125, 0.4281, 0.5295, 0.4482]",
+DIMINUTA,train,8__g010__20260503_081944,mosca_blanca,,lado 11 px a 640,"[0.6125, 0.4785, 0.6296, 0.5046]",
+DIMINUTA,train,8__g011__20260503_082033,mosca_blanca,,lado 8 px a 640,"[0.3734, 0.6077, 0.4001, 0.6204]",
+DIMINUTA,train,8__g012__20260503_082218,mosca_blanca,,lado 10 px a 640,"[0.431, 0.457, 0.4531, 0.4727]",
+DIMINUTA,train,8__g014__20260503_082338,mosca_blanca,,lado 11 px a 640,"[0.2282, 0.2273, 0.2516, 0.2478]",
+ENORME,train,8__g014__20260503_082355,mildiu,,37 % de la imagen,"[0.3072, 0.327, 0.9671, 0.8851]",
+DIMINUTA,train,8__g014__20260503_082409,mosca_blanca,,lado 4 px a 640,"[0.3483, 0.6458, 0.3594, 0.6526]",
+DIMINUTA,train,8__g014__20260503_082423,mosca_blanca,,lado 11 px a 640,"[0.4134, 0.6277, 0.4368, 0.6443]",
+DIMINUTA,train,8__g014__20260503_082423,mosca_blanca,,lado 8 px a 640,"[0.4538, 0.6147, 0.4694, 0.6289]",
+DIMINUTA,train,8__g014__20260503_082449,mosca_blanca,,lado 5 px a 640,"[0.389, 0.5774, 0.4001, 0.5852]",
+DIMINUTA,train,8__g014__20260503_082449,mosca_blanca,,lado 6 px a 640,"[0.4515, 0.5916, 0.4639, 0.6023]",
+DIMINUTA,train,8__g014__20260503_082449,mosca_blanca,,lado 5 px a 640,"[0.4818, 0.4617, 0.4961, 0.4695]",
+DIMINUTA,train,8__g014__20260503_082455,mosca_blanca,,lado 9 px a 640,"[0.4049, 0.6509, 0.4232, 0.6665]",
+DIMINUTA,train,8__g014__20260503_082455,mosca_blanca,,lado 11 px a 640,"[0.4811, 0.6807, 0.5046, 0.6992]",
+DIMINUTA,train,8__g014__20260503_082455,mosca_blanca,,lado 7 px a 640,"[0.5151, 0.5545, 0.53, 0.5648]",
+DIMINUTA,train,8__g018__20260503_082845,mosca_blanca,,lado 8 px a 640,"[0.3105, 0.1794, 0.3268, 0.2004]",
+DIMINUTA,train,8__g018__20260503_082845,mosca_blanca,,lado 9 px a 640,"[0.3317, 0.1912, 0.3545, 0.2058]",
+DIMINUTA,train,8__g018__20260503_082845,mosca_blanca,,lado 8 px a 640,"[0.3867, 0.5273, 0.4023, 0.5415]",
+DIMINUTA,train,8__g018__20260503_082845,mosca_blanca,,lado 5 px a 640,"[0.5117, 0.4304, 0.5228, 0.446]",
+DIMINUTA,train,8__g018__20260503_082845,mosca_blanca,,lado 7 px a 640,"[0.8428, 0.3582, 0.8571, 0.3684]",
+DIMINUTA,train,8__g018__20260503_082845,mosca_blanca,,lado 6 px a 640,"[0.2552, 0.5916, 0.2682, 0.6023]",
+DIMINUTA,train,8__g018__20260503_082903,mosca_blanca,,lado 4 px a 640,"[0.4368, 0.5098, 0.4447, 0.5215]",
+DIMINUTA,train,8__g018__20260503_082903,mosca_blanca,,lado 7 px a 640,"[0.5667, 0.4089, 0.5817, 0.4192]",
+DIMINUTA,train,8__g018__20260503_082903,mosca_blanca,,lado 4 px a 640,"[0.7907, 0.4219, 0.7985, 0.4326]",
+DIMINUTA,train,8__g019__20260503_082954,mosca_blanca,,lado 12 px a 640,"[0.2728, 0.7461, 0.3008, 0.7646]",
+DIMINUTA,train,8__g019__20260503_082958,mosca_blanca,,lado 9 px a 640,"[0.3105, 0.5366, 0.3333, 0.5508]",
+DIMINUTA,train,8__g019__20260503_082958,mosca_blanca,,lado 9 px a 640,"[0.2106, 0.4702, 0.2301, 0.4937]",
+DIMINUTA,train,8__g019__20260503_082958,mosca_blanca,,lado 3 px a 640,"[0.4932, 0.3665, 0.5003, 0.3743]",
+DIMINUTA,train,8__g019__20260503_082958,mosca_blanca,,lado 4 px a 640,"[0.3512, 0.3457, 0.3597, 0.3545]",
+DIMINUTA,train,8__g019__20260503_083014,mosca_blanca,,lado 6 px a 640,"[0.3447, 0.1814, 0.3571, 0.1907]",
+DIMINUTA,train,8__g019__20260503_083014,mosca_blanca,,lado 8 px a 640,"[0.3379, 0.0942, 0.3607, 0.106]",
+DIMINUTA,train,8__g019__20260503_083014,mosca_blanca,,lado 4 px a 640,"[0.4954, 0.2971, 0.5033, 0.3074]",
+DIMINUTA,train,8__g019__20260503_083014,mildiu,,lado 16 px a 640,"[0.5429, 0.602, 0.5842, 0.6262]",
+DIMINUTA,train,8__g019__20260503_083022,mosca_blanca,,lado 6 px a 640,"[0.3789, 0.2563, 0.3991, 0.2656]",
+DIMINUTA,train,8__g019__20260503_083022,mosca_blanca,,lado 4 px a 640,"[0.4919, 0.2505, 0.5003, 0.2573]",
+DIMINUTA,train,8__g019__20260503_083022,mosca_blanca,,lado 4 px a 640,"[0.5133, 0.4172, 0.5212, 0.425]",
+DIMINUTA,train,8__g019__20260503_083022,oidio,,lado 10 px a 640,"[0.4788, 0.4351, 0.5068, 0.4507]",
+DIMINUTA,train,8__g019__20260503_083044,mosca_blanca,,lado 14 px a 640,"[0.2428, 0.4543, 0.2728, 0.4768]",
+DIMINUTA,train,8__g019__20260503_083044,mosca_blanca,,lado 9 px a 640,"[0.2715, 0.5981, 0.2923, 0.6128]",
+DIMINUTA,train,8__g019__20260503_083044,mosca_blanca,,lado 7 px a 640,"[0.5036, 0.0488, 0.5186, 0.0684]",
+DIMINUTA,train,8__g019__20260503_083053,mosca_blanca,,lado 6 px a 640,"[0.3411, 0.5491, 0.3529, 0.5618]",
+DIMINUTA,train,8__g019__20260503_083053,mosca_blanca,,lado 5 px a 640,"[0.6494, 0.3081, 0.6598, 0.3169]",
+DIMINUTA,train,8__g019__20260503_083053,mosca_blanca,,lado 6 px a 640,"[0.7812, 0.3975, 0.7936, 0.4102]",
+DIMINUTA,train,8__g021__20260503_083240,mosca_blanca,,lado 10 px a 640,"[0.4108, 0.3098, 0.4316, 0.3323]",
+DIMINUTA,train,8__g021__20260503_083240,mosca_blanca,,lado 6 px a 640,"[0.4183, 0.3337, 0.4378, 0.343]",
+DIMINUTA,train,8__g021__20260503_083240,mosca_blanca,,lado 10 px a 640,"[0.4782, 0.2922, 0.5062, 0.3079]",
+DIMINUTA,train,8__g021__20260503_083240,mosca_blanca,,lado 7 px a 640,"[0.3239, 0.4622, 0.3389, 0.4724]",
+DIMINUTA,train,8__g021__20260503_083240,mosca_blanca,,lado 5 px a 640,"[0.431, 0.55, 0.4505, 0.5579]",
+DIMINUTA,train,8__g021__20260503_083240,mosca_blanca,,lado 6 px a 640,"[0.5661, 0.5664, 0.5791, 0.5757]",
+DIMINUTA,train,8__g021__20260503_083249,mosca_blanca,,lado 5 px a 640,"[0.3874, 0.3379, 0.3984, 0.3511]",
+DIMINUTA,train,8__g021__20260503_083249,mosca_blanca,,lado 8 px a 640,"[0.583, 0.3098, 0.6032, 0.323]",
+DIMINUTA,train,8__g021__20260503_083249,mosca_blanca,,lado 13 px a 640,"[0.6699, 0.3164, 0.696, 0.3384]",
+DIMINUTA,train,8__g021__20260503_083249,mosca_blanca,,lado 12 px a 640,"[0.597, 0.2903, 0.623, 0.3083]",
+DIMINUTA,train,8__g021__20260503_083249,mosca_blanca,,lado 5 px a 640,"[0.3766, 0.4668, 0.3877, 0.4771]",
+DIMINUTA,train,8__g021__20260503_083249,mosca_blanca,,lado 8 px a 640,"[0.4411, 0.5574, 0.4574, 0.5769]",
+DIMINUTA,train,8__g021__20260503_083249,mosca_blanca,,lado 9 px a 640,"[0.9456, 0.3198, 0.9639, 0.3364]",
+DIMINUTA,train,8__g021__20260503_083304,mosca_blanca,,lado 10 px a 640,"[0.8317, 0.5332, 0.8525, 0.5669]",
+DIMINUTA,train,8__g021__20260503_083304,mosca_blanca,,lado 12 px a 640,"[0.8138, 0.4854, 0.8379, 0.5039]",
+DIMINUTA,train,8__g021__20260503_083304,mosca_blanca,,lado 9 px a 640,"[0.583, 0.4272, 0.6012, 0.4414]",
+DIMINUTA,train,8__g021__20260503_083304,mosca_blanca,,lado 6 px a 640,"[0.4694, 0.4741, 0.4824, 0.4868]",
+DIMINUTA,train,8__g021__20260503_083304,mosca_blanca,,lado 8 px a 640,"[0.7044, 0.3616, 0.724, 0.3743]",
+DIMINUTA,train,8__g021__20260503_083304,mosca_blanca,,lado 13 px a 640,"[0.938, 0.723, 0.9664, 0.7435]",
+DIMINUTA,train,8__g023__20260503_083412,oidio,,lado 11 px a 640,"[0.5234, 0.6101, 0.5469, 0.6335]",
+DIMINUTA,train,8__g023__20260503_083412,oidio,,lado 15 px a 640,"[0.5378, 0.6367, 0.5716, 0.6602]",
+DIMINUTA,train,8__g023__20260503_083412,oidio,,lado 15 px a 640,"[0.5667, 0.5977, 0.5973, 0.6211]",
+DIMINUTA,train,8__g025__20260503_083729,mosca_blanca,,lado 9 px a 640,"[0.5752, 0.449, 0.5934, 0.4636]",
+DIMINUTA,train,8__g026__20260503_083847,mildiu,,lado 15 px a 640,"[0.3237, 0.8552, 0.3584, 0.8786]",
+DIMINUTA,train,8__g026__20260503_083933,mosca_blanca,,lado 6 px a 640,"[0.593, 0.5499, 0.6091, 0.5589]",
+DIMINUTA,train,8__g026__20260503_083933,mosca_blanca,,lado 8 px a 640,"[0.4199, 0.4966, 0.4362, 0.5112]",
+DIMINUTA,train,8__g026__20260503_083933,mosca_blanca,,lado 8 px a 640,"[0.6591, 0.613, 0.6756, 0.6261]",
+DIMINUTA,train,8__g026__20260503_083933,mosca_blanca,,lado 6 px a 640,"[0.7185, 0.5385, 0.7318, 0.5504]",
+DIMINUTA,train,8__g026__20260503_083933,mosca_blanca,,lado 6 px a 640,"[0.7358, 0.4492, 0.7489, 0.4615]",
+DIMINUTA,train,8__g026__20260503_083933,mosca_blanca,,lado 3 px a 640,"[0.3667, 0.4498, 0.373, 0.4582]",
+DIMINUTA,train,8__g026__20260503_083933,mosca_blanca,,lado 4 px a 640,"[0.5618, 0.3214, 0.5695, 0.3281]",
+DIMINUTA,train,8__g026__20260503_083940,mosca_blanca,,lado 10 px a 640,"[0.4264, 0.614, 0.4473, 0.6311]",
+DIMINUTA,train,8__g026__20260503_083940,mosca_blanca,,lado 11 px a 640,"[0.3223, 0.519, 0.3451, 0.5356]",
+DIMINUTA,train,8__g026__20260503_083940,mosca_blanca,,lado 12 px a 640,"[0.5394, 0.3684, 0.5635, 0.3909]",
+DIMINUTA,train,8__g026__20260503_083940,mosca_blanca,,lado 14 px a 640,"[0.5179, 0.4863, 0.5492, 0.5088]",
+DIMINUTA,train,8__g027__20260503_084029,mosca_blanca,,lado 8 px a 640,"[0.266, 0.1523, 0.2842, 0.165]",
+DIMINUTA,train,8__g027__20260503_084043,mosca_blanca,,lado 10 px a 640,"[0.4199, 0.2517, 0.4408, 0.2688]",
+DIMINUTA,train,8__g027__20260503_084043,mosca_blanca,,lado 8 px a 640,"[0.2894, 0.4678, 0.3089, 0.4805]",
+DIMINUTA,train,8__g027__20260503_084043,mosca_blanca,,lado 9 px a 640,"[0.444, 0.5315, 0.4622, 0.5481]",
+DIMINUTA,train,8__g027__20260503_084043,mosca_blanca,,lado 6 px a 640,"[0.6432, 0.4875, 0.6549, 0.5017]",
+DIMINUTA,train,8__g027__20260503_084043,mosca_blanca,,lado 4 px a 640,"[0.4564, 0.439, 0.4655, 0.4468]",
+DIMINUTA,train,8__g027__20260503_084043,mosca_blanca,,lado 4 px a 640,"[0.4473, 0.4463, 0.4557, 0.4551]",
+DIMINUTA,train,8__g027__20260503_084043,mosca_blanca,,lado 4 px a 640,"[0.5049, 0.4583, 0.5153, 0.4651]",
+DIMINUTA,train,8__g027__20260503_084043,mosca_blanca,,lado 3 px a 640,"[0.5218, 0.4492, 0.5329, 0.4541]",
+DIMINUTA,train,8__g027__20260503_084043,mosca_blanca,,lado 3 px a 640,"[0.5257, 0.4395, 0.5368, 0.4448]",
+DIMINUTA,train,8__g027__20260503_084043,mosca_blanca,,lado 8 px a 640,"[0.4844, 0.4343, 0.5065, 0.447]",
+DIMINUTA,train,8__g027__20260503_084056,mosca_blanca,,lado 9 px a 640,"[0.2926, 0.4075, 0.3122, 0.427]",
+DIMINUTA,train,8__g027__20260503_084056,oidio,,lado 11 px a 640,"[0.2612, 0.5531, 0.2848, 0.5729]",
+DIMINUTA,train,8__g027__20260503_084115,mildiu,,lado 14 px a 640,"[0.5956, 0.4071, 0.6277, 0.4285]",
+DIMINUTA,train,8__g027__20260503_084134,mosca_blanca,,lado 10 px a 640,"[0.5654, 0.408, 0.5863, 0.4265]",
+DIMINUTA,train,8__g027__20260503_084134,mosca_blanca,,lado 9 px a 640,"[0.5846, 0.4758, 0.6042, 0.4929]",
+DIMINUTA,train,8__g027__20260503_084134,mosca_blanca,,lado 9 px a 640,"[0.6204, 0.5266, 0.6387, 0.5408]",
+DIMINUTA,train,8__g031__20260503_084645,mosca_blanca,,lado 9 px a 640,"[0.4167, 0.4607, 0.4395, 0.4753]",
+DIMINUTA,train,8__g031__20260503_084703,mosca_blanca,,lado 9 px a 640,"[0.4932, 0.4727, 0.516, 0.4868]",
+DIMINUTA,train,8__g031__20260503_084703,mosca_blanca,,lado 11 px a 640,"[0.3175, 0.4353, 0.3409, 0.4553]",
+DIMINUTA,train,8__g036__20260503_085257,mosca_blanca,,lado 7 px a 640,"[0.4167, 0.6555, 0.4316, 0.6741]",
+DIMINUTA,train,8__g037__20260503_085505,mosca_blanca,,lado 9 px a 640,"[0.6234, 0.4922, 0.6468, 0.5063]",
+DIMINUTA,train,8__g037__20260503_085505,mosca_blanca,,lado 9 px a 640,"[0.5518, 0.2976, 0.57, 0.3196]",
+DIMINUTA,train,8__g037__20260503_085516_001,mosca_blanca,,lado 8 px a 640,"[0.3833, 0.376, 0.3989, 0.3932]",
+DIMINUTA,train,8__g037__20260503_085524,mosca_blanca,,lado 6 px a 640,"[0.4616, 0.5312, 0.4746, 0.5439]",
+DIMINUTA,train,8__g037__20260503_085539,mosca_blanca,,lado 8 px a 640,"[0.5081, 0.4814, 0.5244, 0.5]",
+DIMINUTA,train,8__g037__20260503_085546,mosca_blanca,,lado 7 px a 640,"[0.4082, 0.2273, 0.4232, 0.2478]",
+DIMINUTA,train,8__g037__20260503_085612,mosca_blanca,,lado 8 px a 640,"[0.3516, 0.8584, 0.3737, 0.8711]",
+DIMINUTA,train,8__g037__20260503_085732,mosca_blanca,,lado 7 px a 640,"[0.5752, 0.6851, 0.5902, 0.6992]",
+DIMINUTA,train,8__g037__20260503_085732,mosca_blanca,,lado 6 px a 640,"[0.4756, 0.2273, 0.4886, 0.24]",
+DIMINUTA,train,8__g037__20260503_085732,mosca_blanca,,lado 6 px a 640,"[0.2686, 0.5002, 0.2816, 0.5168]",
+DIMINUTA,train,8__g037__20260503_085754,mosca_blanca,,lado 4 px a 640,"[0.6602, 0.4126, 0.6693, 0.4219]",
+DIMINUTA,train,8__g037__20260503_085754,mosca_blanca,,lado 6 px a 640,"[0.8405, 0.4636, 0.8535, 0.4753]",
+DIMINUTA,train,8__g037__20260503_085808,mosca_blanca,,lado 9 px a 640,"[0.5029, 0.4148, 0.5251, 0.429]",
+DIMINUTA,train,8__g037__20260503_085845,mosca_blanca,,lado 8 px a 640,"[0.5599, 0.5649, 0.5762, 0.5806]",
+DIMINUTA,train,8__g040__20260503_090304,mosca_blanca,,lado 8 px a 640,"[0.474, 0.4707, 0.4902, 0.4873]",
+DIMINUTA,train,8__g042__20260503_090625,mosca_blanca,,lado 11 px a 640,"[0.3099, 0.5315, 0.332, 0.5481]",
+DIMINUTA,train,8__g042__20260503_090633,mosca_blanca,,lado 11 px a 640,"[0.3796, 0.488, 0.403, 0.5105]",
+DIMINUTA,train,8__g042__20260503_090719,mosca_blanca,,lado 9 px a 640,"[0.3464, 0.4609, 0.3646, 0.4766]",
+DIMINUTA,train,8__g050__20260503_091657,mosca_blanca,,lado 8 px a 640,"[0.516, 0.3115, 0.5322, 0.3262]",
+DIMINUTA,train,8__g057__20260503_092419,mosca_blanca,,lado 13 px a 640,"[0.6602, 0.7771, 0.6882, 0.7981]",
+DIMINUTA,train,8__g057__20260503_092423,mosca_blanca,,lado 10 px a 640,"[0.6068, 0.6191, 0.6276, 0.6357]",
+DIMINUTA,train,8__g057__20260503_092441,mosca_blanca,,lado 4 px a 640,"[0.2061, 0.448, 0.2145, 0.4583]",
+DIMINUTA,train,8__g059__20260503_092732,mosca_blanca,,lado 6 px a 640,"[0.4639, 0.5178, 0.4769, 0.5305]",
+DIMINUTA,train,8__g059__20260503_092732,mosca_blanca,,lado 7 px a 640,"[0.4697, 0.4927, 0.4847, 0.5044]",
+DIMINUTA,train,8__g059__20260503_092738,mosca_blanca,,lado 7 px a 640,"[0.349, 0.4805, 0.3633, 0.4912]",
+DIMINUTA,train,8__g059__20260503_092759,mosca_blanca,,lado 9 px a 640,"[0.237, 0.5859, 0.2552, 0.6016]",
+DIMINUTA,train,8__g073__20260503_095235,mosca_blanca,,lado 9 px a 640,"[0.4635, 0.481, 0.4818, 0.5005]",
+DIMINUTA,train,8__g073__20260503_095309,mosca_blanca,,lado 11 px a 640,"[0.5552, 0.4928, 0.5747, 0.515]",
+DIMINUTA,train,8__g073__20260503_095333,mosca_blanca,,lado 8 px a 640,"[0.502, 0.5305, 0.5182, 0.5491]",
+DIMINUTA,train,8__g073__20260503_095402,mosca_blanca,,lado 11 px a 640,"[0.5143, 0.4324, 0.5371, 0.4534]",
+DIMINUTA,train,8__g073__20260503_095402,mosca_blanca,,lado 11 px a 640,"[0.876, 0.6533, 0.8988, 0.6719]",
+DIMINUTA,train,8__g073__20260503_095417,mosca_blanca,,lado 8 px a 640,"[0.6029, 0.4121, 0.6191, 0.4268]",
+DIMINUTA,train,8__g073__20260503_095446,mosca_blanca,,lado 7 px a 640,"[0.252, 0.4202, 0.2669, 0.4343]",
+DIMINUTA,train,8__g073__20260503_095446,mosca_blanca,,lado 9 px a 640,"[0.4824, 0.4348, 0.502, 0.4495]",
+DIMINUTA,train,8__g073__20260503_095455,mosca_blanca,,lado 7 px a 640,"[0.4635, 0.5359, 0.4785, 0.5486]",
+DIMINUTA,train,8__g073__20260503_095524,mosca_blanca,,lado 9 px a 640,"[0.4512, 0.5305, 0.4694, 0.5491]",
+DIMINUTA,train,8__g073__20260503_095554,mosca_blanca,,lado 9 px a 640,"[0.4645, 0.4927, 0.4854, 0.5073]",
+DIMINUTA,train,8__g073__20260503_095612,mosca_blanca,,lado 12 px a 640,"[0.4824, 0.5408, 0.5065, 0.5657]",
+DIMINUTA,train,8__g074__20260503_095709,mosca_blanca,,lado 9 px a 640,"[0.6699, 0.3271, 0.6882, 0.3496]",
+DIMINUTA,train,8__g074__20260503_095709,mosca_blanca,,lado 6 px a 640,"[0.5143, 0.4531, 0.5293, 0.4624]",
+DIMINUTA,train,8__g074__20260503_095709,mosca_blanca,,lado 6 px a 640,"[0.568, 0.3447, 0.5837, 0.3535]",
+DIMINUTA,train,8__g074__20260503_095723,mosca_blanca,,lado 9 px a 640,"[0.3825, 0.4497, 0.402, 0.4644]",
+DIMINUTA,train,frames_extraidosv1__video_20260503_100229__20260503_100229_frame_000030,mosca_blanca,,lado 12 px a 640,"[0.6927, 0.1458, 0.7236, 0.164]",
+DIMINUTA,train,frames_extraidosv1__video_20260503_100229__20260503_100229_frame_000180,mosca_blanca,,lado 12 px a 640,"[0.3293, 0.5117, 0.3475, 0.5301]",
+DIMINUTA,train,frames_extraidosv1__video_20260503_100229__20260503_100229_frame_000240,mosca_blanca,,lado 15 px a 640,"[0.7832, 0.0293, 0.8125, 0.0527]",
+DIMINUTA,train,frames_extraidosv1__video_20260503_100229__20260503_100229_frame_000270,mosca_blanca,,lado 10 px a 640,"[0.56, 0.3845, 0.5764, 0.402]",
+DIMINUTA,train,frames_extraidosv1__video_20260503_100229__20260503_100229_frame_000750,mosca_blanca,,lado 14 px a 640,"[0.5547, 0.1641, 0.5825, 0.1852]",
+DIMINUTA,train,frames_extraidosv1__video_20260503_100229__20260503_100229_frame_000750,mosca_blanca,,lado 9 px a 640,"[0.7125, 0.4969, 0.7325, 0.5103]",
+ENORME,train,frames_extraidosv1__video_20260503_100229__20260503_100229_frame_000810,mildiu,,71 % de la imagen,"[0.0254, 0.0215, 0.9984, 0.748]",
+DIMINUTA,train,frames_extraidosv1__video_20260503_100229__20260503_100229_frame_002040,mosca_blanca,,lado 14 px a 640,"[0.4312, 0.305, 0.4652, 0.3273]",
+DIMINUTA,train,frames_extraidosv1__video_20260503_100229__20260503_100229_frame_002040,mosca_blanca,,lado 15 px a 640,"[0.4271, 0.1391, 0.461, 0.1619]",
+DIMINUTA,train,frames_extraidosv1__video_20260503_165343__20260503_165343_frame_000420,mildiu,,lado 16 px a 640,"[0.6047, 0.5776, 0.6293, 0.6122]",
+DIMINUTA,train,frames_extraidosv1__video_20260503_165343__20260503_165343_frame_000420,mildiu,,lado 14 px a 640,"[0.6585, 0.4839, 0.6809, 0.5072]",
+DIMINUTA,train,frames_extraidosv1__video_20260503_172401__20260503_172401_frame_000030,mildiu,,lado 12 px a 640,"[0.2103, 0.5216, 0.2476, 0.5412]",
+DIMINUTA,train,frames_extraidosv1__video_20260503_172401__20260503_172401_frame_000180,mildiu,,lado 12 px a 640,"[0.1117, 0.5943, 0.1486, 0.6128]",
+DIMINUTA,train,version2__V2__12__g001__20260712_144947,mildiu,,lado 13 px a 640,"[0.7862, 0.0111, 0.806, 0.0448]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082552,mildiu,,lado 16 px a 640,"[0.3934, 0.0511, 0.418, 0.0962]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082552,mildiu,,lado 11 px a 640,"[0.4191, 0.0183, 0.4363, 0.0597]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082620,mildiu,,lado 14 px a 640,"[0.3906, 0.7736, 0.4858, 0.8026]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082725,mildiu,,lado 11 px a 640,"[0.5705, 0.4058, 0.5876, 0.4293]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082725,mildiu,,lado 11 px a 640,"[0.2251, 0.2189, 0.2517, 0.242]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082747,mildiu,,lado 15 px a 640,"[0.7187, 0.1199, 0.7483, 0.151]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082747,mosca_blanca,,lado 10 px a 640,"[0.786, 0.1895, 0.8034, 0.2106]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082747,mosca_blanca,,lado 8 px a 640,"[0.7999, 0.1678, 0.8121, 0.1897]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082747,mosca_blanca,,lado 8 px a 640,"[0.8556, 0.2382, 0.8695, 0.2539]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082919,mildiu,,lado 16 px a 640,"[0.399, 0.2457, 0.4237, 0.2964]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082930,mildiu,,lado 3 px a 640,"[0.6313, 0.5153, 0.6367, 0.5277]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082930,mildiu,,lado 6 px a 640,"[0.4755, 0.5592, 0.4891, 0.5722]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082930,mildiu,,lado 9 px a 640,"[0.0673, 0.7071, 0.0807, 0.7342]",
+DIMINUTA,train,version2__V2__8__g010__20260712_082959,sana,,lado 11 px a 640,"[0.3941, 0.7105, 0.4118, 0.7332]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083029,mildiu,,lado 10 px a 640,"[0.7028, 0.4475, 0.7225, 0.469]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083029,mildiu,,lado 10 px a 640,"[0.0465, 0.6032, 0.0706, 0.6233]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083029,mildiu,,lado 10 px a 640,"[0.0757, 0.6032, 0.0947, 0.6238]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083029,mildiu,,lado 14 px a 640,"[0.0532, 0.7357, 0.0919, 0.7658]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083101,mildiu,,lado 11 px a 640,"[0.2003, 0.4518, 0.2168, 0.4823]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083104,mildiu,,lado 10 px a 640,"[0.4354, 0.7486, 0.4624, 0.7703]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083112,sana,,lado 16 px a 640,"[0.5609, 0.5519, 0.5857, 0.6247]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083112,mildiu,,lado 9 px a 640,"[0.5217, 0.3594, 0.5405, 0.3791]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083112,mildiu,,lado 7 px a 640,"[0.4369, 0.412, 0.4483, 0.4262]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083112,mildiu,,lado 4 px a 640,"[0.515, 0.209, 0.5249, 0.2175]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083112,mildiu,,lado 8 px a 640,"[0.3836, 0.1856, 0.3962, 0.2072]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083112,mildiu,,lado 8 px a 640,"[0.3418, 0.1973, 0.3538, 0.2175]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083151,mildiu,,lado 10 px a 640,"[0.3507, 0.6087, 0.3687, 0.6296]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083151,mildiu,,lado 10 px a 640,"[0.7015, 0.1801, 0.7178, 0.2086]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083200,polilla,,lado 8 px a 640,"[0.4254, 0.6865, 0.4375, 0.7081]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083200,polilla,,lado 9 px a 640,"[0.4632, 0.6245, 0.4779, 0.6432]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083258,mildiu,,lado 7 px a 640,"[0.4704, 0.6022, 0.4818, 0.6915]",
+DIMINUTA,train,version2__V2__8__g010__20260712_083258,mildiu,,lado 12 px a 640,"[0.6185, 0.6738, 0.6429, 0.698]",
+DIMINUTA,train,version2__V2__8__g015__20260712_084158,mildiu,,lado 13 px a 640,"[0.5306, 0.7444, 0.555, 0.7718]",
+DIMINUTA,train,version2__V2__8__g015__20260712_084344,mildiu,,lado 13 px a 640,"[0.484, 0.7012, 0.5155, 0.7276]",
+DIMINUTA,train,version2__V2__8__g018__20260712_084856,mildiu,,lado 14 px a 640,"[0.4272, 0.5089, 0.4574, 0.5385]",
+DIMINUTA,train,version2__V2__8__g018__20260712_084856,mildiu,,lado 13 px a 640,"[0.4183, 0.5458, 0.4508, 0.5732]",
+DIMINUTA,train,version2__V2__8__g018__20260712_084858,mildiu,,lado 13 px a 640,"[0.4785, 0.5588, 0.5086, 0.5851]",
+DIMINUTA,train,version2__V2__8__g018__20260712_084909,mildiu,,lado 12 px a 640,"[0.6535, 0.638, 0.6722, 0.6687]",
+DIMINUTA,train,version2__V2__8__g018__20260712_084909,mildiu,,lado 14 px a 640,"[0.5176, 0.6619, 0.5444, 0.6904]",
+DIMINUTA,train,version2__V2__8__g018__20260712_084911,mildiu,,lado 10 px a 640,"[0.5261, 0.4232, 0.5423, 0.4433]",
+DIMINUTA,train,version2__V2__8__g019__20260712_085053,mildiu,,lado 14 px a 640,"[0.5216, 0.3309, 0.5526, 0.3605]",
+DIMINUTA,train,version2__V2__8__g019__20260712_085123,mildiu,,lado 12 px a 640,"[0.5436, 0.6217, 0.5689, 0.647]",
+DIMINUTA,train,version2__V2__8__g019__20260712_085443,mildiu,,lado 15 px a 640,"[0.5672, 0.0297, 0.5906, 0.0604]",
+DIMINUTA,train,version2__V2__8__g019__20260712_085449,mildiu,,lado 6 px a 640,"[0.8081, 0.5751, 0.8179, 0.5927]",
+DIMINUTA,train,version2__V2__8__g019__20260712_085527,mosca_blanca,,lado 11 px a 640,"[0.4648, 0.4758, 0.4824, 0.5026]",
+DIMINUTA,train,version2__V2__8__g019__20260712_085551,mosca_blanca,,lado 3 px a 640,"[0.5709, 0.4008, 0.5762, 0.4068]",
+DIMINUTA,train,version2__V2__8__g019__20260712_085551,mosca_blanca,,lado 4 px a 640,"[0.5313, 0.4249, 0.5381, 0.4407]",
+DIMINUTA,train,version2__V2__8__g019__20260712_085554,mosca_blanca,,lado 10 px a 640,"[0.2254, 0.4818, 0.2425, 0.5016]",
+DIMINUTA,train,version2__V2__8__g019__20260712_085626,mildiu,,lado 13 px a 640,"[0.3361, 0.8735, 0.3654, 0.9009]",
+DIMINUTA,train,version2__V2__8__g020__20260712_085854,mosca_blanca,,lado 9 px a 640,"[0.6543, 0.5957, 0.6681, 0.6144]",
+DIMINUTA,train,version2__V2__8__g020__20260712_085854,mosca_blanca,,lado 9 px a 640,"[0.7666, 0.7031, 0.7812, 0.7262]",
+DIMINUTA,train,version2__V2__8__g020__20260712_085854,mosca_blanca,,lado 12 px a 640,"[0.743, 0.2517, 0.7642, 0.2759]",
+DIMINUTA,train,version2__V2__8__g022__20260712_090253,mildiu,,lado 13 px a 640,"[0.8014, 0.2686, 0.823, 0.2966]",
+DIMINUTA,train,version2__V2__8__g022__20260712_090444,sana,,lado 8 px a 640,"[0.681, 0.3896, 0.7146, 0.406]",
+DIMINUTA,train,version2__V2__8__g023__20260712_090544,mildiu,,lado 15 px a 640,"[0.6348, 0.6478, 0.6576, 0.6817]",
+DIMINUTA,train,version2__V2__8__g023__20260712_090549,mildiu,,lado 15 px a 640,"[0.2604, 0.319, 0.2946, 0.3497]",
+DIMINUTA,train,version2__V2__8__g023__20260712_090552,mildiu,,lado 16 px a 640,"[0.4647, 0.5946, 0.5404, 0.6274]",
+DIMINUTA,train,version2__V2__8__g023__20260712_090638,mildiu,,lado 13 px a 640,"[0.5098, 0.5368, 0.5307, 0.5668]",
+DIMINUTA,train,version2__V2__8__g023__20260712_090638,mildiu,,lado 13 px a 640,"[0.5857, 0.8307, 0.6114, 0.8575]",
+DIMINUTA,train,version2__V2__8__g023__20260712_090638,mildiu,,lado 11 px a 640,"[0.8097, 0.8362, 0.8263, 0.8631]",
+DIMINUTA,train,version2__V2__8__g023__20260712_090710,mildiu,,lado 15 px a 640,"[0.0798, 0.7878, 0.1066, 0.8195]",
+DIMINUTA,train,version2__V2__8__g023__20260712_090712,mildiu,,lado 12 px a 640,"[0.0073, 0.3646, 0.0448, 0.3887]",
+DIMINUTA,train,version2__V2__8__g023__20260712_090731,mildiu,,lado 12 px a 640,"[0.1107, 0.2224, 0.1522, 0.2477]",
+ENORME,train,version2__V3__4__g006__20260729_143847,mildiu,,77 % de la imagen,"[0.1025, 0.0, 0.9715, 0.8858]",
+DIMINUTA,train,version2__V3__4__g011__20260729_150244,mosca_blanca,,lado 11 px a 640,"[0.6112, 0.5404, 0.6283, 0.5797]",
+DIMINUTA,train,version2__V3__4__g015__20260729_151716,polilla,,lado 16 px a 640,"[0.5249, 0.459, 0.6152, 0.4918]",
+DIMINUTA,train,version2__V3__4__g016__20260729_151950,mosca_blanca,,lado 8 px a 640,"[0.78, 0.4297, 0.7967, 0.4473]",
+DIMINUTA,train,version2__V3__4__g020__20260729_154019,mosca_blanca,,lado 9 px a 640,"[0.3532, 0.8344, 0.3678, 0.8564]",
+DIMINUTA,train,version2__V3__4__g020__20260729_154022,mosca_blanca,,lado 13 px a 640,"[0.2995, 0.8431, 0.3312, 0.8694]",
+DIMINUTA,train,version2__V3__4__g020__20260729_154027,mosca_blanca,,lado 15 px a 640,"[0.2173, 0.778, 0.2433, 0.8086]",
+DIMINUTA,train,version2__V3__4__g020__20260729_154031-0-,mosca_blanca,,lado 7 px a 640,"[0.2759, 0.8019, 0.2873, 0.8249]",
+DIMINUTA,train,version2__V3__4__g020__20260729_154034,mosca_blanca,,lado 11 px a 640,"[0.255, 0.7425, 0.2745, 0.7656]",
+DIMINUTA,train,version2__V3__frames_videosv2__video_20260729_145442__20260729_145442_frame_003600,polilla,,lado 16 px a 640,"[0.5109, 0.5406, 0.5444, 0.5649]",
+DIMINUTA,train,version2__V3__frames_videosv2__video_20260729_145716__20260729_145716_frame_000720,mildiu,,lado 14 px a 640,"[0.8204, 0.5162, 0.853, 0.5376]",
+DIMINUTA,train,version2__V3__frames_videosv2__video_20260729_150335__20260729_150335_frame_000060,mosca_blanca,,lado 12 px a 640,"[0.5734, 0.65, 0.6152, 0.6691]",
+DIMINUTA,train,version2__V3__frames_videosv2__video_20260729_150335__20260729_150335_frame_000600,mosca_blanca,,lado 14 px a 640,"[0.5531, 0.6375, 0.5916, 0.6594]",
+DIMINUTA,train,version2__V3__frames_videosv2__video_20260729_150335__20260729_150335_frame_005550,mosca_blanca,,lado 12 px a 640,"[0.4, 0.5766, 0.4235, 0.5954]",
+DIMINUTA,train,version2__V3__frames_videosv2__video_20260729_151351__20260729_151351_frame_000030,mosca_blanca,,lado 10 px a 640,"[0.7024, 0.6893, 0.7202, 0.7055]",
+DIMINUTA,train,version2__V3__frames_videosv2__video_20260729_151351__20260729_151351_frame_002010,mosca_blanca,,lado 12 px a 640,"[0.0263, 0.7932, 0.0494, 0.8127]",
+DIMINUTA,train,version2__V3__frames_videosv2__video_20260729_151351__20260729_151351_frame_002010,mosca_blanca,,lado 3 px a 640,"[0.7359, 0.1886, 0.7446, 0.1931]",
+DIMINUTA,valid,12__g004__20260503_120302,mildiu,,lado 14 px a 640,"[0.6647, 0.5574, 0.6947, 0.5818]",
+DIMINUTA,valid,12__g004__20260503_120302,mildiu,,lado 13 px a 640,"[0.6585, 0.4976, 0.749, 0.5181]",
+DIMINUTA,valid,12__g004__20260503_120302,mildiu,,lado 13 px a 640,"[0.7314, 0.7749, 0.7809, 0.7954]",
+DIMINUTA,valid,12__g004__20260503_120302,mildiu,,lado 13 px a 640,"[0.1748, 0.5879, 0.2093, 0.6089]",
+DIMINUTA,valid,12__g004__20260503_120302,oidio,,lado 15 px a 640,"[0.0911, 0.564, 0.127, 0.5875]",
+DIMINUTA,valid,12__g017__20260503_122722,mildiu,,lado 13 px a 640,"[0.1787, 0.4648, 0.1992, 0.5277]",
+DIMINUTA,valid,12__g017__20260503_122722,mildiu,,lado 14 px a 640,"[0.0303, 0.651, 0.0869, 0.68]",
+DIMINUTA,valid,12__g022__20260503_125044,oidio,,lado 10 px a 640,"[0.582, 0.3665, 0.6087, 0.3821]",
+DIMINUTA,valid,12__g022__20260503_125044,oidio,,lado 8 px a 640,"[0.5729, 0.3318, 0.5898, 0.3464]",
+DIMINUTA,valid,12__g022__20260503_125044,mildiu,,lado 8 px a 640,"[0.5072, 0.3821, 0.5228, 0.4055]",
+DIMINUTA,valid,12__g022__20260503_125044,oidio,,lado 9 px a 640,"[0.6077, 0.3279, 0.6266, 0.3489]",
+DIMINUTA,valid,12__g022__20260503_125051,oidio,,lado 16 px a 640,"[0.4352, 0.519, 0.4697, 0.5435]",
+DIMINUTA,valid,12__g022__20260503_125051,mildiu,,lado 11 px a 640,"[0.4492, 0.405, 0.4727, 0.4402]",
+DIMINUTA,valid,12__g022__20260503_125051,oidio,,lado 12 px a 640,"[0.3245, 0.3652, 0.3519, 0.3848]",
+DIMINUTA,valid,12__g022__20260503_125051,oidio,,lado 8 px a 640,"[0.4186, 0.3289, 0.4408, 0.3416]",
+DIMINUTA,valid,12__g022__20260503_125051,oidio,,lado 9 px a 640,"[0.4551, 0.3074, 0.4733, 0.324]",
+DIMINUTA,valid,12__g022__20260503_125051,oidio,,lado 15 px a 640,"[0.4993, 0.3274, 0.5332, 0.3508]",
+DIMINUTA,valid,12__g022__20260503_125051,oidio,,lado 4 px a 640,"[0.4163, 0.5669, 0.4242, 0.5815]",
+DIMINUTA,valid,12__g022__20260503_125108,oidio,,lado 7 px a 640,"[0.348, 0.6763, 0.363, 0.7036]",
+DIMINUTA,valid,12__g022__20260503_125108,oidio,,lado 14 px a 640,"[0.2422, 0.7093, 0.2707, 0.7383]",
+DIMINUTA,valid,12__g022__20260503_125108,oidio,,lado 14 px a 640,"[0.3353, 0.71, 0.3638, 0.7391]",
+ENORME,valid,12__g025__20260503_125951,mildiu,,34 % de la imagen,"[0.1449, 0.343, 0.9733, 0.751]",
+DIMINUTA,valid,12__g029__20260503_131732,oidio,,lado 15 px a 640,"[0.4863, 0.5547, 0.5195, 0.5863]",
+DIMINUTA,valid,12__g029__20260503_131732,oidio,,lado 15 px a 640,"[0.6172, 0.638, 0.6514, 0.6683]",
+DIMINUTA,valid,12__g032__20260503_132549,oidio,,lado 11 px a 640,"[0.5302, 0.6044, 0.5548, 0.6213]",
+DIMINUTA,valid,12__g032__20260503_132549,oidio,,lado 10 px a 640,"[0.466, 0.5703, 0.4916, 0.5864]",
+DIMINUTA,valid,12__g032__20260503_132549,oidio,,lado 10 px a 640,"[0.5068, 0.5726, 0.5276, 0.5954]",
+DIMINUTA,valid,12__g032__20260503_132549,oidio,,lado 10 px a 640,"[0.5657, 0.6067, 0.5866, 0.6232]",
+DIMINUTA,valid,12__g032__20260503_132549,oidio,,lado 9 px a 640,"[0.3272, 0.6247, 0.3502, 0.6385]",
+DIMINUTA,valid,12__g032__20260503_132607,oidio,,lado 15 px a 640,"[0.3548, 0.5, 0.3952, 0.5234]",
+DIMINUTA,valid,12__g032__20260503_132649,oidio,,lado 9 px a 640,"[0.6868, 0.448, 0.7243, 0.4617]",
+DIMINUTA,valid,12__g032__20260503_132649,oidio,,lado 13 px a 640,"[0.651, 0.4736, 0.6787, 0.4947]",
+DIMINUTA,valid,12__g032__20260503_132757,oidio,,lado 10 px a 640,"[0.3219, 0.5188, 0.3545, 0.5344]",
+DIMINUTA,valid,12__g032__20260503_132757,oidio,,lado 12 px a 640,"[0.4082, 0.407, 0.4323, 0.4304]",
+DIMINUTA,valid,12__g032__20260503_132757,oidio,,lado 11 px a 640,"[0.4499, 0.4021, 0.4733, 0.4387]",
+DIMINUTA,valid,12__g032__20260503_132757,oidio,,lado 16 px a 640,"[0.3236, 0.3813, 0.3639, 0.4062]",
+DIMINUTA,valid,12__g032__20260503_132757,oidio,,lado 14 px a 640,"[0.4544, 0.9763, 0.4844, 0.9988]",
+DIMINUTA,valid,12__g038__20260503_135002,oidio,,lado 13 px a 640,"[0.4653, 0.3483, 0.4863, 0.3828]",
+DIMINUTA,valid,12__g038__20260503_135012,oidio,,lado 15 px a 640,"[0.5078, 0.3854, 0.543, 0.417]",
+DIMINUTA,valid,12__g038__20260503_135012,oidio,,lado 15 px a 640,"[0.4492, 0.4128, 0.4785, 0.4443]",
+DIMINUTA,valid,12__g040__20260503_135214,mildiu,,lado 16 px a 640,"[0.4492, 0.719, 0.4818, 0.7478]",
+DIMINUTA,valid,12__g040__20260503_135214,mildiu,,lado 13 px a 640,"[0.6364, 0.9027, 0.6641, 0.9493]",
+DIMINUTA,valid,12__g040__20260503_135214,mildiu,,lado 8 px a 640,"[0.5273, 0.8057, 0.5444, 0.826]",
+DIMINUTA,valid,12__g040__20260503_135214,mildiu,,lado 9 px a 640,"[0.8545, 0.7025, 0.8732, 0.7179]",
+DIMINUTA,valid,12__g040__20260503_135301,sana,,lado 16 px a 640,"[0.7568, 0.2588, 0.7894, 0.2994]",
+DIMINUTA,valid,12__g040__20260503_135412,oidio,,lado 16 px a 640,"[0.4089, 0.1277, 0.4414, 0.1614]",
+ENORME,valid,12__g045__20260503_140256,mildiu,,30 % de la imagen,"[0.1373, 0.1582, 0.7464, 0.6584]",
+ENORME,valid,12__g051__20260503_142722,mildiu,,31 % de la imagen,"[0.1491, 0.3396, 0.8105, 0.8152]",
+DIMINUTA,valid,12__g054__20260503_143051,polilla,,lado 14 px a 640,"[0.4463, 0.4844, 0.5212, 0.5063]",
+DIMINUTA,valid,12__g054__20260503_143101,polilla,,lado 14 px a 640,"[0.3411, 0.4414, 0.418, 0.4634]",
+ENORME,valid,12__g058__20260503_143858,mildiu,,43 % de la imagen,"[0.1613, 0.3146, 0.8319, 0.9514]",
+DIMINUTA,valid,16__g013__20260503_162426,mosca_blanca,,lado 7 px a 640,"[0.5505, 0.4146, 0.5654, 0.4292]",
+DIMINUTA,valid,16__g013__20260503_162430,sana,,lado 15 px a 640,"[0.7546, 0.2314, 0.7858, 0.2949]",
+DIMINUTA,valid,16__g013__20260503_162445,mosca_blanca,,lado 11 px a 640,"[0.3618, 0.5524, 0.3789, 0.585]",
+DIMINUTA,valid,16__g013__20260503_162454,mosca_blanca,,lado 9 px a 640,"[0.5037, 0.5257, 0.5183, 0.5524]",
+DIMINUTA,valid,16__g020__20260503_163635,mosca_blanca,,lado 12 px a 640,"[0.152, 0.8945, 0.1761, 0.9131]",
+DIMINUTA,valid,16__g027__20260503_165148,mosca_blanca,,lado 11 px a 640,"[0.387, 0.5598, 0.4098, 0.5823]",
+DIMINUTA,valid,16__g034__20260503_170258,polilla,,lado 12 px a 640,"[0.4137, 0.5527, 0.4691, 0.5708]",
+DIMINUTA,valid,8__g029__20260503_084304,mosca_blanca,,lado 8 px a 640,"[0.5114, 0.3406, 0.5309, 0.3533]",
+DIMINUTA,valid,8__g029__20260503_084304,mosca_blanca,,lado 12 px a 640,"[0.4629, 0.4402, 0.487, 0.4724]",
+DIMINUTA,valid,8__g029__20260503_084304,mosca_blanca,,lado 12 px a 640,"[0.265, 0.4771, 0.291, 0.498]",
+DIMINUTA,valid,8__g029__20260503_084304,mosca_blanca,,lado 10 px a 640,"[0.3105, 0.4658, 0.3314, 0.4844]",
+DIMINUTA,valid,8__g039__20260503_090209,mildiu,,lado 8 px a 640,"[0.4587, 0.5686, 0.4756, 0.5891]",
+DIMINUTA,valid,8__g039__20260503_090209,mildiu,,lado 16 px a 640,"[0.1664, 0.9107, 0.1997, 0.9461]",
+DIMINUTA,valid,8__g041__20260503_090419,mosca_blanca,,lado 13 px a 640,"[0.5667, 0.4512, 0.5928, 0.4736]",
+DIMINUTA,valid,8__g043__20260503_090939,mosca_blanca,,lado 10 px a 640,"[0.5752, 0.5088, 0.5954, 0.5273]",
+DIMINUTA,valid,8__g047__20260503_091347,mildiu,,lado 6 px a 640,"[0.2243, 0.5256, 0.2367, 0.5398]",
+DIMINUTA,valid,8__g051__20260503_091835,mosca_blanca,,lado 8 px a 640,"[0.4785, 0.5034, 0.498, 0.5151]",
+DIMINUTA,valid,8__g056__20260503_092337,mosca_blanca,,lado 10 px a 640,"[0.3569, 0.6764, 0.3726, 0.7064]",
+DIMINUTA,valid,8__g056__20260503_092345,mosca_blanca,,lado 9 px a 640,"[0.4756, 0.4967, 0.4902, 0.5202]",
+DIMINUTA,valid,8__g060__20260503_092918,mosca_blanca,,lado 6 px a 640,"[0.445, 0.4133, 0.458, 0.4353]",
+DIMINUTA,valid,8__g064__20260503_093841,mosca_blanca,,lado 6 px a 640,"[0.2568, 0.4441, 0.2699, 0.4543]",
+DIMINUTA,valid,8__g065__20260503_094016,mosca_blanca,,lado 5 px a 640,"[0.4876, 0.4949, 0.498, 0.5051]",
+DIMINUTA,valid,8__g065__20260503_094016,mosca_blanca,,lado 2 px a 640,"[0.5068, 0.5059, 0.512, 0.5146]",
+DIMINUTA,valid,8__g065__20260503_094016,mosca_blanca,,lado 4 px a 640,"[0.5199, 0.4836, 0.5303, 0.49]",
+DIMINUTA,valid,8__g065__20260503_094016,mosca_blanca,,lado 4 px a 640,"[0.4987, 0.3987, 0.5078, 0.4075]",
+DIMINUTA,valid,8__g065__20260503_094016,oidio,,lado 12 px a 640,"[0.46, 0.3962, 0.484, 0.4148]",
+DIMINUTA,valid,8__g065__20260503_094016,mosca_blanca,,lado 8 px a 640,"[0.7106, 0.8735, 0.7269, 0.8921]",
+DIMINUTA,valid,8__g065__20260503_094020,mosca_blanca,,lado 6 px a 640,"[0.3529, 0.4531, 0.3659, 0.4688]",
+DIMINUTA,valid,8__g065__20260503_094020,mosca_blanca,,lado 6 px a 640,"[0.3861, 0.4526, 0.3984, 0.4644]",
+DIMINUTA,valid,8__g065__20260503_094020,mosca_blanca,,lado 6 px a 640,"[0.377, 0.416, 0.39, 0.4248]",
+DIMINUTA,valid,8__g065__20260503_094020,mosca_blanca,,lado 6 px a 640,"[0.6374, 0.5071, 0.6504, 0.5164]",
+DIMINUTA,valid,8__g065__20260503_094027,mosca_blanca,,lado 10 px a 640,"[0.3662, 0.4399, 0.387, 0.457]",
+DIMINUTA,valid,8__g072__20260503_094934,mosca_blanca,,lado 11 px a 640,"[0.511, 0.5944, 0.5344, 0.6165]",
+DIMINUTA,valid,frames_extraidosv1__video_20260503_095824__20260503_095824_frame_000840,mildiu,,lado 8 px a 640,"[0.8581, 0.6645, 0.8767, 0.6777]",
+DIMINUTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_000090,mildiu,,lado 11 px a 640,"[0.4005, 0.314, 0.4174, 0.3401]",
+DIMINUTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_000090,mildiu,,lado 10 px a 640,"[0.2574, 0.3001, 0.2852, 0.3153]",
+DIMINUTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_004050,mildiu,,lado 9 px a 640,"[0.2342, 0.4324, 0.2487, 0.4512]",
+DIMINUTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_004050,mildiu,,lado 9 px a 640,"[0.1063, 0.4127, 0.1341, 0.4264]",
+DIMINUTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_004050,mildiu,,lado 8 px a 640,"[0.0695, 0.126, 0.0853, 0.1382]",
+DIMINUTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_004050,mildiu,,lado 9 px a 640,"[0.0317, 0.1459, 0.0734, 0.16]",
+DIMINUTA,valid,version2__V2__12__g002__20260712_145213,mildiu,,lado 9 px a 640,"[0.3898, 0.5414, 0.4232, 0.5602]",
+DIMINUTA,valid,version2__V2__12__g002__20260712_145225,mildiu,,lado 15 px a 640,"[0.6551, 0.6934, 0.6925, 0.724]",
+DIMINUTA,valid,version2__V2__8__g003__20260712_081733,mosca_blanca,,lado 7 px a 640,"[0.2889, 0.5903, 0.2995, 0.6079]",
+DIMINUTA,valid,version2__V2__8__g007__20260712_082122,mildiu,,lado 10 px a 640,"[0.4387, 0.2925, 0.4576, 0.3127]",
+DIMINUTA,valid,version2__V2__8__g007__20260712_082122,mosca_blanca,,lado 6 px a 640,"[0.2854, 0.8376, 0.2941, 0.8515]",
+DIMINUTA,valid,version2__V2__8__g007__20260712_082122,mosca_blanca,,lado 4 px a 640,"[0.2996, 0.8429, 0.3059, 0.8515]",
+DIMINUTA,valid,version2__V2__8__g007__20260712_082122,mildiu,,lado 14 px a 640,"[0.8507, 0.4372, 0.872, 0.4668]",
+DIMINUTA,valid,version2__V2__8__g007__20260712_082145,mildiu,,lado 11 px a 640,"[0.9644, 0.6434, 0.9896, 0.6665]",
+DIMINUTA,valid,version2__V2__8__g007__20260712_082145,mildiu,,lado 14 px a 640,"[0.9652, 0.4069, 0.992, 0.4354]",
+DIMINUTA,valid,version2__V2__8__g007__20260712_082145,mildiu,,lado 15 px a 640,"[0.9277, 0.357, 0.9635, 0.3876]",
+DIMINUTA,valid,version2__V2__8__g013__20260712_083856,sana,,lado 2 px a 640,"[0.4548, 0.4994, 0.4602, 0.5046]",
+DIMINUTA,valid,version2__V2__8__g013__20260712_083901,mildiu,,lado 15 px a 640,"[0.4389, 0.206, 0.4641, 0.2381]",
+DIMINUTA,valid,version2__V2__8__g013__20260712_083901,mosca_blanca,,lado 5 px a 640,"[0.7867, 0.1173, 0.7959, 0.127]",
+DIMINUTA,valid,version2__V2__8__g016__20260712_084641,mildiu,,lado 13 px a 640,"[0.4702, 0.8407, 0.5181, 0.8673]",
+DIMINUTA,valid,version2__V2__8__g021__20260712_090145,mildiu,,lado 15 px a 640,"[0.6552, 0.7303, 0.6787, 0.7725]",
+DIMINUTA,valid,version2__V2__8__g021__20260712_090145,mildiu,,lado 15 px a 640,"[0.2313, 0.6533, 0.2655, 0.6851]",
+DIMINUTA,valid,version2__V3__4__g005__20260729_143653,polilla,,lado 16 px a 640,"[0.442, 0.4577, 0.4667, 0.496]",
+DIMINUTA,valid,version2__V3__4__g008__20260729_144414,mosca_blanca,,lado 15 px a 640,"[0.4526, 0.4997, 0.4765, 0.5385]",
+DIMINUTA,valid,version2__V3__4__g008__20260729_144448,mosca_blanca,,lado 15 px a 640,"[0.4956, 0.5037, 0.5428, 0.5356]",
+DIMINUTA,valid,version2__V3__4__g009__20260729_144644,polilla,,lado 16 px a 640,"[0.4957, 0.446, 0.5352, 0.4789]",
+DIMINUTA,valid,version2__V3__frames_videosv2__video_20260729_151131__20260729_151131_frame_000120,mosca_blanca,,lado 14 px a 640,"[0.5748, 0.6138, 0.596, 0.6476]",
+DIMINUTA,valid,version2__V3__frames_videosv2__video_20260729_151131__20260729_151131_frame_000180,mosca_blanca,,lado 15 px a 640,"[0.567, 0.6339, 0.5915, 0.6576]",
+DIMINUTA,valid,version2__V3__frames_videosv2__video_20260729_151131__20260729_151131_frame_003180,mosca_blanca,,lado 11 px a 640,"[0.5915, 0.5647, 0.6094, 0.584]",
+DIMINUTA,valid,version2__V3__frames_videosv2__video_20260729_151131__20260729_151131_frame_003420,mosca_blanca,,lado 13 px a 640,"[0.5458, 0.5681, 0.5725, 0.5885]",
+DIMINUTA,valid,version2__V3__frames_videosv2__video_20260729_151131__20260729_151131_frame_003450,mosca_blanca,,lado 15 px a 640,"[0.5484, 0.5656, 0.5749, 0.5885]",
+DIMINUTA,valid,version2__V3__frames_videosv2__video_20260729_151131__20260729_151131_frame_004380,mosca_blanca,,lado 12 px a 640,"[0.5469, 0.6049, 0.567, 0.6242]",
+DIMINUTA,valid,version2__V3__frames_videosv2__video_20260729_151131__20260729_151131_frame_004410,mosca_blanca,,lado 15 px a 640,"[0.5312, 0.6063, 0.5624, 0.6302]",
+ENORME,test,12__g008__20260503_121130,mildiu,,33 % de la imagen,"[0.2776, 0.1849, 0.8982, 0.7135]",
+DIMINUTA,test,12__g010__20260503_121526,oidio,,lado 12 px a 640,"[0.5394, 0.1895, 0.6567, 0.2082]",
+DIMINUTA,test,12__g021__20260503_125006,oidio,,lado 13 px a 640,"[0.6042, 0.5179, 0.6252, 0.5635]",
+DIMINUTA,test,12__g021__20260503_125006,oidio,,lado 14 px a 640,"[0.3013, 0.7279, 0.3237, 0.7578]",
+DIMINUTA,test,12__g021__20260503_125006,oidio,,lado 12 px a 640,"[0.2603, 0.8392, 0.2788, 0.875]",
+DIMINUTA,test,12__g021__20260503_125007,oidio,,lado 11 px a 640,"[0.3601, 0.6357, 0.3772, 0.6702]",
+ENORME,test,12__g035__20260503_133731,mildiu,,39 % de la imagen,"[0.1794, 0.1118, 0.776, 0.7588]",
+DIMINUTA,test,12__g052__20260503_142836,mosca_blanca,,lado 9 px a 640,"[0.3844, 0.3696, 0.4033, 0.3853]",
+DIMINUTA,test,12__g052__20260503_142840,mosca_blanca,,lado 5 px a 640,"[0.463, 0.4885, 0.4728, 0.4963]",
+DIMINUTA,test,16__g001__20260503_160406,mosca_blanca,,lado 5 px a 640,"[0.4443, 0.4167, 0.4554, 0.427]",
+DIMINUTA,test,16__g004__20260503_160943,mosca_blanca,,lado 12 px a 640,"[0.3561, 0.6543, 0.3874, 0.6738]",
+DIMINUTA,test,16__g004__20260503_160946,mosca_blanca,,lado 11 px a 640,"[0.479, 0.5815, 0.5056, 0.5989]",
+DIMINUTA,test,16__g018__20260503_163338,mosca_blanca,,lado 5 px a 640,"[0.4993, 0.2329, 0.5098, 0.2437]",
+DIMINUTA,test,16__g018__20260503_163338,mosca_blanca,,lado 3 px a 640,"[0.5596, 0.2344, 0.5667, 0.2422]",
+DIMINUTA,test,16__g018__20260503_163338,mosca_blanca,,lado 4 px a 640,"[0.5671, 0.2698, 0.5749, 0.2786]",
+DIMINUTA,test,16__g018__20260503_163338,mosca_blanca,,lado 4 px a 640,"[0.5944, 0.3015, 0.6022, 0.3108]",
+DIMINUTA,test,16__g018__20260503_163338,oidio,,lado 13 px a 640,"[0.6094, 0.2383, 0.6374, 0.2852]",
+DIMINUTA,test,16__g022__20260503_164139,polilla,,lado 11 px a 640,"[0.7232, 0.468, 0.7451, 0.4951]",
+DIMINUTA,test,16__g022__20260503_164209,mosca_blanca,,lado 9 px a 640,"[0.6159, 0.5488, 0.6354, 0.5635]",
+DIMINUTA,test,16__g023__20260503_164307,mosca_blanca,,lado 9 px a 640,"[0.2301, 0.468, 0.2497, 0.4866]",
+DIMINUTA,test,8__g013__20260503_082304,mosca_blanca,,lado 10 px a 640,"[0.5469, 0.511, 0.5671, 0.5266]",
+DIMINUTA,test,8__g017__20260503_082808,mosca_blanca,,lado 9 px a 640,"[0.5443, 0.5132, 0.5638, 0.5288]",
+DIMINUTA,test,8__g032__20260503_084807,mosca_blanca,,lado 8 px a 640,"[0.5231, 0.4404, 0.5394, 0.4551]",
+ENORME,test,8__g044__20260503_091011_001,oidio,,31 % de la imagen,"[0.3461, 0.4042, 0.8873, 0.9733]",
+DIMINUTA,test,8__g049__20260503_091559,mildiu,,lado 1 px a 640,"[0.4609, 0.1872, 0.4622, 0.1951]",
+DIMINUTA,test,8__g063__20260503_093730,mosca_blanca,,lado 8 px a 640,"[0.4443, 0.562, 0.4606, 0.5786]",
+DIMINUTA,test,8__g067__20260503_094210,mosca_blanca,,lado 9 px a 640,"[0.4707, 0.4829, 0.4889, 0.5]",
+DIMINUTA,test,8__g070__20260503_094708,mosca_blanca,,lado 9 px a 640,"[0.513, 0.4719, 0.5326, 0.4861]",
+DIMINUTA,test,8__g070__20260503_094708,mosca_blanca,,lado 7 px a 640,"[0.363, 0.4561, 0.3779, 0.4688]",
+DIMINUTA,test,version2__V2__8__g005__20260712_081933,sana,,lado 2 px a 640,"[0.6165, 0.4476, 0.6196, 0.4674]",
+DIMINUTA,test,version2__V2__8__g008__20260712_082332,mildiu,,lado 13 px a 640,"[0.4565, 0.0944, 0.4771, 0.1561]",
+DIMINUTA,test,version2__V2__8__g012__20260712_083630,sana,,lado 0 px a 640,"[0.2795, 0.8659, 0.2808, 0.8661]",
+DIMINUTA,test,version2__V3__4__g001__20260729_142234,polilla,,lado 15 px a 640,"[0.5225, 0.4867, 0.6128, 0.5182]",
+DIMINUTA,test,version2__V3__4__g012__20260729_150952,mosca_blanca,,lado 15 px a 640,"[0.5164, 0.4443, 0.5454, 0.4765]",
+DIMINUTA,test,version2__V3__4__g012__20260729_150954,mosca_blanca,,lado 14 px a 640,"[0.5493, 0.3499, 0.5708, 0.401]",
+DIMINUTA,test,version2__V3__4__g025__20260729_161159-0-,mosca_blanca,,lado 13 px a 640,"[0.6738, 0.415, 0.6938, 0.4544]",
+DIMINUTA,test,version2__V3__4__g025__20260729_161159,mosca_blanca,,lado 13 px a 640,"[0.6616, 0.4297, 0.6821, 0.4674]",
+DIMINUTA,test,version2__V3__4__g025__20260729_161200,mosca_blanca,,lado 13 px a 640,"[0.6558, 0.4346, 0.6763, 0.4726]",
+DIMINUTA,test,version2__V3__4__g025__20260729_161203,mosca_blanca,,lado 16 px a 640,"[0.5396, 0.4753, 0.5728, 0.5078]",
+DIMINUTA,test,version2__V3__4__g025__20260729_161204,mosca_blanca,,lado 15 px a 640,"[0.5798, 0.4411, 0.6177, 0.4726]",
+DIMINUTA,test,version2__V3__4__g025__20260729_161222,mosca_blanca,,lado 14 px a 640,"[0.6104, 0.4964, 0.6431, 0.5248]",
+DIMINUTA,test,version2__V3__4__g025__20260729_161224,mosca_blanca,,lado 14 px a 640,"[0.5798, 0.4818, 0.6118, 0.5104]",
+DIMINUTA,test,version2__V3__4__g025__20260729_161228,mosca_blanca,,lado 16 px a 640,"[0.5164, 0.5049, 0.5601, 0.5378]",
+DIMINUTA,test,version2__V3__frames_videosv2__video_20260729_150413__20260729_150413_frame_000870,mosca_blanca,,lado 9 px a 640,"[0.6389, 0.5017, 0.6583, 0.5156]",
+NO_VISTA,valid,12__g004__20260503_120302,mildiu,,ningun modelo la toca,"[0.6647, 0.5574, 0.6947, 0.5818]",
+NO_VISTA,valid,12__g004__20260503_120302,mildiu,,ningun modelo la toca,"[0.6585, 0.4976, 0.749, 0.5181]",
+NO_VISTA,valid,12__g004__20260503_120302,mildiu,,ningun modelo la toca,"[0.7425, 0.7361, 0.8291, 0.7703]",
+NO_VISTA,valid,12__g004__20260503_120302,mildiu,,ningun modelo la toca,"[0.7314, 0.7749, 0.7809, 0.7954]",
+NO_VISTA,valid,12__g004__20260503_120302,mildiu,,ningun modelo la toca,"[0.5954, 0.6863, 0.7607, 0.7307]",
+NO_VISTA,valid,12__g004__20260503_120302,mildiu,,ningun modelo la toca,"[0.1748, 0.5879, 0.2093, 0.6089]",
+NO_VISTA,valid,12__g004__20260503_120302,mildiu,,ningun modelo la toca,"[0.1891, 0.8547, 0.236, 0.9358]",
+NO_VISTA,valid,12__g004__20260503_120302,oidio,,ningun modelo la toca,"[0.1855, 0.4626, 0.332, 0.5569]",
+NO_VISTA,valid,12__g004__20260503_120302,oidio,,ningun modelo la toca,"[0.4443, 0.5676, 0.5143, 0.6534]",
+NO_VISTA,valid,12__g004__20260503_120302,oidio,,ningun modelo la toca,"[0.4574, 0.5066, 0.555, 0.5594]",
+NO_VISTA,valid,12__g004__20260503_120302,oidio,,ningun modelo la toca,"[0.6608, 0.0806, 0.7357, 0.1358]",
+NO_VISTA,valid,12__g015__20260503_122315,oidio,,ningun modelo la toca,"[0.459, 0.6372, 0.5208, 0.6998]",
+NO_VISTA,valid,12__g015__20260503_122315,oidio,,ningun modelo la toca,"[0.5192, 0.7068, 0.5664, 0.7352]",
+NO_VISTA,valid,12__g015__20260503_122315,oidio,,ningun modelo la toca,"[0.4818, 0.4932, 0.5371, 0.5435]",
+NO_VISTA,valid,12__g015__20260503_122315,oidio,,ningun modelo la toca,"[0.4443, 0.7141, 0.5013, 0.7718]",
+NO_VISTA,valid,12__g015__20260503_122315,oidio,,ningun modelo la toca,"[0.2962, 0.6934, 0.3597, 0.7364]",
+NO_VISTA,valid,12__g015__20260503_122315,oidio,,ningun modelo la toca,"[0.5697, 0.5798, 0.6201, 0.6107]",
+FALTANTE,valid,12__g017__20260503_122722,(ninguna),mildiu,"6/9 modelos, conf media 0.44","[0.3528, 0.8837, 0.4717, 0.9969]",2.6577800000000003
+NO_VISTA,valid,12__g017__20260503_122722,mildiu,,ningun modelo la toca,"[0.8262, 0.8919, 0.8848, 0.943]",
+NO_VISTA,valid,12__g017__20260503_122722,mildiu,,ningun modelo la toca,"[0.7598, 0.8451, 0.8311, 0.9066]",
+NO_VISTA,valid,12__g017__20260503_122722,mildiu,,ningun modelo la toca,"[0.0303, 0.651, 0.0869, 0.68]",
+NO_VISTA,valid,12__g019__20260503_123852,mildiu,,ningun modelo la toca,"[0.8423, 0.5312, 0.9531, 0.7799]",
+NO_VISTA,valid,12__g019__20260503_123852,mildiu,,ningun modelo la toca,"[0.7085, 0.7653, 0.7773, 0.8988]",
+NO_VISTA,valid,12__g019__20260503_123905,mildiu,,ningun modelo la toca,"[0.2679, 0.582, 0.3193, 0.6162]",
+NO_VISTA,valid,12__g019__20260503_123905,mildiu,,ningun modelo la toca,"[0.3219, 0.429, 0.4515, 0.5242]",
+FALTANTE,valid,12__g022__20260503_125039,(ninguna),mildiu,"6/9 modelos, conf media 0.54","[0.8237, 0.172, 0.9577, 0.2338]",3.25035
+NO_VISTA,valid,12__g022__20260503_125039,mildiu,,ningun modelo la toca,"[0.6328, 0.1934, 0.7096, 0.2441]",
+NO_VISTA,valid,12__g022__20260503_125039,mildiu,,ningun modelo la toca,"[0.6396, 0.8948, 0.7031, 0.9427]",
+FALTANTE,valid,12__g022__20260503_125044,(ninguna),mildiu,"9/9 modelos, conf media 0.82","[0.4425, 0.2722, 0.647, 0.7148]",7.35739
+FALTANTE,valid,12__g022__20260503_125044,(ninguna),mildiu,"6/9 modelos, conf media 0.53","[0.533, 0.0008, 0.7157, 0.2328]",3.1985199999999994
+NO_VISTA,valid,12__g022__20260503_125044,oidio,,ningun modelo la toca,"[0.582, 0.3665, 0.6087, 0.3821]",
+NO_VISTA,valid,12__g022__20260503_125044,mildiu,,ningun modelo la toca,"[0.5407, 0.325, 0.5921, 0.3547]",
+NO_VISTA,valid,12__g022__20260503_125044,oidio,,ningun modelo la toca,"[0.5729, 0.3318, 0.5898, 0.3464]",
+NO_VISTA,valid,12__g022__20260503_125044,mildiu,,ningun modelo la toca,"[0.2529, 0.2625, 0.3708, 0.3015]",
+NO_VISTA,valid,12__g022__20260503_125044,mildiu,,ningun modelo la toca,"[0.4665, 0.3809, 0.501, 0.4287]",
+NO_VISTA,valid,12__g022__20260503_125044,mildiu,,ningun modelo la toca,"[0.5072, 0.3821, 0.5228, 0.4055]",
+NO_VISTA,valid,12__g022__20260503_125044,oidio,,ningun modelo la toca,"[0.6077, 0.3279, 0.6266, 0.3489]",
+NO_VISTA,valid,12__g022__20260503_125044,mildiu,,ningun modelo la toca,"[0.4395, 0.4993, 0.4867, 0.5728]",
+NO_VISTA,valid,12__g022__20260503_125051,oidio,,ningun modelo la toca,"[0.4352, 0.519, 0.4697, 0.5435]",
+NO_VISTA,valid,12__g022__20260503_125051,mildiu,,ningun modelo la toca,"[0.4492, 0.405, 0.4727, 0.4402]",
+NO_VISTA,valid,12__g022__20260503_125051,mildiu,,ningun modelo la toca,"[0.3145, 0.3567, 0.3587, 0.3948]",
+NO_VISTA,valid,12__g022__20260503_125051,oidio,,ningun modelo la toca,"[0.3245, 0.3652, 0.3519, 0.3848]",
+NO_VISTA,valid,12__g022__20260503_125051,oidio,,ningun modelo la toca,"[0.4186, 0.3289, 0.4408, 0.3416]",
+NO_VISTA,valid,12__g022__20260503_125051,oidio,,ningun modelo la toca,"[0.4551, 0.3074, 0.4733, 0.324]",
+NO_VISTA,valid,12__g022__20260503_125051,oidio,,ningun modelo la toca,"[0.4993, 0.3274, 0.5332, 0.3508]",
+NO_VISTA,valid,12__g022__20260503_125051,oidio,,ningun modelo la toca,"[0.4163, 0.5669, 0.4242, 0.5815]",
+NO_VISTA,valid,12__g022__20260503_125108,oidio,,ningun modelo la toca,"[0.6077, 0.3809, 0.7126, 0.458]",
+NO_VISTA,valid,12__g022__20260503_125108,oidio,,ningun modelo la toca,"[0.5361, 0.4165, 0.6032, 0.457]",
+NO_VISTA,valid,12__g022__20260503_125108,oidio,,ningun modelo la toca,"[0.348, 0.6763, 0.363, 0.7036]",
+NO_VISTA,valid,12__g022__20260503_125108,mildiu,,ningun modelo la toca,"[0.5677, 0.6438, 0.612, 0.678]",
+NO_VISTA,valid,12__g022__20260503_125108,oidio,,ningun modelo la toca,"[0.2422, 0.7093, 0.2707, 0.7383]",
+NO_VISTA,valid,12__g022__20260503_125108,oidio,,ningun modelo la toca,"[0.3353, 0.71, 0.3638, 0.7391]",
+NO_VISTA,valid,12__g022__20260503_125113,oidio,,ningun modelo la toca,"[0.0439, 0.8679, 0.0781, 0.9073]",
+FALTANTE,valid,12__g022__20260503_125144,(ninguna),mildiu,"7/9 modelos, conf media 0.55","[0.5701, 0.2287, 0.6671, 0.3376]",3.8419800000000004
+FALTANTE,valid,12__g025__20260503_125953,(ninguna),mildiu,"7/9 modelos, conf media 0.50","[0.376, 0.0006, 0.9769, 0.264]",3.4850700000000003
+FALTANTE,valid,12__g025__20260503_125953,(ninguna),mildiu,"6/9 modelos, conf media 0.47","[0.1987, 0.3217, 0.8857, 0.6217]",2.82317
+NO_VISTA,valid,12__g025__20260503_125953,mildiu,,ningun modelo la toca,"[0.0524, 0.4033, 0.1227, 0.4844]",
+NO_VISTA,valid,12__g025__20260503_125953,mildiu,,ningun modelo la toca,"[0.734, 0.7019, 0.9229, 0.8548]",
+NO_VISTA,valid,12__g029__20260503_131646,mildiu,,ningun modelo la toca,"[0.7324, 0.5066, 0.988, 0.6216]",
+NO_VISTA,valid,12__g029__20260503_131732,oidio,,ningun modelo la toca,"[0.6172, 0.638, 0.6514, 0.6683]",
+NO_VISTA,valid,12__g030__20260503_132021,mildiu,,ningun modelo la toca,"[0.2158, 0.3972, 0.361, 0.4871]",
+FALTANTE,valid,12__g030__20260503_132044,(ninguna),sana,"9/9 modelos, conf media 0.70","[0.5841, 0.0143, 0.9246, 0.275]",6.33235
+FALTANTE,valid,12__g030__20260503_132044,(ninguna),sana,"7/9 modelos, conf media 0.51","[0.0003, 0.2869, 0.1631, 0.4875]",3.58427
+FALTANTE,valid,12__g031__20260503_132239,(ninguna),sana,"6/9 modelos, conf media 0.60","[0.0476, 0.5895, 0.3041, 0.6788]",3.58479
+FALTANTE,valid,12__g031__20260503_132239,(ninguna),sana,"6/9 modelos, conf media 0.55","[0.4816, 0.0017, 0.5985, 0.2117]",3.28071
+FALTANTE,valid,12__g031__20260503_132314,(ninguna),sana,"6/9 modelos, conf media 0.66","[0.7541, 0.1144, 0.9972, 0.3103]",3.95824
+FALTANTE,valid,12__g031__20260503_132326,(ninguna),sana,"8/9 modelos, conf media 0.58","[0.1647, 0.458, 0.4438, 0.5678]",4.67572
+FALTANTE,valid,12__g031__20260503_132340,(ninguna),sana,"8/9 modelos, conf media 0.62","[0.2565, 0.6714, 0.3558, 0.8084]",4.986
+FALTANTE,valid,12__g031__20260503_132340,(ninguna),sana,"6/9 modelos, conf media 0.62","[0.7894, 0.0004, 0.9962, 0.1318]",3.73975
+FALTANTE,valid,12__g031__20260503_132345,(ninguna),sana,"9/9 modelos, conf media 0.61","[0.8362, 0.4361, 0.9997, 0.5438]",5.523059999999999
+FALTANTE,valid,12__g031__20260503_132413,(ninguna),sana,"9/9 modelos, conf media 0.71","[0.3531, 0.2922, 0.4683, 0.4321]",6.4295100000000005
+FALTANTE,valid,12__g031__20260503_132413,(ninguna),sana,"8/9 modelos, conf media 0.61","[0.0, 0.0954, 0.2342, 0.1959]",4.91075
+FALTANTE,valid,12__g031__20260503_132413,(ninguna),sana,"7/9 modelos, conf media 0.63","[0.0004, 0.194, 0.1505, 0.3002]",4.417479999999999
+FALTANTE,valid,12__g031__20260503_132423,(ninguna),sana,"8/9 modelos, conf media 0.52","[0.0003, 0.3743, 0.1663, 0.5745]",4.18028
+FALTANTE,valid,12__g031__20260503_132423,(ninguna),sana,"7/9 modelos, conf media 0.60","[0.72, 0.405, 0.9992, 0.6558]",4.21294
+FALTANTE,valid,12__g031__20260503_132444,(ninguna),sana,"8/9 modelos, conf media 0.72","[0.4913, 0.2014, 0.7412, 0.4554]",5.76748
+FALTANTE,valid,12__g031__20260503_132444,(ninguna),sana,"8/9 modelos, conf media 0.74","[0.0003, 0.3119, 0.2515, 0.4051]",5.89054
+FALTANTE,valid,12__g032__20260503_132516,(ninguna),sana,"8/9 modelos, conf media 0.71","[0.08, 0.701, 0.2474, 0.9975]",5.6837
+FALTANTE,valid,12__g032__20260503_132523,(ninguna),sana,"6/9 modelos, conf media 0.56","[0.6335, 0.0001, 0.8106, 0.128]",3.33974
+NO_VISTA,valid,12__g032__20260503_132549,oidio,,ningun modelo la toca,"[0.4149, 0.6243, 0.4504, 0.6679]",
+NO_VISTA,valid,12__g032__20260503_132549,oidio,,ningun modelo la toca,"[0.5302, 0.6044, 0.5548, 0.6213]",
+NO_VISTA,valid,12__g032__20260503_132549,oidio,,ningun modelo la toca,"[0.4572, 0.602, 0.5036, 0.6377]",
+NO_VISTA,valid,12__g032__20260503_132549,oidio,,ningun modelo la toca,"[0.466, 0.5703, 0.4916, 0.5864]",
+NO_VISTA,valid,12__g032__20260503_132549,oidio,,ningun modelo la toca,"[0.5068, 0.5726, 0.5276, 0.5954]",
+NO_VISTA,valid,12__g032__20260503_132549,oidio,,ningun modelo la toca,"[0.5657, 0.6067, 0.5866, 0.6232]",
+NO_VISTA,valid,12__g032__20260503_132549,oidio,,ningun modelo la toca,"[0.609, 0.5018, 0.655, 0.5442]",
+NO_VISTA,valid,12__g032__20260503_132549,oidio,,ningun modelo la toca,"[0.3283, 0.4889, 0.3742, 0.5281]",
+NO_VISTA,valid,12__g032__20260503_132549,oidio,,ningun modelo la toca,"[0.3272, 0.6247, 0.3502, 0.6385]",
+NO_VISTA,valid,12__g032__20260503_132549,oidio,,ningun modelo la toca,"[0.5417, 0.5605, 0.5955, 0.5962]",
+FALTANTE,valid,12__g032__20260503_132555,(ninguna),sana,"6/9 modelos, conf media 0.49","[0.7885, 0.3383, 0.9997, 0.4436]",2.96712
+NO_VISTA,valid,12__g032__20260503_132555,oidio,,ningun modelo la toca,"[0.1175, 0.6587, 0.1794, 0.7212]",
+NO_VISTA,valid,12__g032__20260503_132555,oidio,,ningun modelo la toca,"[0.3822, 0.625, 0.4707, 0.6797]",
+NO_VISTA,valid,12__g032__20260503_132607,oidio,,ningun modelo la toca,"[0.5492, 0.6052, 0.585, 0.6653]",
+NO_VISTA,valid,12__g032__20260503_132607,oidio,,ningun modelo la toca,"[0.3301, 0.5391, 0.3919, 0.6094]",
+NO_VISTA,valid,12__g032__20260503_132607,oidio,,ningun modelo la toca,"[0.5742, 0.5403, 0.6458, 0.5833]",
+NO_VISTA,valid,12__g032__20260503_132607,oidio,,ningun modelo la toca,"[0.3548, 0.5, 0.3952, 0.5234]",
+NO_VISTA,valid,12__g032__20260503_132624,oidio,,ningun modelo la toca,"[0.332, 0.439, 0.4258, 0.4829]",
+NO_VISTA,valid,12__g032__20260503_132624,oidio,,ningun modelo la toca,"[0.3493, 0.4961, 0.4365, 0.5713]",
+NO_VISTA,valid,12__g032__20260503_132624,oidio,,ningun modelo la toca,"[0.4382, 0.5789, 0.5059, 0.6272]",
+NO_VISTA,valid,12__g032__20260503_132624,oidio,,ningun modelo la toca,"[0.1667, 0.4629, 0.2878, 0.542]",
+NO_VISTA,valid,12__g032__20260503_132649,oidio,,ningun modelo la toca,"[0.4284, 0.4617, 0.526, 0.5305]",
+NO_VISTA,valid,12__g032__20260503_132649,oidio,,ningun modelo la toca,"[0.6022, 0.498, 0.6445, 0.5508]",
+NO_VISTA,valid,12__g032__20260503_132649,oidio,,ningun modelo la toca,"[0.6868, 0.448, 0.7243, 0.4617]",
+NO_VISTA,valid,12__g032__20260503_132649,oidio,,ningun modelo la toca,"[0.651, 0.4736, 0.6787, 0.4947]",
+NO_VISTA,valid,12__g032__20260503_132649,oidio,,ningun modelo la toca,"[0.3727, 0.4663, 0.4232, 0.5093]",
+NO_VISTA,valid,12__g032__20260503_132655,oidio,,ningun modelo la toca,"[0.2604, 0.8704, 0.332, 0.9343]",
+FALTANTE,valid,12__g032__20260503_132707,(ninguna),sana,"6/9 modelos, conf media 0.59","[0.7516, 0.3405, 0.9992, 0.58]",3.5623
+NO_VISTA,valid,12__g032__20260503_132707,oidio,,ningun modelo la toca,"[0.3018, 0.2827, 0.348, 0.3296]",
+NO_VISTA,valid,12__g032__20260503_132707,oidio,,ningun modelo la toca,"[0.1338, 0.1616, 0.1833, 0.2148]",
+NO_VISTA,valid,12__g032__20260503_132707,oidio,,ningun modelo la toca,"[0.1637, 0.272, 0.2223, 0.3296]",
+NO_VISTA,valid,12__g032__20260503_132707,oidio,,ningun modelo la toca,"[0.5641, 0.501, 0.5986, 0.541]",
+NO_VISTA,valid,12__g032__20260503_132707,oidio,,ningun modelo la toca,"[0.3076, 0.3711, 0.3792, 0.4044]",
+NO_VISTA,valid,12__g032__20260503_132707,oidio,,ningun modelo la toca,"[0.0635, 0.2942, 0.1107, 0.3287]",
+NO_VISTA,valid,12__g032__20260503_132737,oidio,,ningun modelo la toca,"[0.5199, 0.8298, 0.613, 0.864]",
+NO_VISTA,valid,12__g032__20260503_132737,oidio,,ningun modelo la toca,"[0.6364, 0.5017, 0.7145, 0.5289]",
+FALTANTE,valid,12__g032__20260503_132757,(ninguna),mildiu,"8/9 modelos, conf media 0.53","[0.9135, 0.0234, 0.9999, 0.1147]",4.2434
+NO_VISTA,valid,12__g032__20260503_132757,oidio,,ningun modelo la toca,"[0.2487, 0.821, 0.3451, 0.9006]",
+NO_VISTA,valid,12__g032__20260503_132757,oidio,,ningun modelo la toca,"[0.3887, 0.9231, 0.4408, 0.9612]",
+NO_VISTA,valid,12__g032__20260503_132757,oidio,,ningun modelo la toca,"[0.2152, 0.6245, 0.2549, 0.6519]",
+NO_VISTA,valid,12__g032__20260503_132757,oidio,,ningun modelo la toca,"[0.4082, 0.407, 0.4323, 0.4304]",
+NO_VISTA,valid,12__g032__20260503_132757,oidio,,ningun modelo la toca,"[0.4499, 0.4021, 0.4733, 0.4387]",
+NO_VISTA,valid,12__g032__20260503_132757,oidio,,ningun modelo la toca,"[0.4544, 0.9763, 0.4844, 0.9988]",
+NO_VISTA,valid,12__g038__20260503_135002,oidio,,ningun modelo la toca,"[0.5195, 0.443, 0.5991, 0.5133]",
+NO_VISTA,valid,12__g038__20260503_135012,mildiu,,ningun modelo la toca,"[0.7158, 0.5508, 0.8125, 0.6569]",
+NO_VISTA,valid,12__g040__20260503_135214,mildiu,,ningun modelo la toca,"[0.5273, 0.8057, 0.5444, 0.826]",
+NO_VISTA,valid,12__g040__20260503_135244,mildiu,,ningun modelo la toca,"[0.5264, 0.5003, 0.6406, 0.6214]",
+NO_VISTA,valid,12__g040__20260503_135244,mildiu,,ningun modelo la toca,"[0.7266, 0.4528, 0.8125, 0.5615]",
+NO_VISTA,valid,12__g040__20260503_135244,mildiu,,ningun modelo la toca,"[0.5381, 0.0169, 0.6514, 0.0798]",
+NO_VISTA,valid,12__g040__20260503_135250,mildiu,,ningun modelo la toca,"[0.042, 0.0352, 0.0801, 0.1501]",
+FALTANTE,valid,12__g040__20260503_135306,(ninguna),sana,"7/9 modelos, conf media 0.66","[0.6465, 0.8985, 0.8041, 0.9999]",4.61752
+FALTANTE,valid,12__g040__20260503_135306,(ninguna),sana,"6/9 modelos, conf media 0.55","[0.1467, 0.0444, 0.4439, 0.3498]",3.27848
+FALTANTE,valid,12__g040__20260503_135349,(ninguna),sana,"9/9 modelos, conf media 0.62","[0.1125, 0.0006, 0.2011, 0.1227]",5.551829999999999
+NO_VISTA,valid,12__g040__20260503_135412,oidio,,ningun modelo la toca,"[0.4089, 0.1277, 0.4414, 0.1614]",
+FALTANTE,valid,12__g040__20260503_135434,(ninguna),sana,"6/9 modelos, conf media 0.49","[0.8447, 0.0001, 0.9441, 0.1049]",2.9626399999999995
+FALTANTE,valid,12__g042__20260503_135701,(ninguna),sana,"8/9 modelos, conf media 0.51","[0.9213, 0.8311, 0.9999, 0.9999]",4.09914
+FALTANTE,valid,12__g042__20260503_135742,(ninguna),mildiu,"8/9 modelos, conf media 0.55","[0.0487, 0.0055, 0.1423, 0.2347]",4.42869
+FALTANTE,valid,12__g045__20260503_140241,(ninguna),mildiu,"8/9 modelos, conf media 0.69","[0.2362, 0.6886, 0.4089, 0.8172]",5.5403
+FALTANTE,valid,12__g045__20260503_140241,(ninguna),mildiu,"6/9 modelos, conf media 0.51","[0.5096, 0.0004, 0.6962, 0.1148]",3.0419099999999997
+FALTANTE,valid,12__g045__20260503_140243,(ninguna),mildiu,"9/9 modelos, conf media 0.70","[0.3329, 0.7601, 0.4789, 0.8637]",6.325810000000001
+FALTANTE,valid,12__g045__20260503_140243,(ninguna),mildiu,"9/9 modelos, conf media 0.58","[0.4236, 0.4151, 0.669, 0.6397]",5.2559000000000005
+NO_VISTA,valid,12__g045__20260503_140243,mildiu,,ningun modelo la toca,"[0.4902, 0.5894, 0.5879, 0.6558]",
+NO_VISTA,valid,12__g045__20260503_140243,mildiu,,ningun modelo la toca,"[0.5785, 0.5137, 0.6403, 0.5645]",
+FALTANTE,valid,12__g051__20260503_142730,(ninguna),mildiu,"6/9 modelos, conf media 0.61","[0.9019, 0.2147, 1.0, 0.3349]",3.64142
+NO_VISTA,valid,12__g054__20260503_143101,mosca_blanca,,ningun modelo la toca,"[0.5117, 0.6199, 0.6198, 0.6643]",
+NO_VISTA,valid,12__g054__20260503_143114,oidio,,ningun modelo la toca,"[0.613, 0.5967, 0.7041, 0.6348]",
+NO_VISTA,valid,12__g054__20260503_143114,oidio,,ningun modelo la toca,"[0.7109, 0.6138, 0.7858, 0.6519]",
+FALTANTE,valid,12__g055__20260503_143259,(ninguna),sana,"7/9 modelos, conf media 0.56","[0.5979, 0.5181, 0.8793, 0.6614]",3.93109
+NO_VISTA,valid,12__g058__20260503_143817,oidio,,ningun modelo la toca,"[0.2409, 0.6201, 0.3047, 0.6928]",
+NO_VISTA,valid,12__g058__20260503_143845,oidio,,ningun modelo la toca,"[0.1175, 0.1533, 0.1715, 0.1875]",
+FALTANTE,valid,16__g007__20260503_161453,(ninguna),mildiu,"7/9 modelos, conf media 0.55","[0.6591, 0.7606, 0.9868, 0.9979]",3.83774
+NO_VISTA,valid,16__g007__20260503_161453,oidio,,ningun modelo la toca,"[0.519, 0.5951, 0.5752, 0.685]",
+NO_VISTA,valid,16__g010__20260503_162031,polilla,,ningun modelo la toca,"[0.4821, 0.4324, 0.5492, 0.4768]",
+FALTANTE,valid,16__g013__20260503_162421,(ninguna),sana,"6/9 modelos, conf media 0.53","[0.1889, 0.3889, 0.3438, 0.459]",3.1811199999999995
+FALTANTE,valid,16__g013__20260503_162426,(ninguna),sana,"9/9 modelos, conf media 0.73","[0.471, 0.1802, 0.6961, 0.4875]",6.52823
+NO_VISTA,valid,16__g013__20260503_162445,mosca_blanca,,ningun modelo la toca,"[0.3618, 0.5524, 0.3789, 0.585]",
+NO_VISTA,valid,16__g020__20260503_163635,mosca_blanca,,ningun modelo la toca,"[0.152, 0.8945, 0.1761, 0.9131]",
+NO_VISTA,valid,16__g020__20260503_163650,mildiu,,ningun modelo la toca,"[0.0293, 0.6719, 0.1146, 0.7188]",
+FALTANTE,valid,16__g027__20260503_165141,(ninguna),mildiu,"6/9 modelos, conf media 0.63","[0.2041, 0.4074, 0.3868, 0.5146]",3.79451
+FALTANTE,valid,16__g034__20260503_170321,(ninguna),mildiu,"8/9 modelos, conf media 0.53","[0.153, 0.6328, 0.3074, 0.8626]",4.21161
+NO_VISTA,valid,16__g036__20260503_170838,oidio,,ningun modelo la toca,"[0.26, 0.4215, 0.3452, 0.4726]",
+NO_VISTA,valid,16__g036__20260503_170902,mildiu,,ningun modelo la toca,"[0.1978, 0.1237, 0.2935, 0.2082]",
+FALTANTE,valid,8__g004__20260503_081225,(ninguna),mildiu,"6/9 modelos, conf media 0.56","[0.2262, 0.4891, 0.6683, 0.8752]",3.36645
+FALTANTE,valid,8__g007__20260503_081525,(ninguna),sana,"7/9 modelos, conf media 0.50","[0.7727, 0.4103, 0.9998, 0.5893]",3.52321
+NO_VISTA,valid,8__g029__20260503_084304,mosca_blanca,,ningun modelo la toca,"[0.4629, 0.4402, 0.487, 0.4724]",
+NO_VISTA,valid,8__g029__20260503_084304,mosca_blanca,,ningun modelo la toca,"[0.3105, 0.4658, 0.3314, 0.4844]",
+NO_VISTA,valid,8__g030__20260503_084501,oidio,,ningun modelo la toca,"[0.68, 0.3506, 0.7731, 0.4023]",
+NO_VISTA,valid,8__g030__20260503_084505,mildiu,,ningun modelo la toca,"[0.2305, 0.3333, 0.3385, 0.4338]",
+NO_VISTA,valid,8__g039__20260503_090209,mildiu,,ningun modelo la toca,"[0.4587, 0.5686, 0.4756, 0.5891]",
+NO_VISTA,valid,8__g039__20260503_090233,mildiu,,ningun modelo la toca,"[0.0085, 0.3945, 0.082, 0.5024]",
+NO_VISTA,valid,8__g041__20260503_090419,mosca_blanca,,ningun modelo la toca,"[0.5667, 0.4512, 0.5928, 0.4736]",
+NO_VISTA,valid,8__g043__20260503_090939,mosca_blanca,,ningun modelo la toca,"[0.5752, 0.5088, 0.5954, 0.5273]",
+FALTANTE,valid,8__g045__20260503_091145,(ninguna),mosca_blanca,"6/9 modelos, conf media 0.50","[0.4049, 0.1785, 0.4277, 0.2213]",2.99601
+NO_VISTA,valid,8__g047__20260503_091347,mildiu,,ningun modelo la toca,"[0.2243, 0.5256, 0.2367, 0.5398]",
+NO_VISTA,valid,8__g048__20260503_091433,oidio,,ningun modelo la toca,"[0.4362, 0.5298, 0.4902, 0.5923]",
+NO_VISTA,valid,8__g051__20260503_091835,mildiu,,ningun modelo la toca,"[0.5995, 0.6074, 0.7466, 0.7093]",
+NO_VISTA,valid,8__g053__20260503_092007,mildiu,,ningun modelo la toca,"[0.4883, 0.2881, 0.5825, 0.3398]",
+NO_VISTA,valid,8__g054__20260503_092055,oidio,,ningun modelo la toca,"[0.5713, 0.3962, 0.6383, 0.4304]",
+NO_VISTA,valid,8__g054__20260503_092055,mildiu,,ningun modelo la toca,"[0.5932, 0.6755, 0.7177, 0.7317]",
+FALTANTE,valid,8__g056__20260503_092337,(ninguna),sana,"7/9 modelos, conf media 0.69","[0.271, 0.4928, 0.4584, 0.8735]",4.84813
+FALTANTE,valid,8__g056__20260503_092337,(ninguna),sana,"8/9 modelos, conf media 0.67","[0.4602, 0.2271, 0.6669, 0.8461]",5.3855
+FALTANTE,valid,8__g056__20260503_092337,(ninguna),sana,"6/9 modelos, conf media 0.55","[0.7268, 0.4071, 0.8991, 0.7875]",3.3196900000000005
+NO_VISTA,valid,8__g056__20260503_092337,mosca_blanca,,ningun modelo la toca,"[0.3569, 0.6764, 0.3726, 0.7064]",
+FALTANTE,valid,8__g056__20260503_092345,(ninguna),sana,"6/9 modelos, conf media 0.56","[0.6225, 0.7006, 0.7392, 0.9995]",3.3524599999999998
+FALTANTE,valid,8__g056__20260503_092345,(ninguna),sana,"7/9 modelos, conf media 0.59","[0.4234, 0.3908, 0.7087, 0.6458]",4.1168700000000005
+NO_VISTA,valid,8__g064__20260503_093841,mosca_blanca,,ningun modelo la toca,"[0.2568, 0.4441, 0.2699, 0.4543]",
+NO_VISTA,valid,8__g064__20260503_093841,oidio,,ningun modelo la toca,"[0.7983, 0.3711, 0.9025, 0.4198]",
+NO_VISTA,valid,8__g065__20260503_094016,mosca_blanca,,ningun modelo la toca,"[0.5068, 0.5059, 0.512, 0.5146]",
+NO_VISTA,valid,8__g065__20260503_094016,mosca_blanca,,ningun modelo la toca,"[0.4987, 0.3987, 0.5078, 0.4075]",
+NO_VISTA,valid,8__g065__20260503_094016,oidio,,ningun modelo la toca,"[0.3167, 0.4165, 0.3675, 0.4478]",
+NO_VISTA,valid,8__g065__20260503_094016,oidio,,ningun modelo la toca,"[0.4359, 0.5532, 0.4893, 0.5938]",
+FALTANTE,valid,8__g065__20260503_094020,(ninguna),oidio,"8/9 modelos, conf media 0.57","[0.1747, 0.4562, 0.3651, 0.5726]",4.56288
+NO_VISTA,valid,8__g065__20260503_094020,mosca_blanca,,ningun modelo la toca,"[0.6374, 0.5071, 0.6504, 0.5164]",
+NO_VISTA,valid,8__g065__20260503_094027,mosca_blanca,,ningun modelo la toca,"[0.3662, 0.4399, 0.387, 0.457]",
+FALTANTE,valid,8__g069__20260503_094610,(ninguna),sana,"6/9 modelos, conf media 0.64","[0.771, 0.2305, 0.9996, 0.314]",3.86205
+NO_VISTA,valid,8__g069__20260503_094610,mildiu,,ningun modelo la toca,"[0.5472, 0.0176, 0.6436, 0.1294]",
+NO_VISTA,valid,8__g069__20260503_094633,mildiu,,ningun modelo la toca,"[0.0534, 0.2798, 0.1732, 0.4062]",
+NO_VISTA,valid,8__g072__20260503_094934,mosca_blanca,,ningun modelo la toca,"[0.511, 0.5944, 0.5344, 0.6165]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_091136__20260503_091136_frame_000000,mildiu,,ningun modelo la toca,"[0.5513, 0.2299, 0.6763, 0.3663]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_091136__20260503_091136_frame_000120,mildiu,,ningun modelo la toca,"[0.8172, 0.7563, 0.9098, 0.8316]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_091136__20260503_091136_frame_000120,oidio,,ningun modelo la toca,"[0.5944, 0.5594, 0.6219, 0.6246]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_091136__20260503_091136_frame_000120,oidio,,ningun modelo la toca,"[0.5597, 0.6453, 0.5875, 0.6844]",
+FALTANTE,valid,frames_extraidosv1__video_20260503_095824__20260503_095824_frame_000000,(ninguna),sana,"6/9 modelos, conf media 0.59","[0.0018, 0.7835, 0.4074, 0.9778]",3.52301
+NO_VISTA,valid,frames_extraidosv1__video_20260503_095824__20260503_095824_frame_000000,mildiu,,ningun modelo la toca,"[0.4766, 0.8795, 0.7277, 0.9992]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_095824__20260503_095824_frame_000270,mildiu,,ningun modelo la toca,"[0.4625, 0.2891, 0.5888, 0.3495]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_095824__20260503_095824_frame_000300,mildiu,,ningun modelo la toca,"[0.4719, 0.2799, 0.5638, 0.3523]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_095824__20260503_095824_frame_000330,mildiu,,ningun modelo la toca,"[0.6216, 0.5882, 0.8728, 0.7056]",
+FALTANTE,valid,frames_extraidosv1__video_20260503_095824__20260503_095824_frame_000360,(ninguna),sana,"8/9 modelos, conf media 0.58","[0.622, 0.6695, 0.9987, 0.9524]",4.6343
+NO_VISTA,valid,frames_extraidosv1__video_20260503_095824__20260503_095824_frame_000810,mildiu,,ningun modelo la toca,"[0.4953, 0.5168, 0.6083, 0.5829]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_095824__20260503_095824_frame_000840,mildiu,,ningun modelo la toca,"[0.8255, 0.8813, 0.9911, 0.9988]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_095824__20260503_095824_frame_000840,mildiu,,ningun modelo la toca,"[0.8581, 0.6645, 0.8767, 0.6777]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_143122__20260503_143122_frame_002430,mildiu,,ningun modelo la toca,"[0.5639, 0.0174, 0.6806, 0.1293]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_000090,mildiu,,ningun modelo la toca,"[0.1997, 0.2425, 0.2524, 0.2745]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_000090,mildiu,,ningun modelo la toca,"[0.4005, 0.314, 0.4174, 0.3401]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_000090,mildiu,,ningun modelo la toca,"[0.2574, 0.3001, 0.2852, 0.3153]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_000090,mildiu,,ningun modelo la toca,"[0.1759, 0.0775, 0.2097, 0.1086]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_000090,mildiu,,ningun modelo la toca,"[0.6203, 0.5063, 0.7347, 0.6455]",
+FALTANTE,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_002580,(ninguna),sana,"7/9 modelos, conf media 0.63","[0.8706, 0.0669, 0.9997, 0.1712]",4.386279999999999
+NO_VISTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_004050,mildiu,,ningun modelo la toca,"[0.0547, 0.3539, 0.1063, 0.3872]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_004050,mildiu,,ningun modelo la toca,"[0.2342, 0.4324, 0.2487, 0.4512]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_004050,mildiu,,ningun modelo la toca,"[0.1063, 0.4127, 0.1341, 0.4264]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_004050,mildiu,,ningun modelo la toca,"[0.9338, 0.8018, 0.9999, 0.8557]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_004050,mildiu,,ningun modelo la toca,"[0.0695, 0.126, 0.0853, 0.1382]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_004050,mildiu,,ningun modelo la toca,"[0.0317, 0.1459, 0.0734, 0.16]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_161847__20260503_161847_frame_004050,mildiu,,ningun modelo la toca,"[0.7766, 0.9457, 1.0, 1.0]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_162752__20260503_162752_frame_007290,mildiu,,ningun modelo la toca,"[0.375, 0.2986, 0.475, 0.3586]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_163037__20260503_163037_frame_000000,mildiu,,ningun modelo la toca,"[0.8361, 0.6922, 0.9984, 0.7802]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_163037__20260503_163037_frame_000000,mildiu,,ningun modelo la toca,"[0.6325, 0.7689, 0.7083, 0.833]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_164520__20260503_164520_frame_000000,mildiu,,ningun modelo la toca,"[0.45, 0.1313, 0.5388, 0.1591]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_164520__20260503_164520_frame_000000,mildiu,,ningun modelo la toca,"[0.9344, 0.5312, 0.9876, 0.5677]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_164520__20260503_164520_frame_004650,mildiu,,ningun modelo la toca,"[0.5083, 0.4432, 0.631, 0.4966]",
+NO_VISTA,valid,frames_extraidosv1__video_20260503_164520__20260503_164520_frame_004680,mildiu,,ningun modelo la toca,"[0.0942, 0.8984, 0.1922, 0.9456]",
+FALTANTE,valid,version2__V2__12__g002__20260712_145149,(ninguna),sana,"8/9 modelos, conf media 0.58","[0.3901, 0.0002, 0.7276, 0.1343]",4.641719999999999
+FALTANTE,valid,version2__V2__12__g002__20260712_145200,(ninguna),sana,"6/9 modelos, conf media 0.64","[0.6231, 0.4947, 0.7255, 0.6802]",3.82045
+FALTANTE,valid,version2__V2__12__g002__20260712_145200,(ninguna),sana,"6/9 modelos, conf media 0.41","[0.7004, 0.002, 0.768, 0.2126]",2.4862900000000003
+FALTANTE,valid,version2__V2__12__g002__20260712_145203,(ninguna),sana,"9/9 modelos, conf media 0.67","[0.3239, 0.6914, 0.6022, 0.919]",5.99897
+FALTANTE,valid,version2__V2__12__g002__20260712_145213,(ninguna),sana,"6/9 modelos, conf media 0.54","[0.6237, 0.1148, 0.7879, 0.3474]",3.25709
+FALTANTE,valid,version2__V2__12__g002__20260712_145225,(ninguna),sana,"8/9 modelos, conf media 0.70","[0.5847, 0.5486, 0.8362, 0.7416]",5.60257
+FALTANTE,valid,version2__V2__12__g002__20260712_145225,(ninguna),sana,"8/9 modelos, conf media 0.64","[0.314, 0.6446, 0.5672, 0.9735]",5.10542
+FALTANTE,valid,version2__V2__12__g002__20260712_145243,(ninguna),sana,"6/9 modelos, conf media 0.54","[0.4706, 0.4004, 0.5761, 0.6006]",3.2221599999999997
+FALTANTE,valid,version2__V2__12__g002__20260712_145243,(ninguna),sana,"6/9 modelos, conf media 0.49","[0.701, 0.4618, 0.9619, 0.8744]",2.96372
+FALTANTE,valid,version2__V2__12__g002__20260712_145300,(ninguna),sana,"8/9 modelos, conf media 0.59","[0.6245, 0.3126, 0.801, 0.4707]",4.68421
+NO_VISTA,valid,version2__V2__12__g002__20260712_145300,mildiu,,ningun modelo la toca,"[0.8142, 0.1628, 0.8694, 0.2403]",
+FALTANTE,valid,version2__V2__12__g002__20260712_145309,(ninguna),sana,"6/9 modelos, conf media 0.76","[0.5725, 0.0013, 0.8557, 0.4901]",4.56963
+FALTANTE,valid,version2__V2__12__g002__20260712_145326,(ninguna),sana,"6/9 modelos, conf media 0.46","[0.0001, 0.6773, 0.1351, 0.9091]",2.7805
+FALTANTE,valid,version2__V2__12__g002__20260712_145326,(ninguna),sana,"6/9 modelos, conf media 0.54","[0.3742, 0.761, 0.6839, 0.9558]",3.2134400000000003
+FALTANTE,valid,version2__V2__12__g002__20260712_145332,(ninguna),sana,"7/9 modelos, conf media 0.68","[0.0262, 0.0378, 0.3786, 0.4379]",4.72928
+FALTANTE,valid,version2__V2__12__g002__20260712_145332,(ninguna),sana,"7/9 modelos, conf media 0.69","[0.0499, 0.5521, 0.481, 0.8961]",4.81192
+FALTANTE,valid,version2__V2__12__g002__20260712_145338,(ninguna),sana,"9/9 modelos, conf media 0.64","[0.4713, 0.74, 0.6485, 0.9992]",5.73682
+FALTANTE,valid,version2__V2__12__g002__20260712_145338,(ninguna),sana,"7/9 modelos, conf media 0.66","[0.6786, 0.4693, 0.8284, 0.7218]",4.59703
+FALTANTE,valid,version2__V2__12__g002__20260712_145338,(ninguna),sana,"6/9 modelos, conf media 0.54","[0.3965, 0.2862, 0.5264, 0.6596]",3.2526300000000004
+FALTANTE,valid,version2__V2__12__g002__20260712_145409,(ninguna),sana,"9/9 modelos, conf media 0.67","[0.3952, 0.0016, 0.6945, 0.2265]",6.05448
+FALTANTE,valid,version2__V2__12__g002__20260712_145412,(ninguna),sana,"8/9 modelos, conf media 0.55","[0.3435, 0.0003, 0.7178, 0.1188]",4.41649
+FALTANTE,valid,version2__V2__12__g002__20260712_145412,(ninguna),sana,"6/9 modelos, conf media 0.63","[0.0011, 0.2376, 0.2016, 0.6098]",3.8016199999999998
+FALTANTE,valid,version2__V2__12__g002__20260712_145424,(ninguna),sana,"8/9 modelos, conf media 0.62","[0.7851, 0.0009, 0.9996, 0.2399]",4.96195
+FALTANTE,valid,version2__V2__12__g002__20260712_145424,(ninguna),sana,"6/9 modelos, conf media 0.54","[0.4834, 0.436, 0.6652, 0.6931]",3.21841
+FALTANTE,valid,version2__V2__8__g001__20260712_080212,(ninguna),sana,"9/9 modelos, conf media 0.65","[0.0682, 0.4531, 0.1488, 0.7989]",5.820209999999999
+FALTANTE,valid,version2__V2__8__g001__20260712_080212,(ninguna),sana,"6/9 modelos, conf media 0.58","[0.5959, 0.269, 0.9028, 0.6094]",3.4706400000000004
+FALTANTE,valid,version2__V2__8__g001__20260712_080212,(ninguna),sana,"6/9 modelos, conf media 0.48","[0.5063, 0.0017, 0.711, 0.3596]",2.89935
+CLASE,valid,version2__V2__8__g003__20260712_081655,mildiu,sana,"9/9 modelos dicen sana, 0/9 dicen mildiu","[0.4724, 0.3501, 0.7653, 0.7585]",9.0
+FALTANTE,valid,version2__V2__8__g003__20260712_081733,(ninguna),sana,"6/9 modelos, conf media 0.65","[0.2487, 0.2492, 0.6405, 0.9112]",3.9117500000000005
+NO_VISTA,valid,version2__V2__8__g003__20260712_081733,mildiu,,ningun modelo la toca,"[0.5591, 0.7183, 0.6706, 0.8911]",
+NO_VISTA,valid,version2__V2__8__g003__20260712_081733,mosca_blanca,,ningun modelo la toca,"[0.2889, 0.5903, 0.2995, 0.6079]",
+FALTANTE,valid,version2__V2__8__g003__20260712_081752,(ninguna),sana,"6/9 modelos, conf media 0.62","[0.0002, 0.0007, 0.3291, 0.3392]",3.7287099999999995
+FALTANTE,valid,version2__V2__8__g007__20260712_082053,(ninguna),sana,"8/9 modelos, conf media 0.58","[0.4346, 0.4387, 0.7001, 0.8992]",4.6090800000000005
+FALTANTE,valid,version2__V2__8__g007__20260712_082122,(ninguna),sana,"8/9 modelos, conf media 0.73","[0.5327, 0.2139, 0.6791, 0.3425]",5.86721
+FALTANTE,valid,version2__V2__8__g007__20260712_082122,(ninguna),sana,"8/9 modelos, conf media 0.65","[0.2441, 0.7637, 0.3273, 0.9045]",5.1813400000000005
+NO_VISTA,valid,version2__V2__8__g007__20260712_082122,mildiu,,ningun modelo la toca,"[0.4387, 0.2925, 0.4576, 0.3127]",
+NO_VISTA,valid,version2__V2__8__g007__20260712_082122,mosca_blanca,,ningun modelo la toca,"[0.2854, 0.8376, 0.2941, 0.8515]",
+NO_VISTA,valid,version2__V2__8__g007__20260712_082122,mosca_blanca,,ningun modelo la toca,"[0.2996, 0.8429, 0.3059, 0.8515]",
+NO_VISTA,valid,version2__V2__8__g007__20260712_082122,mildiu,,ningun modelo la toca,"[0.8507, 0.4372, 0.872, 0.4668]",
+FALTANTE,valid,version2__V2__8__g007__20260712_082140,(ninguna),sana,"6/9 modelos, conf media 0.46","[0.9163, 0.415, 0.9999, 0.7274]",2.7642499999999997
+NO_VISTA,valid,version2__V2__8__g007__20260712_082145,mildiu,,ningun modelo la toca,"[0.9644, 0.6434, 0.9896, 0.6665]",
+NO_VISTA,valid,version2__V2__8__g007__20260712_082145,mildiu,,ningun modelo la toca,"[0.9277, 0.357, 0.9635, 0.3876]",
+NO_VISTA,valid,version2__V2__8__g007__20260712_082145,mildiu,,ningun modelo la toca,"[0.9709, 0.5436, 1.0, 0.5949]",
+FALTANTE,valid,version2__V2__8__g007__20260712_082152,(ninguna),sana,"6/9 modelos, conf media 0.46","[0.2155, 0.0002, 0.3142, 0.0627]",2.786
+FALTANTE,valid,version2__V2__8__g013__20260712_083703,(ninguna),sana,"6/9 modelos, conf media 0.55","[0.6017, 0.0221, 0.654, 0.2063]",3.2951699999999997
+FALTANTE,valid,version2__V2__8__g013__20260712_083703,(ninguna),sana,"7/9 modelos, conf media 0.47","[0.9367, 0.5134, 0.9999, 0.7155]",3.2736599999999996
+FALTANTE,valid,version2__V2__8__g013__20260712_083703,(ninguna),sana,"6/9 modelos, conf media 0.48","[0.8996, 0.6283, 0.9998, 0.8595]",2.87486
+FALTANTE,valid,version2__V2__8__g013__20260712_083725,(ninguna),sana,"9/9 modelos, conf media 0.57","[0.3132, 0.711, 0.436, 0.9938]",5.100289999999999
+FALTANTE,valid,version2__V2__8__g013__20260712_083730,(ninguna),sana,"8/9 modelos, conf media 0.62","[0.4521, 0.7034, 0.5351, 0.9141]",4.98688
+FALTANTE,valid,version2__V2__8__g013__20260712_083730,(ninguna),sana,"8/9 modelos, conf media 0.57","[0.5884, 0.0004, 0.7178, 0.1302]",4.55922
+FALTANTE,valid,version2__V2__8__g013__20260712_083748,(ninguna),sana,"9/9 modelos, conf media 0.81","[0.5142, 0.4784, 0.5863, 0.7791]",7.31033
+FALTANTE,valid,version2__V2__8__g013__20260712_083748,(ninguna),sana,"6/9 modelos, conf media 0.51","[0.0303, 0.8132, 0.0967, 0.9798]",3.05907
+FALTANTE,valid,version2__V2__8__g013__20260712_083756,(ninguna),sana,"8/9 modelos, conf media 0.68","[0.0386, 0.5208, 0.095, 0.7019]",5.44062
+FALTANTE,valid,version2__V2__8__g013__20260712_083756,(ninguna),sana,"8/9 modelos, conf media 0.64","[0.3769, 0.907, 0.4583, 0.9997]",5.14767
+FALTANTE,valid,version2__V2__8__g013__20260712_083822,(ninguna),sana,"6/9 modelos, conf media 0.50","[0.0346, 0.0299, 0.1484, 0.1417]",3.01283
+NO_VISTA,valid,version2__V2__8__g013__20260712_083828,mildiu,,ningun modelo la toca,"[0.2209, 0.638, 0.2606, 0.676]",
+FALTANTE,valid,version2__V2__8__g013__20260712_083856,(ninguna),sana,"9/9 modelos, conf media 0.62","[0.3187, 0.411, 0.422, 0.5304]",5.59802
+FALTANTE,valid,version2__V2__8__g013__20260712_083901,(ninguna),sana,"9/9 modelos, conf media 0.70","[0.6647, 0.5856, 0.787, 0.7964]",6.30123
+FALTANTE,valid,version2__V2__8__g013__20260712_083901,(ninguna),sana,"6/9 modelos, conf media 0.56","[0.4725, 0.6351, 0.5289, 0.7814]",3.36605
+FALTANTE,valid,version2__V2__8__g013__20260712_083901,(ninguna),sana,"9/9 modelos, conf media 0.57","[0.6824, 0.0003, 0.8635, 0.0906]",5.1303399999999995
+FALTANTE,valid,version2__V2__8__g013__20260712_083901,(ninguna),sana,"6/9 modelos, conf media 0.56","[0.4215, 0.5025, 0.5057, 0.6107]",3.38267
+NO_VISTA,valid,version2__V2__8__g013__20260712_083901,mildiu,,ningun modelo la toca,"[0.4389, 0.206, 0.4641, 0.2381]",
+NO_VISTA,valid,version2__V2__8__g013__20260712_083901,mosca_blanca,,ningun modelo la toca,"[0.7867, 0.1173, 0.7959, 0.127]",
+FALTANTE,valid,version2__V2__8__g014__20260712_084023,(ninguna),sana,"9/9 modelos, conf media 0.65","[0.0395, 0.2965, 0.1808, 0.5192]",5.879480000000001
+FALTANTE,valid,version2__V2__8__g014__20260712_084023,(ninguna),sana,"6/9 modelos, conf media 0.51","[0.0001, 0.5766, 0.0943, 0.7622]",3.038639999999999
+FALTANTE,valid,version2__V2__8__g016__20260712_084509,(ninguna),sana,"7/9 modelos, conf media 0.50","[0.2912, 0.2755, 0.6774, 0.7832]",3.5067500000000003
+FALTANTE,valid,version2__V2__8__g016__20260712_084537,(ninguna),sana,"8/9 modelos, conf media 0.70","[0.2505, 0.0006, 0.4434, 0.1519]",5.5891
+FALTANTE,valid,version2__V2__8__g016__20260712_084537,(ninguna),sana,"6/9 modelos, conf media 0.51","[0.238, 0.8879, 0.4739, 0.9997]",3.0785400000000003
+FALTANTE,valid,version2__V2__8__g016__20260712_084539,(ninguna),sana,"9/9 modelos, conf media 0.81","[0.4894, 0.0411, 0.5908, 0.1872]",7.3133300000000006
+FALTANTE,valid,version2__V2__8__g016__20260712_084539,(ninguna),sana,"6/9 modelos, conf media 0.59","[0.2456, 0.8519, 0.326, 0.9857]",3.55668
+FALTANTE,valid,version2__V2__8__g016__20260712_084543,(ninguna),sana,"7/9 modelos, conf media 0.61","[0.5303, 0.3818, 0.6321, 0.4876]",4.2639499999999995
+FALTANTE,valid,version2__V2__8__g016__20260712_084546,(ninguna),sana,"8/9 modelos, conf media 0.58","[0.322, 0.8968, 0.5053, 0.9996]",4.6357
+FALTANTE,valid,version2__V2__8__g016__20260712_084554,(ninguna),sana,"8/9 modelos, conf media 0.59","[0.6036, 0.6214, 0.7367, 0.8192]",4.70914
+FALTANTE,valid,version2__V2__8__g016__20260712_084555,(ninguna),sana,"7/9 modelos, conf media 0.49","[0.7236, 0.5103, 0.8065, 0.6196]",3.45643
+FALTANTE,valid,version2__V2__8__g016__20260712_084555,(ninguna),sana,"8/9 modelos, conf media 0.46","[0.6593, 0.1724, 0.735, 0.3027]",3.65773
+FALTANTE,valid,version2__V2__8__g016__20260712_084555,(ninguna),sana,"6/9 modelos, conf media 0.56","[0.9108, 0.1905, 0.9752, 0.3679]",3.3695199999999996
+FALTANTE,valid,version2__V2__8__g016__20260712_084600,(ninguna),sana,"9/9 modelos, conf media 0.76","[0.5933, 0.7855, 0.7041, 0.9999]",6.84499
+FALTANTE,valid,version2__V2__8__g016__20260712_084600,(ninguna),sana,"8/9 modelos, conf media 0.71","[0.7315, 0.452, 0.9298, 0.7091]",5.69703
+FALTANTE,valid,version2__V2__8__g016__20260712_084600,(ninguna),sana,"7/9 modelos, conf media 0.56","[0.8784, 0.0002, 0.9997, 0.1139]",3.8940100000000006
+NO_VISTA,valid,version2__V2__8__g016__20260712_084600,mildiu,,ningun modelo la toca,"[0.7387, 0.5377, 0.7794, 0.6601]",
+FALTANTE,valid,version2__V2__8__g016__20260712_084609,(ninguna),sana,"8/9 modelos, conf media 0.56","[0.0844, 0.3097, 0.1741, 0.5479]",4.48063
+FALTANTE,valid,version2__V2__8__g016__20260712_084609,(ninguna),sana,"6/9 modelos, conf media 0.52","[0.6152, 0.6127, 0.7063, 0.7566]",3.09133
+FALTANTE,valid,version2__V2__8__g016__20260712_084622,(ninguna),sana,"9/9 modelos, conf media 0.78","[0.7282, 0.044, 0.8185, 0.3088]",6.99481
+FALTANTE,valid,version2__V2__8__g016__20260712_084622,(ninguna),sana,"8/9 modelos, conf media 0.61","[0.0078, 0.7334, 0.3987, 0.9985]",4.87575
+FALTANTE,valid,version2__V2__8__g016__20260712_084622,(ninguna),sana,"7/9 modelos, conf media 0.50","[0.4064, 0.4038, 0.5078, 0.4936]",3.5211499999999996
+FALTANTE,valid,version2__V2__8__g016__20260712_084641,(ninguna),sana,"8/9 modelos, conf media 0.72","[0.4142, 0.2115, 0.5556, 0.3961]",5.78424
+FALTANTE,valid,version2__V2__8__g016__20260712_084641,(ninguna),sana,"8/9 modelos, conf media 0.58","[0.2338, 0.696, 0.3597, 0.8434]",4.64313
+FALTANTE,valid,version2__V2__8__g016__20260712_084641,(ninguna),sana,"7/9 modelos, conf media 0.52","[0.0565, 0.0467, 0.1572, 0.1321]",3.64475
+NO_VISTA,valid,version2__V2__8__g016__20260712_084641,mildiu,,ningun modelo la toca,"[0.4702, 0.8407, 0.5181, 0.8673]",
+FALTANTE,valid,version2__V2__8__g016__20260712_084643,(ninguna),sana,"9/9 modelos, conf media 0.69","[0.0002, 0.5041, 0.1176, 0.6323]",6.2450399999999995
+FALTANTE,valid,version2__V2__8__g016__20260712_084643,(ninguna),sana,"6/9 modelos, conf media 0.51","[0.0003, 0.6631, 0.1209, 0.7942]",3.05204
+FALTANTE,valid,version2__V2__8__g016__20260712_084652,(ninguna),sana,"7/9 modelos, conf media 0.64","[0.2859, 0.5703, 0.3612, 0.7439]",4.46688
+FALTANTE,valid,version2__V2__8__g016__20260712_084654,(ninguna),sana,"9/9 modelos, conf media 0.76","[0.5458, 0.8546, 0.6594, 0.9997]",6.8145500000000006
+FALTANTE,valid,version2__V2__8__g016__20260712_084654,(ninguna),sana,"6/9 modelos, conf media 0.59","[0.8671, 0.2308, 0.9997, 0.7528]",3.5126500000000007
+FALTANTE,valid,version2__V2__8__g016__20260712_084711,(ninguna),sana,"7/9 modelos, conf media 0.64","[0.5954, 0.5662, 0.8903, 0.8143]",4.46065
+FALTANTE,valid,version2__V2__8__g021__20260712_085953,(ninguna),sana,"8/9 modelos, conf media 0.70","[0.6481, 0.522, 0.8648, 0.9316]",5.61764
+FALTANTE,valid,version2__V2__8__g021__20260712_085953,(ninguna),sana,"8/9 modelos, conf media 0.72","[0.6384, 0.104, 0.8182, 0.4494]",5.74497
+FALTANTE,valid,version2__V2__8__g021__20260712_085953,(ninguna),sana,"8/9 modelos, conf media 0.63","[0.112, 0.4189, 0.443, 0.6185]",5.013450000000001
+FALTANTE,valid,version2__V2__8__g021__20260712_090003,(ninguna),sana,"6/9 modelos, conf media 0.61","[0.5099, 0.4554, 0.616, 0.5379]",3.6596299999999995
+FALTANTE,valid,version2__V2__8__g021__20260712_090010,(ninguna),sana,"9/9 modelos, conf media 0.82","[0.9231, 0.4246, 0.9999, 0.7808]",7.338009999999999
+FALTANTE,valid,version2__V2__8__g021__20260712_090010,(ninguna),sana,"9/9 modelos, conf media 0.65","[0.7626, 0.3768, 0.8786, 0.5836]",5.8819
+FALTANTE,valid,version2__V2__8__g021__20260712_090013,(ninguna),sana,"7/9 modelos, conf media 0.66","[0.2233, 0.6305, 0.3603, 0.806]",4.64601
+FALTANTE,valid,version2__V2__8__g021__20260712_090013,(ninguna),sana,"8/9 modelos, conf media 0.69","[0.6478, 0.4649, 0.7263, 0.6995]",5.52891
+FALTANTE,valid,version2__V2__8__g021__20260712_090013,(ninguna),sana,"6/9 modelos, conf media 0.51","[0.9199, 0.5366, 1.0, 0.8396]",3.05617
+FALTANTE,valid,version2__V2__8__g021__20260712_090030,(ninguna),sana,"9/9 modelos, conf media 0.51","[0.0003, 0.6706, 0.0562, 0.9983]",4.574739999999999
+FALTANTE,valid,version2__V2__8__g021__20260712_090030,(ninguna),sana,"9/9 modelos, conf media 0.70","[0.0006, 0.4002, 0.1738, 0.6314]",6.31586
+FALTANTE,valid,version2__V2__8__g021__20260712_090111,(ninguna),sana,"9/9 modelos, conf media 0.82","[0.3607, 0.3773, 0.5342, 0.4785]",7.35256
+FALTANTE,valid,version2__V2__8__g021__20260712_090111,(ninguna),sana,"9/9 modelos, conf media 0.66","[0.6537, 0.3131, 0.7411, 0.4088]",5.924810000000001
+FALTANTE,valid,version2__V2__8__g021__20260712_090117,(ninguna),sana,"9/9 modelos, conf media 0.65","[0.1627, 0.8463, 0.3243, 0.9996]",5.8489
+FALTANTE,valid,version2__V2__8__g021__20260712_090117,(ninguna),sana,"9/9 modelos, conf media 0.53","[0.0002, 0.7762, 0.089, 0.9548]",4.73005
+FALTANTE,valid,version2__V2__8__g021__20260712_090117,(ninguna),sana,"7/9 modelos, conf media 0.54","[0.5532, 0.0606, 0.6441, 0.3008]",3.8011800000000004
+FALTANTE,valid,version2__V2__8__g021__20260712_090119,(ninguna),sana,"9/9 modelos, conf media 0.60","[0.2418, 0.0003, 0.451, 0.1248]",5.39612
+FALTANTE,valid,version2__V2__8__g021__20260712_090119,(ninguna),sana,"6/9 modelos, conf media 0.54","[0.8022, 0.3688, 0.8986, 0.6079]",3.24026
+FALTANTE,valid,version2__V2__8__g021__20260712_090123,(ninguna),sana,"9/9 modelos, conf media 0.70","[0.7631, 0.4718, 0.869, 0.7052]",6.34094
+FALTANTE,valid,version2__V2__8__g021__20260712_090123,(ninguna),sana,"9/9 modelos, conf media 0.61","[0.8053, 0.822, 0.9515, 0.9995]",5.48588
+FALTANTE,valid,version2__V2__8__g021__20260712_090125,(ninguna),sana,"9/9 modelos, conf media 0.78","[0.4091, 0.0004, 0.4929, 0.1797]",6.98556
+FALTANTE,valid,version2__V2__8__g021__20260712_090133,(ninguna),sana,"7/9 modelos, conf media 0.68","[0.6189, 0.7763, 0.8449, 0.9982]",4.75578
+FALTANTE,valid,version2__V2__8__g021__20260712_090133,(ninguna),sana,"6/9 modelos, conf media 0.57","[0.2839, 0.6852, 0.3736, 0.9085]",3.3935899999999997
+FALTANTE,valid,version2__V2__8__g021__20260712_090145,(ninguna),sana,"6/9 modelos, conf media 0.59","[0.0704, 0.8896, 0.2113, 0.9997]",3.54483
+NO_VISTA,valid,version2__V2__8__g021__20260712_090145,mildiu,,ningun modelo la toca,"[0.8439, 0.7456, 0.8714, 0.793]",
+NO_VISTA,valid,version2__V2__8__g021__20260712_090145,mildiu,,ningun modelo la toca,"[0.0647, 0.5357, 0.1408, 0.6343]",
+FALTANTE,valid,version2__V2__8__g021__20260712_090149,(ninguna),sana,"8/9 modelos, conf media 0.64","[0.685, 0.0079, 0.7988, 0.2454]",5.14844
+NO_VISTA,valid,version2__V3__4__g005__20260729_143659,mildiu,,ningun modelo la toca,"[0.9049, 0.4894, 0.9847, 0.5786]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144624,mildiu,,ningun modelo la toca,"[0.5542, 0.612, 0.7674, 0.7793]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144624,mildiu,,ningun modelo la toca,"[0.2865, 0.561, 0.402, 0.6481]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144624,mildiu,,ningun modelo la toca,"[0.4818, 0.5198, 0.5998, 0.5927]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144625,polilla,,ningun modelo la toca,"[0.6356, 0.0119, 0.8057, 0.0882]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144629,mildiu,,ningun modelo la toca,"[0.5493, 0.0163, 0.7886, 0.1001]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144634,mildiu,,ningun modelo la toca,"[0.673, 0.8659, 0.7861, 0.9714]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144637,mildiu,,ningun modelo la toca,"[0.9253, 0.7237, 0.9961, 0.8141]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144637,mildiu,,ningun modelo la toca,"[0.717, 0.7574, 0.8203, 0.8466]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144637,mildiu,,ningun modelo la toca,"[0.6242, 0.0347, 0.8879, 0.1522]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144641,mildiu,,ningun modelo la toca,"[0.6519, 0.7628, 0.7511, 0.8445]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144644,polilla,,ningun modelo la toca,"[0.4957, 0.446, 0.5352, 0.4789]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144647,mildiu,,ningun modelo la toca,"[0.6641, 0.6814, 0.887, 0.8043]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144647,mildiu,,ningun modelo la toca,"[0.6209, 0.7595, 0.7088, 0.8347]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144647,mildiu,,ningun modelo la toca,"[0.6331, 0.1248, 0.7975, 0.2184]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144648,mildiu,,ningun modelo la toca,"[0.8325, 0.7107, 0.9359, 0.8162]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144648,mildiu,,ningun modelo la toca,"[0.6413, 0.7574, 0.7389, 0.8412]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144648,mildiu,,ningun modelo la toca,"[0.6698, 0.1183, 0.835, 0.2129]",
+NO_VISTA,valid,version2__V3__4__g009__20260729_144654,mildiu,,ningun modelo la toca,"[0.457, 0.1047, 0.593, 0.2664]",
+NO_VISTA,valid,version2__V3__4__g022__20260729_155718,mildiu,,ningun modelo la toca,"[0.673, 0.2116, 0.8114, 0.3779]",
+NO_VISTA,valid,version2__V3__4__g022__20260729_155718,mildiu,,ningun modelo la toca,"[0.4647, 0.1259, 0.5949, 0.1912]",
+NO_VISTA,valid,version2__V3__4__g022__20260729_155725,mildiu,,ningun modelo la toca,"[0.1953, 0.1562, 0.2523, 0.2346]",
+NO_VISTA,valid,version2__V3__4__g022__20260729_155725,mildiu,,ningun modelo la toca,"[0.5159, 0.804, 0.5811, 0.8813]",
+NO_VISTA,valid,version2__V3__4__g023__20260729_155943,polilla,,ningun modelo la toca,"[0.9375, 0.6478, 1.0, 0.7339]",
+NO_VISTA,valid,version2__V3__4__g023__20260729_155958,mildiu,,ningun modelo la toca,"[0.6925, 0.2018, 0.7446, 0.4701]",
+NO_VISTA,valid,version2__V3__4__g023__20260729_160000,mildiu,,ningun modelo la toca,"[0.7267, 0.2365, 0.7878, 0.5103]",
+NO_VISTA,valid,version2__V3__4__g023__20260729_160004-0-,mildiu,,ningun modelo la toca,"[0.7617, 0.1432, 0.8105, 0.4484]",
+NO_VISTA,valid,version2__V3__4__g023__20260729_160004,mildiu,,ningun modelo la toca,"[0.7951, 0.1541, 0.8561, 0.4386]",
+NO_VISTA,valid,version2__V3__4__g023__20260729_160005,mildiu,,ningun modelo la toca,"[0.7552, 0.1356, 0.8081, 0.4245]",
+NO_VISTA,valid,version2__V3__4__g023__20260729_160005,mildiu,,ningun modelo la toca,"[0.4213, 0.2751, 0.4982, 0.3894]",
+NO_VISTA,valid,version2__V3__4__g023__20260729_160027,mildiu,,ningun modelo la toca,"[0.6274, 0.1497, 0.6844, 0.3703]",
+NO_VISTA,valid,version2__V3__4__g023__20260729_160030,mildiu,,ningun modelo la toca,"[0.3306, 0.1212, 0.4323, 0.2563]",
+NO_VISTA,valid,version2__V3__4__g023__20260729_160035-0-,mildiu,,ningun modelo la toca,"[0.3137, 0.1789, 0.3931, 0.2939]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_144705__20260729_144705_frame_000000,mildiu,,ningun modelo la toca,"[0.0246, 0.6775, 0.1663, 0.7782]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_144705__20260729_144705_frame_000000,mildiu,,ningun modelo la toca,"[0.0859, 0.8069, 0.3348, 0.9846]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_144705__20260729_144705_frame_000060,oidio,,ningun modelo la toca,"[0.1406, 0.3, 0.436, 0.6218]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_144705__20260729_144705_frame_000120,mildiu,,ningun modelo la toca,"[0.7668, 0.3304, 0.8638, 0.8206]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_144705__20260729_144705_frame_000120,mildiu,,ningun modelo la toca,"[0.0446, 0.7745, 0.298, 0.9746]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_144721__20260729_144721_frame_000060,mildiu,,ningun modelo la toca,"[0.7422, 0.4587, 0.7879, 0.5818]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_144721__20260729_144721_frame_000090,mildiu,,ningun modelo la toca,"[0.6942, 0.4453, 0.7812, 0.5818]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_144721__20260729_144721_frame_000150,mildiu,,ningun modelo la toca,"[0.7454, 0.4695, 0.7866, 0.5865]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_145106__20260729_145106_frame_000540,mildiu,,ningun modelo la toca,"[0.2879, 0.7924, 0.3951, 0.8251]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_145106__20260729_145106_frame_000540,mildiu,,ningun modelo la toca,"[0.3091, 0.279, 0.4554, 0.4556]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_145106__20260729_145106_frame_000690,mildiu,,ningun modelo la toca,"[0.5201, 0.8047, 0.6217, 0.8429]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_145106__20260729_145106_frame_000690,mildiu,,ningun modelo la toca,"[0.7098, 0.1551, 0.7645, 0.1855]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_145106__20260729_145106_frame_000750,mildiu,,ningun modelo la toca,"[0.8393, 0.4498, 1.0, 0.5818]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_145106__20260729_145106_frame_000750,mildiu,,ningun modelo la toca,"[0.9353, 0.2534, 0.9799, 0.2826]",
+FALTANTE,valid,version2__V3__frames_videosv2__video_20260729_145106__20260729_145106_frame_000930,(ninguna),sana,"8/9 modelos, conf media 0.66","[0.7058, 0.0005, 0.9982, 0.1908]",5.31414
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_145106__20260729_145106_frame_000930,mildiu,,ningun modelo la toca,"[0.0094, 0.7969, 0.0803, 0.9345]",
+NO_VISTA,valid,version2__V3__frames_videosv2__video_20260729_151131__20260729_151131_frame_004380,mildiu,,ningun modelo la toca,"[0.8333, 0.2095, 0.9251, 0.2551]",
+FALTANTE,test,12__g008__20260503_121158,(ninguna),sana,"7/9 modelos, conf media 0.69","[0.2156, 0.0695, 0.5098, 0.4894]",4.7963
+NO_VISTA,test,12__g010__20260503_121522,oidio,,ningun modelo la toca,"[0.0452, 0.6199, 0.0921, 0.699]",
+NO_VISTA,test,12__g010__20260503_121522,oidio,,ningun modelo la toca,"[0.2578, 0.3997, 0.3265, 0.5771]",
+NO_VISTA,test,12__g010__20260503_121526,oidio,,ningun modelo la toca,"[0.5394, 0.1895, 0.6567, 0.2082]",
+NO_VISTA,test,12__g010__20260503_121526,oidio,,ningun modelo la toca,"[0.1986, 0.0835, 0.2988, 0.1218]",
+NO_VISTA,test,12__g010__20260503_121526,oidio,,ningun modelo la toca,"[0.3301, 0.3247, 0.3887, 0.3865]",
+NO_VISTA,test,12__g010__20260503_121526,oidio,,ningun modelo la toca,"[0.7939, 0.7695, 0.9785, 0.9453]",
+NO_VISTA,test,12__g010__20260503_121526,oidio,,ningun modelo la toca,"[0.6501, 0.8379, 0.7796, 0.9043]",
+NO_VISTA,test,12__g010__20260503_121526,oidio,,ningun modelo la toca,"[0.1676, 0.6836, 0.2197, 0.7354]",
+NO_VISTA,test,12__g010__20260503_121526,oidio,,ningun modelo la toca,"[0.2513, 0.7546, 0.2969, 0.803]",
+NO_VISTA,test,12__g010__20260503_121543,mildiu,,ningun modelo la toca,"[0.6237, 0.8315, 0.748, 0.9668]",
+NO_VISTA,test,12__g016__20260503_122602,oidio,,ningun modelo la toca,"[0.1081, 0.3569, 0.2611, 0.4858]",
+FALTANTE,test,12__g020__20260503_124012,(ninguna),sana,"7/9 modelos, conf media 0.55","[0.0006, 0.6715, 0.1275, 0.7413]",3.8745700000000003
+FALTANTE,test,12__g020__20260503_124051,(ninguna),mildiu,"6/9 modelos, conf media 0.53","[0.6773, 0.4801, 0.8597, 0.588]",3.2028100000000004
+NO_VISTA,test,12__g020__20260503_124051,mildiu,,ningun modelo la toca,"[0.6002, 0.5524, 0.6653, 0.6122]",
+NO_VISTA,test,12__g021__20260503_124930,oidio,,ningun modelo la toca,"[0.3939, 0.542, 0.5046, 0.6241]",
+NO_VISTA,test,12__g021__20260503_124930,oidio,,ningun modelo la toca,"[0.0195, 0.4626, 0.109, 0.5594]",
+NO_VISTA,test,12__g021__20260503_124938,oidio,,ningun modelo la toca,"[0.4935, 0.5637, 0.5957, 0.6421]",
+NO_VISTA,test,12__g021__20260503_124938,oidio,,ningun modelo la toca,"[0.25, 0.2781, 0.2923, 0.3171]",
+NO_VISTA,test,12__g021__20260503_125002,mildiu,,ningun modelo la toca,"[0.283, 0.4984, 0.386, 0.6019]",
+NO_VISTA,test,12__g021__20260503_125002,mildiu,,ningun modelo la toca,"[0.4917, 0.3675, 0.5894, 0.4775]",
+FALTANTE,test,12__g021__20260503_125006,(ninguna),mildiu,"8/9 modelos, conf media 0.61","[0.3613, 0.6989, 0.4852, 0.9398]",4.866219999999999
+FALTANTE,test,12__g021__20260503_125006,(ninguna),mildiu,"7/9 modelos, conf media 0.53","[0.2318, 0.6622, 0.3636, 0.8936]",3.72659
+NO_VISTA,test,12__g021__20260503_125006,oidio,,ningun modelo la toca,"[0.5085, 0.3776, 0.554, 0.4284]",
+NO_VISTA,test,12__g021__20260503_125006,oidio,,ningun modelo la toca,"[0.6792, 0.6719, 0.73, 0.7233]",
+NO_VISTA,test,12__g021__20260503_125006,oidio,,ningun modelo la toca,"[0.3013, 0.7279, 0.3237, 0.7578]",
+NO_VISTA,test,12__g021__20260503_125006,oidio,,ningun modelo la toca,"[0.4314, 0.7565, 0.4578, 0.7969]",
+NO_VISTA,test,12__g021__20260503_125006,oidio,,ningun modelo la toca,"[0.2603, 0.8392, 0.2788, 0.875]",
+FALTANTE,test,12__g021__20260503_125007,(ninguna),mildiu,"8/9 modelos, conf media 0.64","[0.4043, 0.6114, 0.5065, 0.8079]",5.14284
+FALTANTE,test,12__g021__20260503_125007,(ninguna),mildiu,"7/9 modelos, conf media 0.62","[0.2964, 0.5839, 0.4047, 0.7736]",4.32941
+NO_VISTA,test,12__g021__20260503_125007,oidio,,ningun modelo la toca,"[0.5242, 0.3464, 0.5525, 0.3958]",
+NO_VISTA,test,12__g021__20260503_125007,oidio,,ningun modelo la toca,"[0.6667, 0.5863, 0.7034, 0.6325]",
+NO_VISTA,test,12__g021__20260503_125007,oidio,,ningun modelo la toca,"[0.5247, 0.5215, 0.5613, 0.5677]",
+NO_VISTA,test,12__g021__20260503_125007,oidio,,ningun modelo la toca,"[0.3601, 0.6357, 0.3772, 0.6702]",
+NO_VISTA,test,12__g021__20260503_125007,oidio,,ningun modelo la toca,"[0.3218, 0.7178, 0.3687, 0.7699]",
+NO_VISTA,test,12__g027__20260503_130848,mildiu,,ningun modelo la toca,"[0.3545, 0.5051, 0.4365, 0.6301]",
+NO_VISTA,test,12__g027__20260503_130908,mildiu,,ningun modelo la toca,"[0.6567, 0.3281, 0.7466, 0.528]",
+FALTANTE,test,12__g035__20260503_133643,(ninguna),sana,"9/9 modelos, conf media 0.71","[0.1262, 0.9059, 0.4358, 0.9998]",6.3926300000000005
+FALTANTE,test,12__g035__20260503_133643,(ninguna),sana,"7/9 modelos, conf media 0.64","[0.1483, 0.6145, 0.3084, 0.7848]",4.49078
+FALTANTE,test,12__g035__20260503_133643,(ninguna),sana,"8/9 modelos, conf media 0.66","[0.3322, 0.7032, 0.6515, 0.8521]",5.308599999999999
+FALTANTE,test,12__g035__20260503_133705,(ninguna),sana,"9/9 modelos, conf media 0.61","[0.0622, 0.5576, 0.2735, 0.9421]",5.5292200000000005
+FALTANTE,test,12__g035__20260503_133705,(ninguna),sana,"6/9 modelos, conf media 0.57","[0.3862, 0.4781, 0.5874, 0.755]",3.4159699999999997
+FALTANTE,test,12__g035__20260503_133726,(ninguna),mildiu,"7/9 modelos, conf media 0.51","[0.677, 0.3971, 0.8407, 0.4948]",3.5788100000000003
+FALTANTE,test,12__g035__20260503_133738,(ninguna),mildiu,"8/9 modelos, conf media 0.54","[0.2719, 0.2577, 0.7013, 0.7713]",4.3568
+NO_VISTA,test,12__g035__20260503_133743,oidio,,ningun modelo la toca,"[0.5013, 0.3945, 0.5488, 0.4365]",
+NO_VISTA,test,12__g035__20260503_133743,oidio,,ningun modelo la toca,"[0.2897, 0.7104, 0.3418, 0.7534]",
+FALTANTE,test,12__g043__20260503_135920,(ninguna),mildiu,"6/9 modelos, conf media 0.49","[0.0185, 0.2283, 0.1101, 0.3186]",2.92755
+NO_VISTA,test,12__g043__20260503_135940,mildiu,,ningun modelo la toca,"[0.7581, 0.3237, 0.8512, 0.395]",
+NO_VISTA,test,12__g043__20260503_135947,mildiu,,ningun modelo la toca,"[0.7025, 0.197, 0.8835, 0.2625]",
+FALTANTE,test,12__g043__20260503_140015,(ninguna),sana,"8/9 modelos, conf media 0.53","[0.8521, 0.8872, 0.9999, 0.9999]",4.27168
+FALTANTE,test,12__g043__20260503_140022,(ninguna),sana,"7/9 modelos, conf media 0.68","[0.0663, 0.1269, 0.3341, 0.4103]",4.73234
+FALTANTE,test,12__g052__20260503_142836,(ninguna),sana,"6/9 modelos, conf media 0.51","[0.166, 0.8174, 0.4566, 0.9997]",3.0778
+FALTANTE,test,12__g052__20260503_142836,(ninguna),sana,"7/9 modelos, conf media 0.60","[0.3069, 0.165, 0.4339, 0.3739]",4.22246
+FALTANTE,test,12__g052__20260503_142840,(ninguna),mildiu,"7/9 modelos, conf media 0.65","[0.1279, 0.617, 0.2455, 0.7011]",4.584580000000001
+NO_VISTA,test,12__g052__20260503_142840,mosca_blanca,,ningun modelo la toca,"[0.463, 0.4885, 0.4728, 0.4963]",
+FALTANTE,test,12__g052__20260503_142900,(ninguna),mildiu,"8/9 modelos, conf media 0.63","[0.0823, 0.7757, 0.2737, 0.9204]",5.07813
+FALTANTE,test,12__g053__20260503_142931,(ninguna),mildiu,"9/9 modelos, conf media 0.58","[0.3498, 0.7742, 0.6669, 0.9975]",5.1948099999999995
+NO_VISTA,test,12__g053__20260503_142931,mildiu,,ningun modelo la toca,"[0.3385, 0.4724, 0.4518, 0.5325]",
+NO_VISTA,test,12__g053__20260503_142931,mildiu,,ningun modelo la toca,"[0.4098, 0.8162, 0.4997, 0.884]",
+FALTANTE,test,12__g057__20260503_143722,(ninguna),mildiu,"6/9 modelos, conf media 0.57","[0.5181, 0.3276, 0.6119, 0.3996]",3.4087899999999998
+NO_VISTA,test,16__g001__20260503_160406,mosca_blanca,,ningun modelo la toca,"[0.4443, 0.4167, 0.4554, 0.427]",
+FALTANTE,test,16__g014__20260503_162651,(ninguna),sana,"8/9 modelos, conf media 0.51","[0.8231, 0.5494, 0.9997, 0.7207]",4.0866
+NO_VISTA,test,16__g015__20260503_162828,mildiu,,ningun modelo la toca,"[0.3451, 0.2092, 0.4362, 0.2844]",
+NO_VISTA,test,16__g015__20260503_162856,polilla,,ningun modelo la toca,"[0.5459, 0.6062, 0.5804, 0.6594]",
+NO_VISTA,test,16__g015__20260503_162858,mildiu,,ningun modelo la toca,"[0.4987, 0.4387, 0.5918, 0.5833]",
+NO_VISTA,test,16__g015__20260503_162858,polilla,,ningun modelo la toca,"[0.484, 0.6018, 0.527, 0.6418]",
+NO_VISTA,test,16__g018__20260503_163338,mosca_blanca,,ningun modelo la toca,"[0.5596, 0.2344, 0.5667, 0.2422]",
+NO_VISTA,test,16__g018__20260503_163338,mosca_blanca,,ningun modelo la toca,"[0.5671, 0.2698, 0.5749, 0.2786]",
+NO_VISTA,test,16__g018__20260503_163338,mosca_blanca,,ningun modelo la toca,"[0.5944, 0.3015, 0.6022, 0.3108]",
+NO_VISTA,test,16__g018__20260503_163338,oidio,,ningun modelo la toca,"[0.6094, 0.2383, 0.6374, 0.2852]",
+NO_VISTA,test,16__g023__20260503_164307,mildiu,,ningun modelo la toca,"[0.5697, 0.7532, 0.7633, 0.889]",
+NO_VISTA,test,16__g023__20260503_164345,mildiu,,ningun modelo la toca,"[0.2731, 0.5442, 0.3877, 0.6604]",
+FALTANTE,test,16__g037__20260503_171054,(ninguna),sana,"8/9 modelos, conf media 0.63","[0.0696, 0.7617, 0.1443, 0.976]",5.06743
+NO_VISTA,test,8__g001__20260503_080603,mildiu,,ningun modelo la toca,"[0.417, 0.1028, 0.5114, 0.177]",
+NO_VISTA,test,8__g001__20260503_080603,mildiu,,ningun modelo la toca,"[0.1911, 0.1479, 0.2744, 0.2144]",
+NO_VISTA,test,8__g001__20260503_080603,mildiu,,ningun modelo la toca,"[0.5444, 0.5125, 0.6933, 0.645]",
+NO_VISTA,test,8__g001__20260503_080603,mildiu,,ningun modelo la toca,"[0.7574, 0.4948, 0.9199, 0.5949]",
+NO_VISTA,test,8__g013__20260503_082304,mildiu,,ningun modelo la toca,"[0.2827, 0.3146, 0.411, 0.4062]",
+NO_VISTA,test,8__g015__20260503_082606,mildiu,,ningun modelo la toca,"[0.4733, 0.6201, 0.528, 0.7051]",
+NO_VISTA,test,8__g015__20260503_082606,mildiu,,ningun modelo la toca,"[0.5898, 0.5257, 0.6693, 0.6068]",
+NO_VISTA,test,8__g016__20260503_082703,mildiu,,ningun modelo la toca,"[0.3385, 0.5892, 0.4254, 0.6612]",
+NO_VISTA,test,8__g016__20260503_082703,mildiu,,ningun modelo la toca,"[0.4511, 0.6773, 0.5572, 0.7675]",
+NO_VISTA,test,8__g017__20260503_082808,mosca_blanca,,ningun modelo la toca,"[0.5443, 0.5132, 0.5638, 0.5288]",
+NO_VISTA,test,8__g028__20260503_084215,mildiu,,ningun modelo la toca,"[0.0611, 0.4586, 0.1326, 0.508]",
+NO_VISTA,test,8__g028__20260503_084228,oidio,,ningun modelo la toca,"[0.3053, 0.4375, 0.4212, 0.5234]",
+NO_VISTA,test,8__g032__20260503_084748,mildiu,,ningun modelo la toca,"[0.3475, 0.2952, 0.4486, 0.3546]",
+NO_VISTA,test,8__g032__20260503_084807,mosca_blanca,,ningun modelo la toca,"[0.5231, 0.4404, 0.5394, 0.4551]",
+NO_VISTA,test,8__g049__20260503_091559,oidio,,ningun modelo la toca,"[0.0768, 0.4717, 0.1263, 0.5312]",
+NO_VISTA,test,8__g049__20260503_091559,mildiu,,ningun modelo la toca,"[0.4609, 0.1872, 0.4622, 0.1951]",
+NO_VISTA,test,8__g049__20260503_091559,mildiu,,ningun modelo la toca,"[0.1124, 0.6693, 0.1828, 0.7023]",
+NO_VISTA,test,8__g049__20260503_091616,oidio,,ningun modelo la toca,"[0.3496, 0.407, 0.4316, 0.4475]",
+FALTANTE,test,8__g055__20260503_092220,(ninguna),sana,"9/9 modelos, conf media 0.63","[0.8302, 0.5999, 0.9993, 0.9642]",5.67763
+NO_VISTA,test,8__g058__20260503_092629,oidio,,ningun modelo la toca,"[0.3512, 0.4128, 0.4111, 0.4495]",
+NO_VISTA,test,8__g058__20260503_092629,oidio,,ningun modelo la toca,"[0.3346, 0.4795, 0.3919, 0.5176]",
+NO_VISTA,test,8__g058__20260503_092629,oidio,,ningun modelo la toca,"[0.2321, 0.2722, 0.3128, 0.3305]",
+NO_VISTA,test,8__g058__20260503_092658,oidio,,ningun modelo la toca,"[0.3887, 0.3698, 0.5205, 0.4418]",
+NO_VISTA,test,8__g058__20260503_092658,oidio,,ningun modelo la toca,"[0.5144, 0.5522, 0.5938, 0.6101]",
+NO_VISTA,test,8__g058__20260503_092658,mildiu,,ningun modelo la toca,"[0.7369, 0.3462, 0.8169, 0.3778]",
+NO_VISTA,test,8__g058__20260503_092658,mildiu,,ningun modelo la toca,"[0.8071, 0.3686, 0.9769, 0.4263]",
+FALTANTE,test,8__g063__20260503_093730,(ninguna),sana,"6/9 modelos, conf media 0.52","[0.0003, 0.1792, 0.1885, 0.3496]",3.0997300000000005
+NO_VISTA,test,8__g063__20260503_093730,mosca_blanca,,ningun modelo la toca,"[0.4443, 0.562, 0.4606, 0.5786]",
+NO_VISTA,test,8__g067__20260503_094210,mosca_blanca,,ningun modelo la toca,"[0.4707, 0.4829, 0.4889, 0.5]",
+NO_VISTA,test,8__g070__20260503_094708,mosca_blanca,,ningun modelo la toca,"[0.363, 0.4561, 0.3779, 0.4688]",
+NO_VISTA,test,8__g070__20260503_094708,mildiu,,ningun modelo la toca,"[0.3946, 0.2017, 0.4482, 0.2458]",
+FALTANTE,test,version2__V2__8__g004__20260712_081849,(ninguna),sana,"9/9 modelos, conf media 0.77","[0.3176, 0.0, 0.456, 0.2003]",6.90419
+FALTANTE,test,version2__V2__8__g004__20260712_081849,(ninguna),sana,"7/9 modelos, conf media 0.47","[0.0002, 0.7086, 0.0453, 0.9805]",3.25581
+FALTANTE,test,version2__V2__8__g005__20260712_081926,(ninguna),sana,"6/9 modelos, conf media 0.71","[0.0009, 0.2736, 0.3421, 0.6468]",4.27848
+FALTANTE,test,version2__V2__8__g005__20260712_081933,(ninguna),sana,"9/9 modelos, conf media 0.77","[0.3709, 0.2915, 0.4403, 0.5426]",6.966409999999999
+FALTANTE,test,version2__V2__8__g005__20260712_081933,(ninguna),sana,"9/9 modelos, conf media 0.72","[0.5508, 0.8519, 0.7217, 0.9995]",6.4844100000000005
+FALTANTE,test,version2__V2__8__g005__20260712_081933,(ninguna),sana,"8/9 modelos, conf media 0.60","[0.7276, 0.8745, 0.9321, 0.9995]",4.79195
+FALTANTE,test,version2__V2__8__g008__20260712_082244,(ninguna),sana,"8/9 modelos, conf media 0.58","[0.4712, 0.4648, 0.6009, 0.7157]",4.656280000000001
+FALTANTE,test,version2__V2__8__g008__20260712_082304,(ninguna),sana,"8/9 modelos, conf media 0.68","[0.5822, 0.2758, 0.7076, 0.4659]",5.441269999999999
+FALTANTE,test,version2__V2__8__g008__20260712_082329,(ninguna),sana,"9/9 modelos, conf media 0.68","[0.4507, 0.0566, 0.5805, 0.2894]",6.115099999999999
+FALTANTE,test,version2__V2__8__g008__20260712_082329,(ninguna),sana,"7/9 modelos, conf media 0.60","[0.2512, 0.5812, 0.347, 0.8506]",4.1701299999999994
+FALTANTE,test,version2__V2__8__g008__20260712_082329,(ninguna),sana,"6/9 modelos, conf media 0.64","[0.0391, 0.6032, 0.1609, 0.8591]",3.8533599999999995
+FALTANTE,test,version2__V2__8__g008__20260712_082329,(ninguna),sana,"8/9 modelos, conf media 0.68","[0.0021, 0.1305, 0.3287, 0.5193]",5.42141
+FALTANTE,test,version2__V2__8__g008__20260712_082332,(ninguna),sana,"8/9 modelos, conf media 0.64","[0.5541, 0.2638, 0.6212, 0.3736]",5.11534
+FALTANTE,test,version2__V2__8__g008__20260712_082332,(ninguna),sana,"7/9 modelos, conf media 0.61","[0.4877, 0.7269, 0.6073, 0.8781]",4.29848
+FALTANTE,test,version2__V2__8__g008__20260712_082332,(ninguna),sana,"9/9 modelos, conf media 0.49","[0.4087, 0.5928, 0.5195, 0.7463]",4.38696
+NO_VISTA,test,version2__V2__8__g008__20260712_082332,mildiu,,ningun modelo la toca,"[0.4565, 0.0944, 0.4771, 0.1561]",
+FALTANTE,test,version2__V2__8__g008__20260712_082348,(ninguna),sana,"8/9 modelos, conf media 0.54","[0.1708, 0.0005, 0.3876, 0.3254]",4.33478
+FALTANTE,test,version2__V2__8__g008__20260712_082348,(ninguna),sana,"7/9 modelos, conf media 0.56","[0.676, 0.0003, 0.8093, 0.2468]",3.8964000000000003
+FALTANTE,test,version2__V2__8__g008__20260712_082350,(ninguna),sana,"7/9 modelos, conf media 0.60","[0.7218, 0.1502, 0.8049, 0.3143]",4.169480000000001
+FALTANTE,test,version2__V2__8__g008__20260712_082350,(ninguna),sana,"7/9 modelos, conf media 0.65","[0.5437, 0.3454, 0.7709, 0.6491]",4.52209
+FALTANTE,test,version2__V2__8__g008__20260712_082404,(ninguna),sana,"9/9 modelos, conf media 0.65","[0.5043, 0.3046, 0.6417, 0.4628]",5.856920000000001
+FALTANTE,test,version2__V2__8__g008__20260712_082404,(ninguna),sana,"6/9 modelos, conf media 0.47","[0.6533, 0.0006, 0.8326, 0.2545]",2.83535
+FALTANTE,test,version2__V2__8__g008__20260712_082409,(ninguna),sana,"9/9 modelos, conf media 0.67","[0.6404, 0.4537, 0.894, 0.6258]",5.9903699999999995
+FALTANTE,test,version2__V2__8__g008__20260712_082409,(ninguna),sana,"9/9 modelos, conf media 0.83","[0.5394, 0.2869, 0.6923, 0.3758]",7.473579999999999
+FALTANTE,test,version2__V2__8__g012__20260712_083456,(ninguna),sana,"7/9 modelos, conf media 0.46","[0.1659, 0.1501, 0.2602, 0.2888]",3.25202
+CLASE,test,version2__V2__8__g012__20260712_083456,mildiu,sana,"6/9 modelos dicen sana, 0/9 dicen mildiu","[0.613, 0.0456, 0.6899, 0.1912]",6.0
+FALTANTE,test,version2__V2__8__g012__20260712_083459,(ninguna),sana,"7/9 modelos, conf media 0.57","[0.4012, 0.2769, 0.4561, 0.4077]",3.975050000000001
+FALTANTE,test,version2__V2__8__g012__20260712_083507,(ninguna),sana,"6/9 modelos, conf media 0.62","[0.5412, 0.4634, 0.5978, 0.5518]",3.7360299999999995
+FALTANTE,test,version2__V2__8__g012__20260712_083528,(ninguna),sana,"7/9 modelos, conf media 0.68","[0.446, 0.7163, 0.5325, 0.8311]",4.76218
+FALTANTE,test,version2__V2__8__g012__20260712_083528,(ninguna),sana,"6/9 modelos, conf media 0.53","[0.841, 0.264, 0.9334, 0.3669]",3.2067499999999995
+FALTANTE,test,version2__V2__8__g012__20260712_083556,(ninguna),sana,"9/9 modelos, conf media 0.66","[0.5058, 0.3484, 0.6503, 0.5632]",5.945320000000001
+FALTANTE,test,version2__V2__8__g012__20260712_083556,(ninguna),sana,"9/9 modelos, conf media 0.83","[0.3228, 0.3249, 0.4273, 0.5309]",7.45878
+FALTANTE,test,version2__V2__8__g012__20260712_083556,(ninguna),sana,"6/9 modelos, conf media 0.62","[0.0985, 0.7793, 0.3718, 0.9416]",3.7189699999999997
+FALTANTE,test,version2__V2__8__g012__20260712_083556,(ninguna),sana,"7/9 modelos, conf media 0.61","[0.4399, 0.7875, 0.6056, 0.9758]",4.29579
+FALTANTE,test,version2__V2__8__g012__20260712_083556,(ninguna),sana,"6/9 modelos, conf media 0.43","[0.8919, 0.3568, 0.9997, 0.5669]",2.5586399999999996
+FALTANTE,test,version2__V2__8__g012__20260712_083556,(ninguna),sana,"6/9 modelos, conf media 0.54","[0.7017, 0.0002, 0.8289, 0.1146]",3.2131
+FALTANTE,test,version2__V2__8__g012__20260712_083559,(ninguna),sana,"7/9 modelos, conf media 0.52","[0.898, 0.1995, 0.9997, 0.3157]",3.6202300000000003
+FALTANTE,test,version2__V2__8__g012__20260712_083606,(ninguna),sana,"8/9 modelos, conf media 0.62","[0.4308, 0.8693, 0.573, 0.9998]",4.93795
+FALTANTE,test,version2__V2__8__g012__20260712_083606,(ninguna),sana,"7/9 modelos, conf media 0.53","[0.2171, 0.0003, 0.3381, 0.1278]",3.6905900000000003
+FALTANTE,test,version2__V2__8__g012__20260712_083606,(ninguna),sana,"7/9 modelos, conf media 0.66","[0.3834, 0.0003, 0.4703, 0.1925]",4.61214
+FALTANTE,test,version2__V2__8__g012__20260712_083614,(ninguna),sana,"9/9 modelos, conf media 0.67","[0.5311, 0.2312, 0.6725, 0.3097]",6.025419999999999
+FALTANTE,test,version2__V2__8__g012__20260712_083614,(ninguna),sana,"9/9 modelos, conf media 0.66","[0.1542, 0.0007, 0.5215, 0.146]",5.96576
+FALTANTE,test,version2__V2__8__g012__20260712_083614,(ninguna),sana,"7/9 modelos, conf media 0.56","[0.6359, 0.0003, 0.889, 0.0759]",3.92415
+FALTANTE,test,version2__V2__8__g012__20260712_083630,(ninguna),sana,"9/9 modelos, conf media 0.67","[0.7729, 0.3684, 0.9242, 0.5347]",6.04302
+FALTANTE,test,version2__V2__8__g012__20260712_083630,(ninguna),sana,"8/9 modelos, conf media 0.59","[0.6026, 0.7237, 0.697, 0.9449]",4.71544
+FALTANTE,test,version2__V2__8__g017__20260712_084749,(ninguna),sana,"7/9 modelos, conf media 0.63","[0.3933, 0.2379, 0.7565, 0.793]",4.4247700000000005
+FALTANTE,test,version2__V2__8__g017__20260712_084756,(ninguna),sana,"8/9 modelos, conf media 0.58","[0.6398, 0.2728, 0.7545, 0.4136]",4.64608
+FALTANTE,test,version2__V2__8__g017__20260712_084759,(ninguna),sana,"6/9 modelos, conf media 0.58","[0.3165, 0.2351, 0.3851, 0.3305]",3.49658
+FALTANTE,test,version2__V2__8__g017__20260712_084759,(ninguna),sana,"7/9 modelos, conf media 0.65","[0.7651, 0.5229, 0.9377, 0.6748]",4.54529
+FALTANTE,test,version2__V2__8__g017__20260712_084808,(ninguna),sana,"9/9 modelos, conf media 0.80","[0.3262, 0.4533, 0.4757, 0.5327]",7.18726
+FALTANTE,test,version2__V2__8__g017__20260712_084808,(ninguna),sana,"8/9 modelos, conf media 0.74","[0.4782, 0.484, 0.609, 0.5754]",5.8943200000000004
+FALTANTE,test,version2__V2__8__g017__20260712_084808,(ninguna),sana,"7/9 modelos, conf media 0.49","[0.0467, 0.2924, 0.1793, 0.4319]",3.44021
+FALTANTE,test,version2__V2__8__g017__20260712_084808,(ninguna),sana,"6/9 modelos, conf media 0.60","[0.3736, 0.2241, 0.5763, 0.3335]",3.61463
+FALTANTE,test,version2__V2__8__g017__20260712_084808,(ninguna),sana,"7/9 modelos, conf media 0.52","[0.64, 0.6037, 0.7146, 0.8031]",3.66333
+NO_VISTA,test,version2__V3__4__g001__20260729_142234,mildiu,,ningun modelo la toca,"[0.7581, 0.3434, 0.8608, 0.4831]",
+NO_VISTA,test,version2__V3__4__g001__20260729_142236,mildiu,,ningun modelo la toca,"[0.1772, 0.4177, 0.229, 0.6733]",
+NO_VISTA,test,version2__V3__4__g001__20260729_142236,mildiu,,ningun modelo la toca,"[0.8984, 0.1872, 0.9702, 0.2863]",
+NO_VISTA,test,version2__V3__4__g004__20260729_143539,mildiu,,ningun modelo la toca,"[0.7105, 0.6044, 0.7707, 0.6936]",
+NO_VISTA,test,version2__V3__4__g004__20260729_143543,mildiu,,ningun modelo la toca,"[0.5868, 0.5859, 0.6405, 0.66]",
+NO_VISTA,test,version2__V3__4__g004__20260729_143547,mildiu,,ningun modelo la toca,"[0.7886, 0.6201, 0.8694, 0.812]",
+NO_VISTA,test,version2__V3__4__g024__20260729_161035,mildiu,,ningun modelo la toca,"[0.116, 0.0114, 0.1792, 0.1691]",
+NO_VISTA,test,version2__V3__4__g024__20260729_161036,mildiu,,ningun modelo la toca,"[0.0391, 0.6104, 0.1831, 0.8009]",
+FALTANTE,test,version2__V3__4__g024__20260729_161039,(ninguna),sana,"6/9 modelos, conf media 0.52","[0.3441, 0.5763, 0.447, 0.9607]",3.1174799999999996
+FALTANTE,test,version2__V3__4__g024__20260729_161050,(ninguna),sana,"7/9 modelos, conf media 0.77","[0.2002, 0.5389, 0.3412, 0.9836]",5.42422
+NO_VISTA,test,version2__V3__4__g024__20260729_161101,mildiu,,ningun modelo la toca,"[0.4785, 0.4639, 0.5503, 0.5404]",
+NO_VISTA,test,version2__V3__frames_videosv2__video_20260729_150413__20260729_150413_frame_000870,mosca_blanca,,ningun modelo la toca,"[0.6389, 0.5017, 0.6583, 0.5156]",
+NO_VISTA,test,version2__V3__frames_videosv2__video_20260729_150650__20260729_150650_frame_000030,mildiu,,ningun modelo la toca,"[0.8594, 0.4254, 1.0, 0.5907]",
+NO_VISTA,test,version2__V3__frames_videosv2__video_20260729_150650__20260729_150650_frame_000180,mildiu,,ningun modelo la toca,"[0.8542, 0.7969, 0.9111, 0.8255]",
+NO_VISTA,test,version2__V3__frames_videosv2__video_20260729_150650__20260729_150650_frame_001440,mildiu,,ningun modelo la toca,"[0.9254, 0.4292, 0.9611, 0.4753]",
+NO_VISTA,test,version2__V3__frames_videosv2__video_20260729_151053__20260729_151053_frame_000060,mosca_blanca,,ningun modelo la toca,"[0.6418, 0.6596, 0.6763, 0.6856]",
+NO_VISTA,test,version2__V3__frames_videosv2__video_20260729_151514__20260729_151514_frame_000720,mildiu,,ningun modelo la toca,"[0.4167, 0.3472, 0.5056, 0.3864]",

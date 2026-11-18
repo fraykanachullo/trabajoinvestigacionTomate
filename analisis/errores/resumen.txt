@@ -1,0 +1,23 @@
+=== Candidatos a error de etiquetado ===
+subconjunto  test  train  valid
+tipo                           
+CLASE           1      0      1
+DIMINUTA       41    422    114
+ENORME          3     16      4
+FALTANTE       81      0    163
+NO_VISTA       93      0    239
+
+Por clase (etiqueta actual o propuesta por los modelos):
+clase     mildiu  mosca_blanca  oidio  polilla  sana
+tipo                                                
+CLASE          2             0      0        0     0
+DIMINUTA     123           302    118       22    12
+ENORME        22             0      1        0     0
+FALTANTE      30             1      1        0   212
+NO_VISTA     178            30    118        6     0
+
+CLASE: etiqueta -> lo que dicen los modelos
+clase_etiqueta  clase_modelos
+mildiu          sana             2
+
+Imagenes distintas con algun candidato: 564 de 1966 (FALTANTE/CLASE/NO_VISTA en 296 de 561 de valid+test)

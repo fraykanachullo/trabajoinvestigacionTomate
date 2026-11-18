@@ -1,0 +1,27 @@
+Imagenes del dataset con EXIF de luz: 1584 de 1966 (sin EXIF: cuadros de video)
+
+Bv (mediana) y lux aproximados por franja y sesion:
+                     Bv  lux_aprox  saturados
+sesion   franja                              
+20260503 manana    5.89     148.27       3.75
+         mediodia  6.47     221.62       3.63
+         tarde     4.57      59.38       1.26
+20260712 manana    4.51      56.96       0.35
+         tarde     5.50     112.75       0.44
+20260729 tarde     5.32      99.87       0.73
+
+Correlacion de Spearman entre Bv y las medidas de la imagen:
+Bv           1.00
+saturados    0.47
+brillo      -0.27
+especular    0.04
+contraste    0.59
+
+Prueba (9 modelos v5), imagenes con EXIF: 161
+            n  Bv_min  Bv_max  acierto
+tercil_Bv                             
+baja       54    1.52    4.35    0.642
+media      55    4.35    6.01    0.613
+alta       54    6.01    8.36    0.621
+acierto ~ z_Bv + C(modelo): OR por 1 DE de Bv = 0.91 (IC95 0.62-1.33), p = 0.616
+acierto ~ z_Bv + C(sesion) + C(modelo): OR por 1 DE de Bv = 1.06 (IC95 0.78-1.45), p = 0.703

@@ -1,0 +1,27 @@
+{
+  "imagenes": 1966,
+  "pares_mismo_grupo": 24369,
+  "mismo_grupo_percentiles_p10_p25_p50": [
+    22.0,
+    26.0,
+    30.0
+  ],
+  "pares_entre_subconjuntos": 856785,
+  "entre_subconjuntos_minimo": 12,
+  "entre_subconjuntos_por_umbral": {
+    "0": 0,
+    "2": 0,
+    "4": 0,
+    "6": 0,
+    "8": 0,
+    "10": 0,
+    "12": 1
+  },
+  "mismo_grupo_por_umbral_fraccion": {
+    "4": 0.007,
+    "6": 0.01,
+    "8": 0.013,
+    "10": 0.017,
+    "12": 0.024
+  }
+}

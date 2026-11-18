@@ -1,0 +1,11 @@
+modelo,mAP50,mAP50_95
+v4_yolo11n_s1,32.1,14.2
+v5_yolo11n_s0,46.5,21.2
+v5_yolo11n_s1,47.0,24.3
+v5_yolo11n_s2,31.6,17.2
+v5_yolov10n_s0,48.8,24.3
+v5_yolov10n_s1,44.8,22.8
+v5_yolov10n_s2,55.3,22.7
+v5_yolov8n_s0,51.9,27.8
+v5_yolov8n_s1,47.2,24.2
+v5_yolov8n_s2,41.3,19.1

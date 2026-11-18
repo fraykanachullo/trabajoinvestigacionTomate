@@ -1,0 +1,44 @@
+=== mAP@0.5 (4 clases) por experimento y modelo: media ± DE entre semillas ===
+                      corridas valid_mAP50  test_mAP50 prueba_fija_mAP50 nuevas_mAP50 test_falso_sano
+experimento modelo                                                                                   
+base        yolo11n          3  33.1 ± 0.7  26.4 ± 1.0        20.1 ± 3.1   36.4 ± 2.6      46.5 ± 9.0
+            yolov10n         3  30.1 ± 0.5  23.4 ± 3.9        19.7 ± 3.8   31.3 ± 3.0     48.1 ± 10.2
+            yolov8n          3  35.6 ± 0.8  29.8 ± 3.2        20.8 ± 2.5   45.2 ± 5.6      38.5 ± 5.5
+clahe       yolo11n          3  34.0 ± 1.0  25.6 ± 3.0        18.8 ± 3.1   35.5 ± 4.2     33.1 ± 12.6
+            yolov10n         3  28.2 ± 0.9  25.3 ± 3.7        19.5 ± 5.0   36.1 ± 2.4      50.3 ± 7.4
+            yolov8n          3  31.6 ± 2.0  22.9 ± 5.2        15.5 ± 0.5  35.4 ± 13.2      52.6 ± 8.5
+fotometrico yolo11n          3  30.0 ± 1.2  25.4 ± 4.3        18.5 ± 2.2   36.6 ± 9.2     53.5 ± 22.8
+            yolov10n         3  25.4 ± 1.7  23.2 ± 0.2        18.8 ± 2.6   33.6 ± 2.2      61.7 ± 6.3
+            yolov8n          3  33.1 ± 3.6  26.7 ± 6.2        16.2 ± 2.4  43.6 ± 11.5     43.5 ± 17.9
+
+--- AP@0.5 por clase en prueba ---
+             corridas test_AP50_mildiu test_AP50_mosca_blanca test_AP50_oidio test_AP50_polilla
+experimento                                                                                    
+base                9       20.6 ± 1.9             31.5 ± 8.6       6.4 ± 2.4        47.7 ± 7.1
+clahe               9       19.4 ± 2.5             26.4 ± 8.7       6.7 ± 2.5        46.0 ± 8.7
+fotometrico         9       20.1 ± 2.4             33.5 ± 6.5       5.0 ± 1.8       42.0 ± 12.2
+
+--- Prueba de estres (media de modelos y semillas): mAP@0.5, falso sano y AP de mosca blanca ---
+                  corridas       mAP50   falso_sano AP50_mosca_blanca
+experimento ev                                                       
+base        -1.0         9  25.6 ± 4.3   47.3 ± 6.4       27.4 ± 10.4
+             0.0         9  26.3 ± 3.6   44.1 ± 8.8        30.6 ± 9.5
+             0.5         9  23.0 ± 3.1   48.6 ± 7.9        22.2 ± 6.4
+             1.0         9  17.9 ± 3.1   51.3 ± 8.4         9.8 ± 4.3
+             1.5         9  11.4 ± 2.3   59.2 ± 7.3         2.9 ± 1.9
+             2.0         9   7.5 ± 1.3   64.9 ± 7.9         0.5 ± 0.5
+clahe       -1.0         9  25.2 ± 3.8  46.7 ± 14.1        26.1 ± 9.0
+             0.0         9  24.6 ± 3.7  45.4 ± 12.5        26.4 ± 8.7
+             0.5         9  22.2 ± 4.2  49.0 ± 12.4        22.1 ± 9.8
+             1.0         9  17.2 ± 3.7  54.3 ± 14.3        11.2 ± 7.3
+             1.5         9  12.6 ± 3.4  61.1 ± 13.7         3.2 ± 2.4
+             2.0         9   7.8 ± 2.6  67.3 ± 11.4         0.6 ± 0.4
+fotometrico -1.0         9  24.8 ± 4.2  54.0 ± 17.2        32.3 ± 5.8
+             0.0         9  24.8 ± 4.1  53.1 ± 17.6        33.1 ± 6.6
+             0.5         9  22.8 ± 4.7  55.6 ± 17.1        26.9 ± 7.7
+             1.0         9  19.1 ± 5.0  59.0 ± 17.4        14.5 ± 9.3
+             1.5         9  13.4 ± 3.0  61.1 ± 16.7         3.0 ± 2.3
+             2.0         9  10.3 ± 2.3  64.9 ± 15.5         0.6 ± 0.7
+Mejor por validacion en base: yolov8n s1 (valid mAP50-95 0.1519, prueba mAP50 0.3239) -> mejor_base_yolov8n_s1.pt
+Mejor por validacion en clahe: yolov8n s0 (valid mAP50-95 0.1529, prueba mAP50 0.2878) -> mejor_clahe_yolov8n_s0.pt
+Mejor por validacion en fotometrico: yolov8n s2 (valid mAP50-95 0.1504, prueba mAP50 0.2671) -> mejor_fotometrico_yolov8n_s2.pt
