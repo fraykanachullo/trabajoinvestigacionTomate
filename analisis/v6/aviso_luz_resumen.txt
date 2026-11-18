@@ -1,0 +1,27 @@
+== Por nivel (imagenes con plaga n=147 por nivel) ==
+      aviso  acierto  falso_sano  sobre240_med  media_med
+ev                                                       
+-1.0    0.0     42.9        44.9           0.0       90.4
+ 0.0    0.0     47.6        38.1           1.5      125.4
+ 0.5    8.2     40.8        44.9           6.1      146.0
+ 1.0   61.2     35.4        48.3          17.0      167.1
+ 1.5   98.0     29.3        53.1          31.1      188.0
+ 2.0   98.6     26.5        51.7          44.1      203.3
+
+== Fallas inducidas por la luz (imagenes que aciertan en EV 0; pares imagen-nivel EV>0: 280, fallas 110) ==
+Aviso actual (media>200 o >15%>240): sensibilidad 0.79, especificidad 0.44, VPP 0.48; tasa de falla con aviso 0.48 vs sin aviso 0.24
+Fotos reales (EV 0, 180): aviso en 0.0% ; pct>240 mediana 1.31, p90 3.72, max 8.27
+
+== Barrido: aviso si % pixeles lum>240 > umbral ==
+umbral  sens  esp  VPP  aviso_EV0(%)
+     1  0.97  0.01  0.39  57.8
+     2  0.96  0.02  0.39  37.2
+     3  0.95  0.05  0.39  18.9
+     5  0.92  0.15  0.41  3.3
+   7.5  0.88  0.20  0.42  0.6
+    10  0.87  0.26  0.43  0.0
+    15  0.79  0.44  0.48  0.0
+    20  0.73  0.52  0.49  0.0
+    25  0.65  0.62  0.53  0.0
+    30  0.55  0.69  0.53  0.0
+Mejor Youden: umbral 25% (J=0.28)

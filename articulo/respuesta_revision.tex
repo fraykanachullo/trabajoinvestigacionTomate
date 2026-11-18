@@ -12,23 +12,20 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 \section*{Resumen}
 \begin{itemize}
 \item \textbf{Atendidas por completo (14):} observaciones 3, 5, 6, 7, 9, 11, 12, 13, 14, 16 y 17; apreciaciones 1, 3 y 4.
-\item \textbf{Atendidas en parte:}
-  \begin{itemize}
-  \item Obs. 1: falta la validación pareada en campo.
-  \item Obs. 2: el experimento de control está listo, sin ejecutar.
-  \item Obs. 8: falta el modelo v6 en el teléfono.
-  \item Obs. 10: falta la validación experta.
-  \item Obs. 15 y apreciación 2.
-  \end{itemize}
+\item \textbf{Atendidas en parte, obs. 1:} falta la validación pareada en campo.
+\item \textbf{Atendidas en parte, obs. 2:} el experimento de control está listo, sin ejecutar.
+\item \textbf{Atendidas en parte, obs. 8:} el modelo v6 ya está en el servidor y en la app; falta medirlo en el teléfono.
+\item \textbf{Atendidas en parte, obs. 10:} falta la validación experta.
+\item \textbf{Atendidas en parte, obs. 15 y apreciación 2.}
 \item \textbf{Pendiente por decisión del revisor:} obs. 4, traducción al final.
 \end{itemize}
 
 \section*{Respuesta punto por punto}
 \subsection*{Observación 1: Radiación solar no estudiada}
 \noindent\textbf{Posición:} \textbf{A} (ruta a; campo P)\\
-\textbf{Respuesta:} La radiación pasó a ser el aporte central: título, objetivo, P3 y P4. \textbf{(i) Medida:} al mediodía la saturación se cuadruplica (3.6 \% frente a 0.8–1.0 \%); el Bv del EXIF lo confirma. \textbf{(ii) Efecto causal:} prueba de estrés con la misma foto sobreexpuesta; +1 EV quita 32 \% del mAP y dos tercios del AP de mosca blanca, y la subexposición no afecta. \textbf{(iii) Mitigación:} 27 corridas. El fotométrico eleva la retención a +2 EV (42 \% frente a 29 \%, 9/9 corridas, p = 0.004) a costa de $-$2.4 puntos con luz normal; CLAHE no ayuda. Ninguna estrategia rescata la mosca blanca por encima de +1.5 EV, así que la mitigación debe incluir la captura. \textbf{Pendiente:} prueba pareada de campo (mismas hojas en 3 franjas, luxómetro, sombra al mediodía, NASA POWER), con el protocolo listo.\\
+\textbf{Respuesta:} La radiación pasó a ser el aporte central: título, objetivo, P3 y P4. \textbf{(i) Medida:} al mediodía la saturación se cuadruplica (3.6 \% frente a 0.8–1.0 \%); el Bv del EXIF lo confirma. \textbf{(ii) Efecto causal:} prueba de estrés con la misma foto sobreexpuesta; +1 EV quita 32 \% del mAP y dos tercios del AP de mosca blanca, y la subexposición no afecta. \textbf{(iii) Mitigación:} 27 corridas. El fotométrico eleva la retención a +2 EV (42 \% frente a 29 \%, 9/9 corridas, p = 0.004) a costa de $-$2.4 puntos con luz normal; CLAHE no ayuda. Ninguna estrategia rescata la mosca blanca por encima de +1.5 EV, así que la mitigación debe incluir la captura. \textbf{(iv) Aviso de la app validado:} no salta en ninguna foto real, salta en el 61 \% a +1 EV y el 98 \% desde +1.5 EV, detecta el 79 \% de las fallas inducidas por la luz y, con aviso, el modelo falla el doble (48 \% frente a 24 \%); se mantienen los umbrales y el mensaje ahora dice «Mucha luz: dé sombra». \textbf{Pendiente:} prueba pareada de campo (mismas hojas en 3 franjas, luxómetro, sombra al mediodía, NASA POWER), con el protocolo listo.\\
 \textbf{Ubicación en el manuscrito:} Título, resumen, P3–P4, Sec. 3.5, 4.3, 4.4, Tabla 6, Fig. 5, Discusión\\
-\textbf{Evidencia:} \texttt{a3\_exposicion.py}, \texttt{a7\_exif\_luz.py}, \texttt{a8\_estres\_exposicion.py}, \texttt{a9\_analisis\_v6.py}, \texttt{estres\_v6.csv}, \texttt{13\_plan\_radiacion.md}, \texttt{15\_resultados\_v6.md}
+\textbf{Evidencia:} \texttt{a3\_exposicion.py}, \texttt{a7\_exif\_luz.py}, \texttt{a8\_estres\_exposicion.py}, \texttt{a9\_analisis\_v6.py}, \texttt{a11\_aviso\_luz.py}, \texttt{estres\_v6.csv}, \texttt{aviso\_luz\_resumen.txt}, \texttt{13\_plan\_radiacion.md}, \texttt{15\_resultados\_v6.md}
 
 \subsection*{Observación 2: La caída v1$\rightarrow$v4 no aísla la fuga}
 \noindent\textbf{Posición:} \textbf{A} (experimento P)\\
@@ -38,7 +35,7 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 
 \subsection*{Observación 3: Comparación v4–v5 confundida}
 \noindent\textbf{Posición:} \textbf{A}\\
-\textbf{Respuesta:} (i) Confirmado: los valores v4 del "test fijo" eran los de 102 imágenes con etiquetas v4. Se reevaluó todo con las mismas 97 imágenes y las etiquetas v5. (ii) Se declara la versión de etiquetas. (iii) Se reconocen los cambios de hiperparámetros. (iv) La conclusión cambió: la v5 no mejora en mayo y sí en julio (generalización temporal). La v6 confirma el patrón (prueba fija 20.2 \%, nuevas 37.6 \%). El control "solo mayo frente a mixto del mismo tamaño", que separa sesiones de cantidad, está en \texttt{entrenar\_control.py} sin ejecutar.\\
+\textbf{Respuesta:} (i) Confirmado: los valores v4 del «test fijo» eran los de 102 imágenes con etiquetas v4. Se reevaluó todo con las mismas 97 imágenes y las etiquetas v5. (ii) Se declara la versión de etiquetas. (iii) Se reconocen los cambios de hiperparámetros. (iv) La conclusión cambió: la v5 no mejora en mayo y sí en julio (generalización temporal). La v6 confirma el patrón (prueba fija 20.2 \%, nuevas 37.6 \%). El control «solo mayo frente a mixto del mismo tamaño», que separa sesiones de cantidad, está en \texttt{entrenar\_control.py} sin ejecutar.\\
 \textbf{Ubicación en el manuscrito:} Tabla 5, Fig. 2, Sec. 4.2, 4.4, Discusión\\
 \textbf{Evidencia:} \texttt{metricas/map\_ultralytics.csv}, \texttt{v4\_vs\_v5\_pareado.csv}, \texttt{comparacion\_v6.csv}
 
@@ -50,7 +47,7 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 
 \subsection*{Observación 5: Grupo por tiempo, no por planta}
 \noindent\textbf{Posición:} \textbf{A}\\
-\textbf{Respuesta:} Se usa "grupo de captura" en lugar de "planta". Auditoría independiente del tiempo con pHash sobre los 856 785 pares entre subconjuntos: 0 pares casi idénticos (mínimo 12; referencia intra-ráfaga 30). Se declara que no descarta la misma planta en dos ráfagas. "Imágenes nuevas" (julio) funciona como prueba temporal parcial. La prueba de campo nueva se dividirá por planta marcada.\\
+\textbf{Respuesta:} Se usa «grupo de captura» en lugar de «planta». Auditoría independiente del tiempo con pHash sobre los 856 785 pares entre subconjuntos: 0 pares casi idénticos (mínimo 12; referencia intra-ráfaga 30). Se declara que no descarta la misma planta en dos ráfagas. «Imágenes nuevas» (julio) funciona como prueba temporal parcial. La prueba de campo nueva se dividirá por planta marcada.\\
 \textbf{Ubicación en el manuscrito:} Sec. 3.3, 4.1, 5.1\\
 \textbf{Evidencia:} \texttt{duplicados/resumen.json}, \texttt{a4\_duplicados.py}, \texttt{13\_plan\_radiacion.md}
 
@@ -62,13 +59,13 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 
 \subsection*{Observación 7: Acierto de clase principal mal definido}
 \noindent\textbf{Posición:} \textbf{A}\\
-\textbf{Respuesta:} Métricas por imagen: sensibilidad por plaga y tasa de falso sano (22 \% v4; 28 \% v5 instalado; 44 \% v6 base, 33–60 \% entre corridas). Líneas base "siempre mildiu" (60.8 \% en la prueba fija, igual que los modelos) y "siempre sana". El falso sano se mide también en la prueba de estrés: sube de 44 \% a 65 \% con +2 EV. La discusión propone que la app muestre la confianza y pida revisar cuando no detecta nada. Falta calibración y regla de abstención.\\
+\textbf{Respuesta:} Métricas por imagen: sensibilidad por plaga y tasa de falso sano (22 \% v4; 28 \% v5 instalado; 44 \% v6 base, 33–60 \% entre corridas). Líneas base «siempre mildiu» (60.8 \% en la prueba fija, igual que los modelos) y «siempre sana». El falso sano se mide también en la prueba de estrés: sube de 44 \% a 65 \% con +2 EV. La discusión propone que la app muestre la confianza y pida revisar cuando no detecta nada. Falta calibración y regla de abstención.\\
 \textbf{Ubicación en el manuscrito:} Sec. 3.5, 4.3, 4.5, Tablas 6–7, Discusión\\
 \textbf{Evidencia:} \texttt{metricas\_por\_imagen.csv}, \texttt{lineas\_base.csv}, \texttt{estres\_v6.csv}
 
 \subsection*{Observación 8: Teléfono con modelos v1/v4; discordancia}
 \noindent\textbf{Posición:} \textbf{AP}\\
-\textbf{Respuesta:} v5 convertido (6.1 MB; coincide con ONNX en 96/96, $\Delta$ $\leq$ 0.014) e instalado. La discordancia se explica por la interpolación del redimensionado (OpenCV frente a Dart). Se reporta el delegado (CPU, 4 hilos). Las capturas se declaran tomadas sobre un monitor. \textbf{Pendiente:} adaptar la app a 4 clases e instalar el YOLOv8n v6, medir latencia y coincidencia con él, igualar la interpolación y probar en campo.\\
+\textbf{Respuesta:} v5 convertido (6.1 MB; coincide con ONNX en 96/96, $\Delta$ $\leq$ 0.014) e instalado. La discordancia se explica por la interpolación del redimensionado (OpenCV frente a Dart). Se reporta el delegado (CPU, 4 hilos). Las capturas se declaran tomadas sobre un monitor. \textbf{v6 desplegado:} backend y app adaptados a 4 clases con el YOLOv8n v6 (servidor \texttt{best.pt}; TFLite float16 de 6.1 MB, coincide con ONNX en 96/96, $\Delta$ = 0.004; pruebas del backend 14/14 y app sin errores de análisis). \textbf{Pendiente:} instalarlo en el celular y medir latencia y coincidencia con el servidor, igualar la interpolación y probar en campo.\\
 \textbf{Ubicación en el manuscrito:} Sec. 3.6, 4.5, Tabla 3, Fig. 6, 5.1 (vii)\\
 \textbf{Evidencia:} \texttt{comparar\_onnx\_tflite.py}
 
@@ -92,7 +89,7 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 
 \subsection*{Observación 12: Formato de informe de avance}
 \noindent\textbf{Posición:} \textbf{A}\\
-\textbf{Respuesta:} Objetivo y preguntas P1–P5; resultados organizados por pregunta; sin "PPI", fases ni versión del servidor; párrafo de limitaciones.\\
+\textbf{Respuesta:} Objetivo y preguntas P1–P5; resultados organizados por pregunta; sin «PPI», fases ni versión del servidor; párrafo de limitaciones.\\
 \textbf{Ubicación en el manuscrito:} Introducción, Sec. 4, 5.1\\
 \textbf{Evidencia:} —
 
@@ -104,7 +101,7 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 
 \subsection*{Observación 14: Cifras sin trazabilidad}
 \noindent\textbf{Posición:} \textbf{A}\\
-\textbf{Respuesta:} "Hasta 6 puntos" se reemplazó por IC y rangos. "96 de 96" se explica como la comparación ONNX–TFLite con la misma entrada. Se retiró "más GPU no ayudan". Cada cifra de la v6 sale de \texttt{comparacion\_v6.csv} / \texttt{estres\_v6.csv}.\\
+\textbf{Respuesta:} «Hasta 6 puntos» se reemplazó por IC y rangos. «96 de 96» se explica como la comparación ONNX–TFLite con la misma entrada. Se retiró «más GPU no ayudan». Cada cifra de la v6 sale de \texttt{comparacion\_v6.csv} / \texttt{estres\_v6.csv}.\\
 \textbf{Ubicación en el manuscrito:} Sec. 4.2, 4.4, 4.5\\
 \textbf{Evidencia:} CSV citados
 
@@ -155,7 +152,7 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 \item Prueba pareada de campo de la radiación (obs. 1), según el protocolo de \texttt{13\_plan\_radiacion.md}.
 \item Ejecutar \texttt{entrenar\_control.py} en la RTX, \textasciitilde{}2.5 h (obs. 2 y 3).
 \item Validación de clases por un especialista y kappa entre anotadores (obs. 10).
-\item App y backend a 4 clases con el YOLOv8n v6; medir en el teléfono y en campo (obs. 8).
+\item Instalar la app con el YOLOv8n v6 en el teléfono y medir latencia y coincidencia; prueba en campo (obs. 8).
 \item Leer y citar Kamei 2023, Gookyi 2024 y HFA-Net (obs. 9).
 \item Traducir al inglés (obs. 4).
 \end{enumerate}

@@ -51,7 +51,7 @@ El experimento de control de fuga (`entrenamiento/entrenar_control.py`) está li
 |---|---|
 | `entrenamiento/` | `entrenar_yolo.py` (v5), `entrenar_yolo_v6.py` (v6: 4 clases, fotométrico, CLAHE, prueba de estrés), `entrenar_control.py` (fuga y sesiones, pendiente), versiones para supercomputadora y Colab. |
 | `dataset/` | División por grupo de captura (`agrupar_split.py`), corrección de fuga video-fotos (`movimientos_split_v5.csv`), test fijo (`test_fijo_v4.txt`) y extracción de cuadros. |
-| `analisis/` | Scripts de la revisión (a1–a10): IC por bootstrap, métricas por imagen y falso sano, exposición, EXIF, duplicados pHash, auditoría de etiquetas, prueba de estrés y análisis v6, con sus salidas (CSV y figuras) y las listas de cada subconjunto de prueba. Usan rutas locales que hay que ajustar. |
+| `analisis/` | Scripts de la revisión (a1–a10): IC por bootstrap, métricas por imagen y falso sano, exposición, EXIF, duplicados pHash, auditoría de etiquetas, prueba de estrés y análisis v6, con sus salidas (CSV y figuras) y las listas de cada subconjunto de prueba. Incluye la validación del aviso de luz de la app (a11). Usan rutas locales que hay que ajustar. |
 | `conversion/` | Verificación ONNX vs TFLite y comparación servidor vs celular. |
 | `documentacion/` | Bitácora, reglas de etiquetado, guías y resultados de cada etapa (01–15), corrección de etiquetas y plan de radiación. |
 | `resultados/` | Métricas y mejor modelo de la v4, la v5 y la v6 (en la v6, el mejor de cada experimento y el `results.csv` de las 27 corridas). |

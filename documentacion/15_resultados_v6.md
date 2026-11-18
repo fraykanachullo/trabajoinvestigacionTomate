@@ -98,6 +98,44 @@ Las mismas 180 fotos de prueba se sobreexpusieron artificialmente, de −1 a +2 
   - Hoy la mediana real al mediodía (3.6 % de píxeles saturados) cae entre 0 y +0.5 EV, donde el base es mejor.
 - **Pendiente:** adaptar backend y app a 4 clases (hoy esperan 5) y convertir a TFLite antes de instalar.
 
+## 3b. Despliegue del modelo v6 (17/11/2026)
+
+- **Servidor:** `best.pt` = YOLOv8n base semilla 1, versión 4.0.0.
+  - `class_names.py` tiene 4 clases. Respaldo de la v5 en `modelos_anteriores/v5_yolov8n_s2/`.
+  - Pruebas unitarias 14/14.
+- **App:** TFLite float16 de 6.1 MB, convertido en `herramientas/conversion/v6`: ONNX opset 17 → onnx2tf.
+  - Coincide con ONNX en 96/96 imágenes (Δ máx. de confianza 0.004).
+  - `metadata.json` y `labels.txt` tienen 4 clases; `flutter analyze` sin errores.
+  - "sana" queda solo como marcador de "sin detecciones".
+- **Pendiente:** instalar en el celular y correr `integration_test/benchmark_test.dart` para medir latencia y coincidencia con el servidor.
+
+## 3c. Validación del aviso "Mucha luz" de la app
+
+- Script: `analisis_revision/a11_aviso_luz.py`. Resumen: `v6/aviso_luz_resumen.txt`.
+- **Regla de la app:** luminancia muestreada cada 6 px; media > 200 o > 15 % de píxeles > 240.
+- **Cómo se probó:** con la prueba de estrés y el modelo v6 instalado (reglas de la app).
+
+| EV | Aviso (%) | Acierto con plaga (%) | Falso sano (%) | Píxeles > 240 (mediana) |
+|---|---|---|---|---|
+| −1 | 0 | 42.9 | 44.9 | 0.0 |
+| 0 | **0** | 47.6 | 38.1 | 1.5 |
+| +0.5 | 8 | 40.8 | 44.9 | 6.1 |
+| +1 | 61 | 35.4 | 48.3 | 17.0 |
+| +1.5 | 98 | 29.3 | 53.1 | 31.1 |
+| +2 | 99 | 26.5 | 51.7 | 44.1 |
+
+- **Fallas inducidas por la luz:** acierta con la exposición original y falla sobreexpuesta. Fueron 110 de 280 pares.
+- **El aviso detecta el 79 % de esas fallas,** con especificidad de 44 %.
+  - Con aviso, la tasa de falla es 48 %; sin aviso, 24 %.
+- **Falsas alarmas:** 0 en las 180 fotos reales.
+- **Barrido de umbrales:**
+  - Con 5 %, detecta el 92 % de las fallas, pero avisa en el 3 % de las fotos normales.
+  - Con 25 %, Youden 0.28 frente a 0.23: mejora poco.
+- **Decisión:**
+  - Se mantienen los umbrales.
+  - El mensaje cambia a **"Mucha luz: dé sombra"**.
+  - La prueba de campo pareada sol/sombra debe confirmar si la sombra recupera el acierto.
+
 ## 4. Limitaciones
 
 - Solo 3 semillas: las DE entre semillas (3–17 puntos) son del mismo orden que las diferencias.
