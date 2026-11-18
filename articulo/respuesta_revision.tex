@@ -14,7 +14,7 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 \item \textbf{Atendidas por completo (15):} observaciones 3, 5, 6, 7, 8, 9, 11, 12, 13, 14, 16 y 17; apreciaciones 1, 3 y 4. En la obs. 8 queda pendiente solo la prueba en campo.
 \item \textbf{Atendidas en parte, obs. 1:} falta la validación pareada en campo.
 \item \textbf{Atendidas en parte, obs. 2:} el experimento de control está listo, sin ejecutar.
-\item \textbf{Atendidas en parte, obs. 10:} falta la validación experta.
+\item \textbf{Atendidas en parte, obs. 10:} experiencia declarada y auditoría hechas; el acuerdo entre anotadores y la validación externa están en curso con el protocolo listo.
 \item \textbf{Atendidas en parte, obs. 15 y apreciación 2.}
 \item \textbf{Pendiente por decisión del revisor:} obs. 4, traducción al final.
 \end{itemize}
@@ -75,10 +75,10 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 \textbf{Evidencia:} —
 
 \subsection*{Observación 10: Etiquetas sin validez experta}
-\noindent\textbf{Posición:} \textbf{AP}\\
-\textbf{Respuesta:} Se declaran los anotadores, las reglas (incluido 16 px), la especie de oídio no confirmada y la polilla como insecto + mina. Auditoría con 9 modelos: 4 problemas. \textbf{Corrección (v6):} revisión manual de las 319 imágenes señaladas; mildiu 2698 $\rightarrow$ 2933 cajas (158 imágenes) y la hoja sana eliminada. Resultado honesto: el mAP global no cambió, porque el techo lo ponen el oídio (casi sin etiquetar en julio) y la mosca blanca diminuta. \textbf{Pendiente:} validación por especialista y kappa entre anotadores.\\
-\textbf{Ubicación en el manuscrito:} Sec. 3.2, 4.6, Tabla 2, Fig. 7, Discusión, 5.1 (i)\\
-\textbf{Evidencia:} \texttt{errores/candidatos.csv}, \texttt{12\_correccion\_etiquetas.md}, Roboflow versión 3
+\noindent\textbf{Posición:} \textbf{AP} (resultados P)\\
+\textbf{Respuesta:} \textbf{(i) Experiencia declarada:} el anotador principal tiene 7 años en el cultivo de tomate en El Pedregal (Majes, Arequipa), en un fundo con asistencia técnica de ingenieros de campo. Se declara como experiencia de campo, no como sustituto de una validación independiente. \textbf{(ii) Reglas y alcance:} reglas escritas completas (incluido 16 px); especie de oídio no confirmada; polilla como insecto + mina; identificación por síntomas visibles. \textbf{(iii) Auditoría y corrección:} 9 modelos como revisores encontraron 4 problemas. En la v6 se revisaron a mano 319 imágenes (mildiu 2698 $\rightarrow$ 2933 cajas) y se eliminó la hoja sana. Solo 2 cajas tenían la clase equivocada: el problema es de criterio, no de identificación. \textbf{(iv) Acuerdo entre anotadores (protocolo ciego, en curso):} muestra estratificada de 100 imágenes (3 sesiones, un grupo por imagen, 258 cajas), etiquetada por separado por los dos anotadores. Se reporta el kappa de Cohen por clase y el F1 por caja (IoU $\geq$ 0.5 y $\geq$ 0.3). El script está validado. \textbf{(v) Validación externa (en curso):} hoja de 50 fotos para un ingeniero agrónomo; kappa con las etiquetas v6. \textbf{Pendiente:} completar (iv) y (v) e incorporar las cifras.\\
+\textbf{Ubicación en el manuscrito:} Sec. 3.2, 3.5 (acuerdo), 4.6, Tabla 2, Fig. 7, 5.1 (i)\\
+\textbf{Evidencia:} \texttt{errores/candidatos.csv}, \texttt{12\_correccion\_etiquetas.md}, \texttt{a12\_muestra\_acuerdo.py}, \texttt{a13\_acuerdo\_anotadores.py}, \texttt{a14\_hoja\_ingeniero.py}, \texttt{acuerdo\_anotadores/}
 
 \subsection*{Observación 11: Datos y código no publicados}
 \noindent\textbf{Posición:} \textbf{A}\\
@@ -150,7 +150,7 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 \begin{enumerate}
 \item Prueba pareada de campo de la radiación (obs. 1), según el protocolo de \texttt{13\_plan\_radiacion.md}.
 \item Ejecutar \texttt{entrenar\_control.py} en la RTX, \textasciitilde{}2.5 h (obs. 2 y 3).
-\item Validación de clases por un especialista y kappa entre anotadores (obs. 10).
+\item Etiquetado ciego de las 100 imágenes por Fray y Hiram, y hoja de 50 fotos para un ingeniero agrónomo (obs. 10).
 \item Igualar la interpolación servidor–teléfono y probar la app en campo (obs. 8).
 \item Leer y citar Kamei 2023, Gookyi 2024 y HFA-Net (obs. 9).
 \item Traducir al inglés (obs. 4).
