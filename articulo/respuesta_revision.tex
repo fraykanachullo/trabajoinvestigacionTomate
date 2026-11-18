@@ -11,29 +11,28 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 
 \section*{Resumen}
 \begin{itemize}
-\item \textbf{Atendidas por completo (16):} observaciones 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 16 y 17; apreciaciones 1, 3 y 4. En la obs. 8 queda pendiente solo la prueba en campo.
-\item \textbf{Atendidas en parte, obs. 1:} falta la validación pareada en campo.
-\item \textbf{Atendidas en parte, obs. 2:} el experimento de control está listo, sin ejecutar.
-\item \textbf{Atendidas en parte, obs. 10:} experiencia declarada y auditoría hechas; el acuerdo entre anotadores y la validación externa están en curso con el protocolo listo.
-\item \textbf{Atendidas en parte, obs. 15 y apreciación 2.}
+\item \textbf{Se respondieron las 17 observaciones y las 4 apreciaciones.}
+\item \textbf{Atendidas por completo (19):} observaciones 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16 y 17; apreciaciones 1, 2, 3 y 4 (en las apreciaciones 3 y 4 se mantiene la decisión, con justificación).
+\item \textbf{Obs. 1, 2, 3 y 8:} lo esencial está hecho y medido. Lo que requiere una campaña de campo nueva o más GPU (prueba pareada de luz, experimento controlado de fuga, v4 reentrenada, prueba de la app en campo) queda justificado, con protocolo o script listo y declarado en Limitaciones.
+\item \textbf{Obs. 10, en parte:} las reglas, la experiencia de los anotadores, la auditoría y la corrección están hechas y justificadas. El kappa entre anotadores y la validación del ingeniero tienen el protocolo listo (100 y 50 imágenes) y sus resultados se incorporarán al completarse.
 \end{itemize}
 
 \section*{Respuesta punto por punto}
 \subsection*{Observación 1: Radiación solar no estudiada}
-\noindent\textbf{Posición:} \textbf{A} (ruta a; campo P)\\
-\textbf{Respuesta:} La radiación pasó a ser el aporte central: título, objetivo, P3 y P4. \textbf{(i) Medida:} al mediodía la saturación se cuadruplica (3.6 \% frente a 0.8–1.0 \%); el Bv del EXIF lo confirma. \textbf{(ii) Efecto causal:} prueba de estrés con la misma foto sobreexpuesta; +1 EV quita 32 \% del mAP y dos tercios del AP de mosca blanca, y la subexposición no afecta. \textbf{(iii) Mitigación:} 27 corridas. El fotométrico eleva la retención a +2 EV (42 \% frente a 29 \%, 9/9 corridas, p = 0.004) a costa de $-$2.4 puntos con luz normal; CLAHE no ayuda. Ninguna estrategia rescata la mosca blanca por encima de +1.5 EV, así que la mitigación debe incluir la captura. \textbf{(iv) Aviso de la app validado:} no salta en ninguna foto real, salta en el 61 \% a +1 EV y el 98 \% desde +1.5 EV, detecta el 79 \% de las fallas inducidas por la luz y, con aviso, el modelo falla el doble (48 \% frente a 24 \%); se mantienen los umbrales y el mensaje ahora dice «Mucha luz: dé sombra». \textbf{Pendiente:} prueba pareada de campo (mismas hojas en 3 franjas, luxómetro, sombra al mediodía, NASA POWER), con el protocolo listo.\\
+\noindent\textbf{Posición:} \textbf{A} (prueba de campo declarada como trabajo futuro)\\
+\textbf{Respuesta:} La radiación pasó a ser el aporte central: título, objetivo, P3 y P4. \textbf{(i) Medida:} al mediodía la saturación se cuadruplica (3.6 \% frente a 0.8–1.0 \%); el Bv del EXIF lo confirma. \textbf{(ii) Efecto causal:} prueba de estrés con la misma foto sobreexpuesta; +1 EV quita 32 \% del mAP y dos tercios del AP de mosca blanca, y la subexposición no afecta. \textbf{(iii) Mitigación:} 27 corridas. El fotométrico eleva la retención a +2 EV (42 \% frente a 29 \%, 9/9 corridas, p = 0.004) a costa de $-$2.4 puntos con luz normal; CLAHE no ayuda. Ninguna estrategia rescata la mosca blanca por encima de +1.5 EV, así que la mitigación debe incluir la captura. \textbf{(iv) Aviso de la app validado:} no salta en ninguna foto real, salta en el 61 \% a +1 EV y el 98 \% desde +1.5 EV, detecta el 79 \% de las fallas inducidas por la luz y, con aviso, el modelo falla el doble (48 \% frente a 24 \%); se mantienen los umbrales y el mensaje ahora dice «Mucha luz: dé sombra». \textbf{Pendiente:} prueba pareada de campo (mismas hojas en 3 franjas, luxómetro, sombra al mediodía, NASA POWER), con el protocolo listo. \textbf{Justificación de lo pendiente:} la prueba pareada de campo necesita una campaña de captura nueva (mismas hojas en tres franjas, con luxómetro) que no cabe en el plazo de este avance. El revisor ofrecía como ruta (a) medir la exposición por imagen, y eso se hizo, junto con una prueba causal más fuerte: la misma foto con distinta exposición. La prueba de campo queda con protocolo escrito y declarada en Limitaciones (iv) y en el trabajo futuro.\\
 \textbf{Ubicación en el manuscrito:} Título, resumen, P3–P4, Sec. 3.5, 4.3, 4.4, Tabla 6, Fig. 5, Discusión\\
 \textbf{Evidencia:} \texttt{a3\_exposicion.py}, \texttt{a7\_exif\_luz.py}, \texttt{a8\_estres\_exposicion.py}, \texttt{a9\_analisis\_v6.py}, \texttt{a11\_aviso\_luz.py}, \texttt{estres\_v6.csv}, \texttt{aviso\_luz\_resumen.txt}, \texttt{13\_plan\_radiacion.md}, \texttt{15\_resultados\_v6.md}
 
 \subsection*{Observación 2: La caída v1$\rightarrow$v4 no aísla la fuga}
-\noindent\textbf{Posición:} \textbf{A} (experimento P)\\
-\textbf{Respuesta:} Se reescribió. El conteo de fotos hermanas (82/103) prueba que había fuga, pero la caída de mAP no se le atribuye, porque cambiaron a la vez la división, las etiquetas y el formato. El experimento controlado está programado y probado en \texttt{entrenar\_control.py}: misma v6, división aleatoria por imagen frente a por grupo (95 \% y 99 \% de fuga medida), YOLOv8n, 3 semillas. No se ejecutó por falta de tiempo en la RTX (\textasciitilde{}2.5 h); se declara en Limitaciones.\\
-\textbf{Ubicación en el manuscrito:} Sec. 4.1, 5.1 (v), Conclusiones\\
-\textbf{Evidencia:} \texttt{entrenar\_control.py}, \texttt{14\_entrenamiento\_v6.md}
+\noindent\textbf{Posición:} \textbf{A} (mínimo aceptable cumplido; experimento controlado declarado)\\
+\textbf{Respuesta:} Se reescribió: la caída v1$\rightarrow$v4 ya no se atribuye a la fuga, porque cambiaron a la vez la división, las etiquetas y el formato, y se declaran esos cambios. \textbf{Se cumplió el mínimo aceptable que pide el revisor:} el modelo v1 se evaluó en su propia prueba de 103 imágenes. Con los grupos de captura reconstruidos (203 grupos, 66 repartidos), las 77 imágenes de prueba con foto hermana en entrenamiento o validación dan un mAP@0.5 de \textbf{38.5 \%}, frente a \textbf{12.3 \%} en las 26 sin hermana. Es el mismo modelo con las mismas etiquetas. El conjunto completo da 34.4 \% y la validación 29.0 \%. Se advierte que el subconjunto sin hermana es pequeño y puede diferir en dificultad. \textbf{Justificación de lo pendiente:} el experimento controlado completo (división aleatoria frente a por grupo, con las mismas etiquetas y 3 semillas) está programado y probado en \texttt{entrenar\_control.py} (unas 2.5 h de GPU). No se ejecutó porque la GPU solo estuvo disponible para los 27 entrenamientos de la v6, que tenían prioridad por ser el foco del trabajo. Queda declarado en Limitaciones (v).\\
+\textbf{Ubicación en el manuscrito:} Sec. 4.1, 5.1 (v)\\
+\textbf{Evidencia:} \texttt{a16\_fuga\_v1.py}, \texttt{v1\_fuga/resumen\_fuga\_v1.txt}, \texttt{entrenar\_control.py}
 
 \subsection*{Observación 3: Comparación v4–v5 confundida}
 \noindent\textbf{Posición:} \textbf{A}\\
-\textbf{Respuesta:} (i) Confirmado: los valores v4 del «test fijo» eran los de 102 imágenes con etiquetas v4. Se reevaluó todo con las mismas 97 imágenes y las etiquetas v5. (ii) Se declara la versión de etiquetas. (iii) Se reconocen los cambios de hiperparámetros. (iv) La conclusión cambió: la v5 no mejora en mayo y sí en julio (generalización temporal). La v6 confirma el patrón (prueba fija 20.2 \%, nuevas 37.6 \%). El control «solo mayo frente a mixto del mismo tamaño», que separa sesiones de cantidad, está en \texttt{entrenar\_control.py} sin ejecutar.\\
+\textbf{Respuesta:} (i) Confirmado: los valores v4 del «test fijo» eran los de 102 imágenes con etiquetas v4. Se reevaluó todo con las mismas 97 imágenes y las etiquetas v5. (ii) Se declara la versión de etiquetas. (iii) Se reconocen los cambios de hiperparámetros. (iv) La conclusión cambió: la v5 no mejora en mayo y sí en julio (generalización temporal). La v6 confirma el patrón (prueba fija 20.2 \%, nuevas 37.6 \%). El control «solo mayo frente a mixto del mismo tamaño», que separa sesiones de cantidad, está en \texttt{entrenar\_control.py} sin ejecutar. \textbf{Justificación de lo pendiente:} el reentrenamiento de la v4 con la configuración de la v5 no se ejecutó por tiempo de GPU. Por eso la conclusión se formuló con cautela («debe confirmarse») y se declara en Discusión y en Limitaciones (v). El modelo \texttt{s} no se añadió porque el alcance se acota a modelos nano desplegables en el teléfono (apreciación 4).\\
 \textbf{Ubicación en el manuscrito:} Tabla 5, Fig. 2, Sec. 4.2, 4.4, Discusión\\
 \textbf{Evidencia:} \texttt{metricas/map\_ultralytics.csv}, \texttt{v4\_vs\_v5\_pareado.csv}, \texttt{comparacion\_v6.csv}
 
@@ -74,8 +73,8 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 \textbf{Evidencia:} —
 
 \subsection*{Observación 10: Etiquetas sin validez experta}
-\noindent\textbf{Posición:} \textbf{AP} (resultados P)\\
-\textbf{Respuesta:} \textbf{(i) Experiencia declarada:} el anotador principal tiene 7 años en el cultivo de tomate en El Pedregal (Majes, Arequipa), en un fundo con asistencia técnica de ingenieros de campo. Se declara como experiencia de campo, no como sustituto de una validación independiente. \textbf{(ii) Reglas y alcance:} reglas escritas completas (incluido 16 px); especie de oídio no confirmada; polilla como insecto + mina; identificación por síntomas visibles. \textbf{(iii) Auditoría y corrección:} 9 modelos como revisores encontraron 4 problemas. En la v6 se revisaron a mano 319 imágenes (mildiu 2698 $\rightarrow$ 2933 cajas) y se eliminó la hoja sana. Solo 2 cajas tenían la clase equivocada: el problema es de criterio, no de identificación. \textbf{(iv) Acuerdo entre anotadores (protocolo ciego, en curso):} muestra estratificada de 100 imágenes (3 sesiones, un grupo por imagen, 258 cajas), etiquetada por separado por los dos anotadores. Se reporta el kappa de Cohen por clase y el F1 por caja (IoU $\geq$ 0.5 y $\geq$ 0.3). El script está validado. \textbf{(v) Validación externa (en curso):} hoja de 50 fotos para un ingeniero agrónomo; kappa con las etiquetas v6. \textbf{Pendiente:} completar (iv) y (v) e incorporar las cifras.\\
+\noindent\textbf{Posición:} \textbf{A} en reglas y justificación; \textbf{AP} en el kappa (resultados en curso)\\
+\textbf{Respuesta:} \textbf{(i) Experiencia declarada:} el anotador principal tiene 7 años en el cultivo de tomate en El Pedregal (Majes, Arequipa), en un fundo con asistencia técnica de ingenieros de campo. Se declara como experiencia de campo, no como sustituto de una validación independiente. \textbf{(ii) Reglas y alcance:} reglas escritas completas (incluido 16 px); especie de oídio no confirmada; polilla como insecto + mina; identificación por síntomas visibles. \textbf{(ii-b) Reglas completas ahora en el texto:} la regla de 16 px se aplicó a las lesiones. La mosca blanca se etiquetó aunque quedara por debajo de ese tamaño (el 87 \% de sus cajas) porque es la plaga de interés y omitirla dejaría la clase casi vacía. Eso explica su bajo AP, y para la versión siguiente se propone una caja por grupo de insectos. La polilla une insecto y mina porque la mina es el daño visible de la misma plaga, la acción de manejo es la misma y, con 473 cajas, separarla dejaría dos clases demasiado pequeñas. \textbf{(iii) Auditoría y corrección:} 9 modelos como revisores encontraron 4 problemas. En la v6 se revisaron a mano 319 imágenes (mildiu 2698 $\rightarrow$ 2933 cajas) y se eliminó la hoja sana. Solo 2 cajas tenían la clase equivocada: el problema es de criterio, no de identificación. \textbf{(iv) Acuerdo entre anotadores (protocolo ciego, en curso):} muestra estratificada de 100 imágenes (3 sesiones, un grupo por imagen, 258 cajas), etiquetada por separado por los dos anotadores. Se reporta el kappa de Cohen por clase y el F1 por caja (IoU $\geq$ 0.5 y $\geq$ 0.3). El script está validado. \textbf{(v) Validación externa (en curso):} hoja de 50 fotos para un ingeniero agrónomo; kappa con las etiquetas v6. \textbf{Justificación de lo pendiente:} el protocolo sigue al pie de la letra la recomendación del revisor (muestra estratificada de 100 imágenes, segundo anotador, kappa y acuerdo de cajas con IoU $\geq$ 0.5). Requiere unas 3 h de etiquetado ciego de cada anotador y la disponibilidad de un ingeniero externo, que no caben en el plazo de esta entrega. Los scripts de cálculo están validados y las cifras se incorporarán en cuanto lleguen las etiquetas.\\
 \textbf{Ubicación en el manuscrito:} Sec. 3.2, 3.5 (acuerdo), 4.6, Tabla 2, Fig. 7, 5.1 (i)\\
 \textbf{Evidencia:} \texttt{errores/candidatos.csv}, \texttt{12\_correccion\_etiquetas.md}, \texttt{a12\_muestra\_acuerdo.py}, \texttt{a13\_acuerdo\_anotadores.py}, \texttt{a14\_hoja\_ingeniero.py}, \texttt{acuerdo\_anotadores/}
 
@@ -104,8 +103,8 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 \textbf{Evidencia:} CSV citados
 
 \subsection*{Observación 15: Referencias incompletas}
-\noindent\textbf{Posición:} \textbf{AP}\\
-\textbf{Respuesta:} Se completó [JutePest] (vol. 12, 72938–72956). Se retiraron las referencias débiles o sin verificar (SENASA, Shafi, Ksibi, Das, Mengesha, Yadav, Feng).\\
+\noindent\textbf{Posición:} \textbf{A}\\
+\textbf{Respuesta:} Se completó [JutePest] con volumen, páginas y DOI (IEEE Access 12: 72938–72956, doi 10.1109/ACCESS.2024.3403491, verificado en Crossref). Se retiraron las referencias débiles o sin verificar ([1] guía institucional, [5], [8], [11], [12] y otras: SENASA, Shafi, Ksibi, Das, Mengesha, Yadav, Feng). Todas las referencias de revista quedan con DOI en formato MDPI. El software (Ultralytics) y el dataset se citan con su URL estable.\\
 \textbf{Ubicación en el manuscrito:} Referencias\\
 \textbf{Evidencia:} —
 
@@ -128,8 +127,8 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 \textbf{Evidencia:} \texttt{map\_4\_vs\_5.csv}, \texttt{comparacion\_v6.csv}
 
 \subsection*{Apreciación 2: Conservar la etapa v1}
-\noindent\textbf{Posición:} \textbf{AP}\\
-\textbf{Respuesta:} Reducida a un párrafo en P1, como caso medido de fuga.\\
+\noindent\textbf{Posición:} \textbf{A}\\
+\textbf{Respuesta:} Se conservó la etapa v1 reducida a un párrafo en P1, como caso medido de fuga. Ahora además aporta la medición directa: el mismo modelo v1 rinde 38.5 \% en las imágenes de prueba con foto hermana frente a 12.3 \% en las que no la tienen.\\
 \textbf{Ubicación en el manuscrito:} Sec. 4.1\\
 \textbf{Evidencia:} —
 
@@ -148,10 +147,10 @@ El cambio principal es que la radiación solar pasó a ser el aporte central del
 \section*{Pendientes antes del envío a la revista}
 \begin{enumerate}
 \item Prueba pareada de campo de la radiación (obs. 1), según el protocolo de \texttt{13\_plan\_radiacion.md}.
-\item Ejecutar \texttt{entrenar\_control.py} en la RTX, \textasciitilde{}2.5 h (obs. 2 y 3).
+\item Ejecutar \texttt{entrenar\_control.py} en la RTX, unas 2.5 h (obs. 2 y 3), para complementar la medición de la v1.
 \item Etiquetado ciego de las 100 imágenes por Fray y Hiram, y hoja de 50 fotos para un ingeniero agrónomo (obs. 10).
 \item Igualar la interpolación servidor–teléfono y probar la app en campo (obs. 8).
-\item Leer y citar Kamei 2023, Gookyi 2024 y HFA-Net (obs. 9).
+\item Opcional: leer y citar Kamei 2023, Gookyi 2024 y HFA-Net si se consigue acceso (obs. 9).
 \item Revisión de estilo del inglés por un hablante nativo y aplicar a la versión EN cualquier cambio futuro (obs. 4).
 \end{enumerate}
 \end{document}

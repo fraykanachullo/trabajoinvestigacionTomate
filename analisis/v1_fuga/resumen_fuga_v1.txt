@@ -1,0 +1,8 @@
+Grupos de captura: 203; grupos repartidos entre subconjuntos: 66
+Prueba v1: 103 imagenes; con foto hermana en entrenamiento/validacion: 77
+
+        conjunto  imagenes  mAP50  mAP50_95  mAP50_sin_sana
+        test_103       103   34.4      13.7            30.4
+test_con_hermana        77   38.5      15.2            34.7
+test_sin_hermana        26   12.3       4.7             6.7
+      validacion       205   29.0      13.2            23.8
