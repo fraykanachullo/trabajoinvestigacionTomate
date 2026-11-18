@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 
 D = Path(r"D:/ProyectoInvestigacion/redaccionarticulo/sensorpeaper/avance_final")
-viejo = (D / "main_antes_revision.tex").read_text(encoding="utf-8")
+viejo = (D / "main_revisado_ing.tex").read_text(encoding="utf-8")
 nuevo = (D / "main.tex").read_text(encoding="utf-8")
 AZ = "\\color{blue}"
 norm = lambda s: re.sub(r"\s+", " ", s).strip()
