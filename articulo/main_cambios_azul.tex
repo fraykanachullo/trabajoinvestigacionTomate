@@ -1,0 +1,460 @@
+%  Version corregida segun el reporte de revision (reporte_revision_g6_dpcaikafth.docx, 13/11/2026).
+%  Cambios principales: objetivo y preguntas; Tabla de v4 frente a v5 recalculada con las mismas
+%  imagenes y etiquetas; mAP sin la clase sana; IC por bootstrap; metricas por imagen (falso sano y
+%  lineas base); exposicion solar medida; auditoria de duplicados y de etiquetas; trabajos relacionados;
+%  entorno y limitaciones. 17/11/2026: se agregan la v6 (etiquetas corregidas, 4 clases), la prueba
+%  de estres por sobreexposicion y los experimentos de mitigacion (fotometrico y CLAHE).
+%  Version en ingles: main_en.tex (obs. 4). Pendiente: experimentos de control de fuga y prueba pareada de campo.
+%  Compilar: latexmk -pdf main.tex
+%=================================================================
+\documentclass[sensors,article,submit,pdftex,moreauthors]{Definitions/mdpi}
+
+\firstpage{1}
+\makeatletter
+\setcounter{page}{\@firstpage}
+\makeatother
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2026}
+\copyrightyear{2026}
+\datereceived{ }
+\daterevised{ }
+\dateaccepted{ }
+\datepublished{ }
+
+%=================================================================
+\usetikzlibrary{positioning,arrows.meta}
+\usepackage{xcolor}
+
+%=================================================================
+\Title{\color{blue} Detectores YOLO Ligeros para Plagas y Enfermedades del Tomate bajo Alta Radiación Solar: Evaluación sin Fuga de Datos, Robustez a la Sobreexposición y Despliegue sin Conexión}
+
+\Author{Fray Benjamin Kana Chullo $^{1,}$*, Hiram Jeremy Ccoto Cruz $^{1}$ y Angel Rosendo Condori Coaquira $^{1}$}
+
+\AuthorNames{Fray Benjamin Kana Chullo, Hiram Jeremy Ccoto Cruz y Angel Rosendo Condori Coaquira}
+
+\address{%
+$^{1}$ \quad Escuela Profesional de Ingeniería de Sistemas, Facultad de Ingeniería y Arquitectura, Universidad Peruana Unión, Juliaca, Perú}
+
+\corres{Correspondencia: fray.kana@upeu.edu.pe}
+
+\abstract{\color{blue} La alta radiación solar de las zonas áridas sobreexpone las fotos de campo y puede ocultar plagas blancas como la mosca blanca o el oídio. Se midió ese efecto en detectores YOLO ligeros (YOLOv8n, YOLO11n y YOLOv10n) entrenados con 1966 imágenes de tomate del Valle de Majes (Perú), con división por grupo de captura, tres semillas y etiquetas corregidas tras una auditoría. En prueba, el mAP@0.5 de cuatro clases fue de $26.5 \pm 3.8$\% (YOLOv8n: $29.8$\%). Al mediodía, los píxeles saturados se cuadruplicaron. Al sobreexponer sintéticamente las mismas fotos, el mAP@0.5 cayó un 32\% con un paso de exposición y la mosca blanca perdió dos tercios de su AP; la subexposición no tuvo efecto. El aumento de datos fotométrico elevó la retención a dos pasos (42\% frente a 29\%; mejor en 9 de 9 corridas), a cambio de 2.4 puntos menos con luz normal; la ecualización CLAHE no ayudó. Ninguna estrategia recuperó la mosca blanca por encima de 1.5 pasos, por lo que la mitigación debe incluir la captura (sombra o exposición). Ampliar el conjunto mejoró las sesiones nuevas, no la original. Un teléfono de gama media procesó cada foto en unos 0.6~s sin conexión. Datos, código y modelos son públicos.}
+
+\keyword{\color{blue} radiación solar; sobreexposición; aumento de datos fotométrico; mosca blanca; oídio; \emph{Tuta absoluta}; fuga de datos; división por grupos; detección de objetos pequeños; inferencia en el borde}
+
+\begin{document}
+
+%=================================================================
+\section{Introducción}
+
+{\color{blue} En el Valle de Majes (Arequipa, Perú), el tomate se cultiva bajo una irradiancia solar elevada y en parcelas donde la asistencia técnica no siempre llega a tiempo.} {\color{blue} Los detectores de objetos basados en aprendizaje profundo permiten localizar varias lesiones en una misma foto~\cite{Fuentes2017}, y las versiones ligeras de la familia YOLO pueden ejecutarse en un teléfono~\cite{Zhong2024,Wang2025}.} {\color{blue} Sin embargo, los resultados obtenidos con imágenes de laboratorio no se trasladan al campo~\cite{Mohanty2016,Jelali2024}.}
+
+{\color{blue} Hay dos problemas menos estudiados.} {\color{blue} El primero es la evaluación: cuando cada planta se fotografía varias veces y las fotos se reparten al azar, imágenes casi idénticas quedan en entrenamiento y en prueba, y las métricas se inflan~\cite{Kapoor2023}.} {\color{blue} En detección de enfermedades del tomate, el aumento de datos aplicado antes de dividir el conjunto llegó a inflar el mAP50 hasta en 66 puntos porcentuales~\cite{Gerz2025}.} {\color{blue} El segundo es la iluminación: la alta radiación produce sobreexposición y reflejos que pueden ocultar el micelio blanco del oídio o el cuerpo de la mosca blanca (\emph{Bemisia tabaci}), un objeto que ya es pequeño para los detectores de una etapa~\cite{Zhang2024Jute,Zhao2025}.}
+
+{\color{blue} El \textbf{objetivo} de este trabajo fue evaluar, sin fuga de datos, detectores YOLO ligeros para cuatro plagas y enfermedades del tomate (mildiu, oídio, mosca blanca y polilla del tomate) en una zona de alta radiación solar, medir cuánto los degrada la sobreexposición, probar dos formas de mitigarla y verificar su funcionamiento en un teléfono sin conexión.} {\color{blue} Se plantearon cinco preguntas:}
+{\color{blue}
+\begin{itemize}[leftmargin=*,labelsep=4.9mm]
+\item \textbf{P1.} ¿Qué fuga de datos existe al dividir por imagen y cuánta queda después de dividir por grupo de captura?
+\item \textbf{P2.} ¿Mejora el detector al ampliar el conjunto con nuevas sesiones de campo, evaluado con las mismas imágenes y etiquetas?
+\item \textbf{P3.} ¿Cuánto cambia la exposición de las fotos entre franjas horarias y cuánto degrada la sobreexposición al detector, por clase?
+\item \textbf{P4.} ¿Reducen esa degradación el aumento de datos fotométrico o el preprocesado CLAHE, y a qué costo con luz normal?
+\item \textbf{P5.} ¿Qué tan útil es el detector para el diagnóstico (incluido el error de declarar sana una planta afectada) y se conserva en el teléfono?
+\end{itemize}
+}
+
+%=================================================================
+\section{Trabajos Relacionados}
+
+{\color{blue} La Tabla~\ref{tab:relacionados} resume trabajos cercanos.} {\color{blue} Las precisiones superiores al 98\% se obtienen con imágenes de laboratorio de fondo uniforme~\cite{Mohanty2016,Debnath2023}; con imágenes de campo, los valores bajan y dependen del tamaño de los objetos y de la división de los datos~\cite{Jelali2024}.} {\color{blue} \citet{Shehu2025} detectaron daño de \emph{Tuta absoluta} con YOLOv8 en 326 fotos de campo de tres fincas de Nigeria (mAP de hasta 0.737), sin despliegue en el borde.} {\color{blue} \citet{Zhao2025} contaron mosca blanca con YOLOv11 e inferencia por cortes (SAHI) en 5124 imágenes de 50~MP (mAP50 de 91.6\%), con la inferencia en un servidor.} {\color{blue} \citet{Debnath2023} llevaron un clasificador de enfermedades del tomate a una aplicación Android, entrenado con 10~000 imágenes de un repositorio público.} {\color{blue} Ninguno de estos trabajos mide cómo la sobreexposición solar degrada al detector, ni lo combina con una auditoría de fuga por grupo de captura y la medición del desempeño en el teléfono.}
+
+\begin{table}[H]\color{blue}
+\caption{Trabajos relacionados (valores tal como los reportan sus autores).\label{tab:relacionados}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\begin{tabularx}{\fulllength}{lXXXl}
+\toprule
+\textbf{Trabajo} & \textbf{Datos} & \textbf{Modelo} & \textbf{Resultado} & \textbf{Despliegue}\\
+\midrule
+\citet{Debnath2023} & 10~000 img. de repositorio, 10 clases (clasificación) & EfficientNetV2B2 & 98.96\% de exactitud en prueba & App Android\\
+\citet{Shehu2025} & 326 img. de campo, \emph{Tuta absoluta} & YOLOv8 & mAP de hasta 0.737 & Laptop\\
+\citet{Zhao2025} & 5124 img. de campo, mosca blanca (5 cultivos) & YOLOv11s + SAHI & mAP50 = 91.6\% & Servidor\\
+Este trabajo & 1966 img. de campo, 4 clases, 3 sesiones, alta radiación & YOLOv8n, YOLO11n, YOLOv10n & mAP@0.5 = 23--30\% según arquitectura; robustez a la sobreexposición medida & Teléfono, sin conexión\\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+%=================================================================
+\section{Materiales y Métodos}
+
+\subsection{\color{blue} Captura de Imágenes}
+
+{\color{blue} Las fotos se tomaron en el Fundo El Pedregal (Majes) en tres sesiones (3 de mayo, 12 de julio y 29 de julio de 2026), con un Samsung Galaxy A56 5G (50~MP), sin flash y sin manipular las plantas; también se extrajeron cuadros de videos cortos.} {\color{blue} Cada imagen se asignó a una franja horaria según la hora de su archivo: mañana (antes de las 11:00, 555 imágenes), mediodía (11:00--13:59, 397) y tarde (desde las 14:00, 1014).} {\color{blue} El mediodía solo se capturó en la sesión del 3 de mayo.}
+
+\subsection{\color{blue} Anotación}\label{sec:anotacion}
+
+{\color{blue} Dos anotadores del equipo etiquetaron las imágenes en Roboflow.} {\color{blue} El anotador principal (F.B.K.C.) tiene siete años de experiencia en el cultivo de tomate en El Pedregal (Majes, Arequipa), en un fundo con asistencia técnica de ingenieros agrónomos de campo, y reconoce estas plagas y enfermedades en el manejo diario del cultivo.} {\color{blue} Se usaron cajas de cinco clases:} {\color{blue} \emph{mildiu} (\emph{Phytophthora infestans}), \emph{oídio} (especie no confirmada en laboratorio), \emph{mosca blanca} (\emph{B. tabaci}), \emph{polilla del tomate} (\emph{Tuta absoluta}; incluye insecto y mina) y \emph{hoja sana}.} {\color{blue} Las reglas escritas fueron: una caja por lesión, insecto o mina; hoja sana solo para folíolos completamente sanos; hojas superpuestas con una caja cada una; etiquetar todo lo reconocible del primer plano y no lo lejano o borroso; y no etiquetar objetos menores de 16~px a 640~px.} {\color{blue} Esta regla de tamaño se aplicó a las lesiones.} {\color{blue} La mosca blanca se etiquetó aunque quedara por debajo de ese tamaño (el 87\% de sus cajas), por dos razones: es la plaga de interés y omitirla dejaría la clase casi vacía.} {\color{blue} Por eso su AP es bajo, y para la siguiente versión se propone una caja por grupo de insectos.} {\color{blue} La polilla incluye insecto y mina en una sola clase.} {\color{blue} La mina es el daño visible de la misma plaga y la acción de manejo es la misma; además, con 473 cajas, separarla dejaría dos clases demasiado pequeñas para entrenar.} {\color{blue} La identificación se basa en síntomas visibles en campo.} {\color{blue} No hubo confirmación de laboratorio ni validación por un fitopatólogo independiente.} {\color{blue} El acuerdo entre anotadores se mide con un protocolo ciego (Sección~\ref{sec:acuerdo}).}
+
+{\color{blue} Tras la auditoría de etiquetas (Sección~\ref{sec:auditoria}), se revisaron a mano las 319 imágenes señaladas.} {\color{blue} Se añadieron las lesiones de mildiu que faltaban (2698 $\rightarrow$ 2933 cajas, con cambios en 158 imágenes) y se eliminó la clase hoja sana, que estaba etiquetada solo en parte y no es una plaga.} {\color{blue} Las imágenes sin plaga se conservan como imágenes de fondo.} {\color{blue} Esta versión final (v6) tiene cuatro clases y 4648 cajas (Tabla~\ref{tab:dataset}).}
+
+\begin{table}[H]\color{blue}
+\caption{Cajas por clase y subconjunto en la versión final (v6). La v5 tenía además 3356 cajas de hoja sana y 2698 de mildiu.\label{tab:dataset}}
+\begin{tabularx}{\textwidth}{lCCCC}
+\toprule
+\textbf{Clase} & \textbf{Entrenamiento} & \textbf{Validación} & \textbf{Prueba} & \textbf{Total}\\
+\midrule
+Mildiu & 1914 & 689 & 330 & 2933\\
+Oídio & 594 & 209 & 89 & 892\\
+Polilla del tomate & 374 & 70 & 29 & 473\\
+Mosca blanca & 253 & 63 & 34 & 350\\
+\midrule
+Imágenes sin plaga & 308 & 77 & 33 & 418\\
+\textbf{Imágenes} & \textbf{1405} & \textbf{381} & \textbf{180} & \textbf{1966}\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{\color{blue} División sin Fuga de Datos}
+
+{\color{blue} Las fotos se tomaron en ráfagas alrededor de cada planta.} {\color{blue} Se definió como \emph{grupo de captura} el conjunto de fotos de una carpeta separadas por menos de 30~s, y cada video como un grupo; no se registró la identidad física de las plantas.} {\color{blue} Los 288 grupos se repartieron completos (70/20/10 por número de imágenes dentro de cada carpeta horaria).} {\color{blue} Además, un video grabado a menos de 30~s de una ráfaga se unió a ella: esto movió 66 imágenes (3.4\%) al subconjunto de su grupo.} {\color{blue} El código de entrenamiento comprueba ambas reglas y se detiene si encuentra un grupo repartido.} {\color{blue} Como control independiente del tiempo, se compararon todos los pares de imágenes de subconjuntos distintos con una huella perceptual (pHash de 63~bits).}
+
+\subsection{\color{blue} Modelos, Entrenamiento y Entorno}
+
+{\color{blue} Se compararon YOLOv8n, YOLO11n y YOLOv10n~\cite{Jocher2023,Jocher2024,Wang2024v10}, preentrenados en COCO, con las semillas 0, 1 y 2 y entradas de $640\times640$ (Tabla~\ref{tab:entorno}).} {\color{blue} El modelo se elige con el mAP@0.5:0.95 de validación, nunca con prueba.} {\color{blue} Se describen cuatro versiones del conjunto: v1 (1028 imágenes de mayo, división por imagen), v4 (1021 imágenes de mayo con etiquetas revisadas y división por grupo), v5 (las 1966 imágenes de las tres sesiones, cinco clases) y v6 (las mismas imágenes y la misma división que la v5, con etiquetas corregidas y cuatro clases).}
+
+\begin{table}[H]\color{blue}
+\caption{Entorno e hiperparámetros.\label{tab:entorno}}
+\begin{tabularx}{\textwidth}{lXX}
+\toprule
+& \textbf{v4} & \textbf{v5 y v6}\\
+\midrule
+Hardware & GPU Tesla T4 (Google Colab) & GPU RTX 5070 Ti, 16 GB\\
+Software & Ultralytics 8.4.82 & Ultralytics 8.4.82, PyTorch 2.12, CUDA 13.2\\
+Épocas / paciencia & 150 / 30 & 200 / 50\\
+\emph{Batch} & 16 & 32\\
+Otros & aumento por defecto & aumento por defecto, tasa coseno, precisión mixta, sin mosaico en las 15 últimas épocas\\
+\midrule
+Conversión & \multicolumn{2}{p{0.72\textwidth}}{ONNX (opset 17) $\rightarrow$ onnx2tf 1.26.3 (TensorFlow 2.18.1) $\rightarrow$ TFLite float16}\\
+Teléfono & \multicolumn{2}{p{0.72\textwidth}}{Samsung Galaxy A56 (Exynos 1580), tflite\_flutter 0.11.0, CPU con 4 hilos, sin delegado}\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{\color{blue} Evaluación}
+
+{\color{blue} \textbf{Conjuntos de prueba.} Para comparar v4 y v5 con las mismas imágenes y la misma verdad de referencia, todas las evaluaciones usan las etiquetas de la v5 y tres subconjuntos de la prueba:} {\color{blue} \emph{prueba fija} (97 imágenes de la prueba de la v4 que siguen en prueba, todas del 3 de mayo), \emph{imágenes nuevas} (83 imágenes:} {\color{blue} 29 del 12 de julio, 51 del 29 de julio y 3 del 3 de mayo) y \emph{prueba completa} (180).} {\color{blue} De la v4 solo se conservó el modelo elegido (YOLO11n, semilla 1).}
+
+{\color{blue} \textbf{Métricas de detección.} mAP@0.5 y mAP@0.5:0.95 de Ultralytics, con las cinco clases y sin la hoja sana.} {\color{blue} La incertidumbre se estimó con bootstrap agrupado por grupo de captura (1000 réplicas), y la diferencia v4--v5 con bootstrap pareado sobre las mismas imágenes.}
+
+{\color{blue} \textbf{Métricas por imagen.} Con las reglas de la aplicación (confianza 0.30, IoU 0.45, NMS agnóstica): sensibilidad y especificidad por plaga o enfermedad (presencia en la imagen) y \emph{tasa de falso sano}, es decir, la proporción de imágenes con alguna plaga o enfermedad en las que el modelo no detecta ninguna.} {\color{blue} También el acierto de la clase principal (detección de mayor confianza frente a la clase más frecuente en las etiquetas) con dos líneas base (responder siempre la clase mayoritaria o siempre sana), intervalos de Wilson y la prueba de McNemar para comparar v4 y v5.}
+
+{\color{blue} \textbf{Exposición.} Por imagen: porcentaje de píxeles saturados (algún canal $\geq 250$), brillo medio, contraste y un indicador de reflejos (V $\geq 230$ y S $\leq 40$).} {\color{blue} En prueba se comparó el acierto por terciles de saturación y se ajustó una regresión logística del acierto con la sesión y el modelo como controles y errores agrupados por grupo de captura.}
+
+{\color{blue} \textbf{Prueba de estrés por sobreexposición.} Cada imagen de prueba se sobreexpuso sintéticamente: se convirtió de sRGB a valores lineales, se multiplicó por $2^{\mathrm{EV}}$, se recortó a 1 y se volvió a sRGB, con EV $\in \{-1, 0, +0.5, +1, +1.5, +2\}$ pasos de exposición.} {\color{blue} Como la única diferencia entre versiones de una foto es la exposición, la caída del detector se puede atribuir a ella.} {\color{blue} Con +1 EV, la mediana de píxeles saturados en prueba pasa de 1\% a 20\%.} {\color{blue} Se reporta la \emph{retención}: el mAP@0.5 con sobreexposición dividido por el mAP@0.5 de la misma corrida sin ella.}
+
+{\color{blue} \textbf{Mitigación.} Con la v6 se entrenaron tres experimentos, cada uno con las tres arquitecturas y tres semillas (27 corridas):}
+{\color{blue}
+\begin{itemize}[leftmargin=*,labelsep=4.9mm]
+\item \emph{base}: aumento por defecto (variación de brillo $\pm 40\%$);
+\item \emph{aumento fotométrico}: variación de brillo $\pm 70\%$ y una copia sobreexpuesta de cada imagen de entrenamiento, con EV uniforme entre +0.5 y +1.5 y el mismo método de la prueba de estrés, solo en entrenamiento;
+\item \emph{CLAHE}: ecualización adaptativa del contraste sobre la luminancia (límite 2.0, cuadrícula $8\times8$), aplicada a todas las imágenes, incluidas las de la prueba de estrés.
+\end{itemize}
+Cada experimento se comparó con la base por pares de arquitectura y semilla, con la prueba de Wilcoxon.
+}
+
+{\color{blue} \textbf{Aviso de exceso de luz.} La aplicación muestra ``mucha luz'' cuando, en la foto muestreada cada 6~píxeles, la luminancia media supera 200 o más del 15\% de los píxeles supera 240.} {\color{blue} El aviso se validó en las 180 fotos de cada nivel de la prueba de estrés con el modelo instalado (v6) y las reglas de la aplicación.} {\color{blue} Una imagen con plaga se consideró acertada si alguna clase detectada coincidía con las etiquetadas.} {\color{blue} Se definió como \emph{falla inducida por la luz} un par imagen--nivel que acierta con la exposición original y falla sobreexpuesto.}
+
+{\color{blue} \textbf{Acuerdo entre anotadores y validación externa.}\label{sec:acuerdo} Se extrajo una muestra estratificada de 100 imágenes de la v6.} {\color{blue} Contiene 20 con polilla, 20 con mosca blanca, 20 con oídio, 25 con mildiu y 15 sin plaga, de las tres sesiones y con una sola imagen por grupo de captura (258 cajas de referencia).} {\color{blue} Los dos anotadores la vuelven a etiquetar por separado, sin ver las etiquetas existentes ni las del otro, con las reglas escritas y cuatro clases.} {\color{blue} El acuerdo por imagen se resume con el kappa de Cohen sobre la presencia de cada clase, y el acuerdo por caja, con el F1 de cajas emparejadas por clase (IoU $\geq 0.5$ y $\geq 0.3$).} {\color{blue} Cada anotador se compara también con las etiquetas de la v6.} {\color{blue} Además, un ingeniero agrónomo externo clasifica 50 de esas imágenes (10 por estrato) marcando las clases presentes, y se calcula su kappa con las etiquetas de la v6.}
+
+{\color{blue} \textbf{Teléfono.} Una prueba automatizada pasó 192 imágenes por el mismo código de la aplicación y midió el tiempo desde los bytes JPEG hasta las cajas finales y la coincidencia con el servidor (misma clase principal; cajas con la misma clase e IoU $\geq 0.5$).}
+
+\subsection{\color{blue} Sistema}
+
+{\color{blue} La aplicación (Flutter) analiza la foto en el servidor (FastAPI) cuando hay conexión y en el propio teléfono con TFLite cuando no la hay; los resultados se guardan en SQLite y se sincronizan después (Figura~\ref{fig:arq}).} {\color{blue} Ambos lados corrigen la orientación EXIF y usan \emph{letterbox} a 640~px con los mismos umbrales; difieren en la interpolación del redimensionado (OpenCV en el servidor y la librería \texttt{image} de Dart en el teléfono).}
+
+\begin{figure}[H]\color{blue}
+\centering
+\resizebox{0.95\linewidth}{!}{%
+\begin{tikzpicture}[
+  font=\footnotesize,
+  box/.style={draw, rounded corners=2pt, align=center, minimum height=9mm, text width=27mm, inner sep=2pt, fill=white},
+  arr/.style={-{Stealth[length=2mm]}, thick}
+]
+\node[box] (cam) at (0,0) {Cámara o galería};
+\node[box] (pre) at (3.6,0) {Letterbox 640$\times$640,\\RGB, rotación EXIF};
+\node[box, text width=17mm] (route) at (6.6,0) {¿Hay\\conexión?};
+\node[box, fill=blue!6] (srv) at (10,1.3) {Servidor: FastAPI +\\YOLO (PyTorch)};
+\node[box, fill=green!8] (tfl) at (10,-1.3) {Teléfono: TFLite\\float16};
+\node[box, text width=20mm] (res) at (13.4,0) {Cajas, clase,\\confianza};
+\node[box, text width=20mm] (db) at (13.4,-2.9) {Historial local\\(SQLite)};
+\node[box, text width=40mm] (sync) at (8.6,-2.9) {Sincronización de los\\registros pendientes};
+\draw[arr] (cam) -- (pre);
+\draw[arr] (pre) -- (route);
+\draw[arr] (route.north) |- node[pos=0.75, above]{sí} (srv.west);
+\draw[arr] (route.south) |- node[pos=0.75, below]{no} (tfl.west);
+\draw[arr] (srv.east) -| (res.north);
+\draw[arr] (tfl.east) -| (res.south);
+\draw[arr] (res.south) ++(4mm,0) -- ([xshift=4mm]db.north);
+\draw[arr] (db) -- node[above]{pendientes} (sync);
+\end{tikzpicture}}
+\caption{Arquitectura con inferencia en el servidor o en el teléfono.\label{fig:arq}}
+\end{figure}
+
+\subsection{\color{blue} Disponibilidad y Reproducibilidad}
+
+{\color{blue} El conjunto de datos está en Roboflow Universe con licencia CC~BY~4.0~\cite{Dataset2026}: la versión~1 corresponde a la v4, la versión~2 a la v5 y la versión~3 a la v6.} {\color{blue} El repositorio de investigación contiene el código de entrenamiento (que verifica la división y aplica los 66 movimientos), las listas de imágenes de cada subconjunto de prueba, las métricas de cada corrida, los modelos y los scripts de este análisis (Tabla~\ref{tab:repro}).} {\color{blue} Como la v5 y la v6 se entrenaron con \texttt{deterministic=False}, una nueva ejecución puede diferir ligeramente.}
+
+\begin{table}[H]\color{blue}
+\caption{Recursos públicos.\label{tab:repro}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\begin{tabularx}{\fulllength}{lX}
+\toprule
+\textbf{Recurso} & \textbf{Enlace}\\
+\midrule
+Conjunto de datos & \url{https://universe.roboflow.com/fray-hxtls/plagas-tomate-majes-v2}\\
+Código, resultados y modelos & \url{https://github.com/fraykanachullo/trabajoinvestigacionTomate}\\
+Servidor (FastAPI) & \url{https://github.com/fraykanachullo/backentTomate}\\
+Aplicación móvil (Flutter) & \url{https://github.com/fraykanachullo/frontendTomate}\\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+%=================================================================
+\section{Resultados}
+
+\subsection{\color{blue} P1: Fuga de Datos}
+
+{\color{blue} En la v1, dividida por imagen, 65 de 189 grupos de captura tenían fotos en más de un subconjunto, y 82 de las 103 imágenes de prueba tenían una foto del mismo grupo en entrenamiento o validación.} {\color{blue} Su mAP@0.5 en validación fue de 30.2--30.6\% en tres configuraciones de YOLOv8n con una semilla.} {\color{blue} La v4, ya dividida por grupo, obtuvo 27.7--30.4\% en validación y 21.5--24.2\% en prueba.} {\color{blue} Como entre v1 y v4 cambiaron a la vez la división, las etiquetas y el formato de las imágenes, esa diferencia no aísla el efecto de la fuga.} {\color{blue} Para medirlo con el mismo modelo y las mismas etiquetas, el modelo v1 se evaluó en su propia prueba de 103 imágenes.} {\color{blue} Se reconstruyeron los grupos de captura a partir de la hora de cada archivo:} {\color{blue} 203 grupos, 66 de ellos repartidos entre subconjuntos.} {\color{blue} Así, 77 imágenes de prueba tenían una foto hermana en entrenamiento o validación y 26 no la tenían.} {\color{blue} En las primeras, el mAP@0.5 fue de 38.5\% (34.7\% sin la hoja sana); en las 26 restantes, de 12.3\% (6.7\%).} {\color{blue} En el conjunto completo fue de 34.4\%, y en validación, de 29.0\%.} {\color{blue} La diferencia es grande, pero el subconjunto sin hermana es pequeño y puede diferir también en dificultad.} {\color{blue} Un experimento controlado (división aleatoria frente a división por grupo, con las mismas etiquetas y tres semillas) quedó programado, pero no se ejecutó por falta de tiempo de GPU.}
+
+{\color{blue} En la división final, la comparación de los 856~785 pares de imágenes de subconjuntos distintos no encontró ninguno casi idéntico: la distancia mínima de pHash fue 12, y el único par a esa distancia corresponde a escenas distintas.} {\color{blue} Como referencia, dos fotos de la misma ráfaga están a una mediana de 30.} {\color{blue} Este método descarta fotos duplicadas, pero no la misma planta fotografiada en dos ráfagas separadas.}
+
+\subsection{\color{blue} P2: Efecto de Ampliar el Conjunto de Datos}
+
+{\color{blue} La Tabla~\ref{tab:v4v5} y la Figura~\ref{fig:modelos} comparan el modelo de la v4 con los de la v5 en las mismas imágenes.} {\color{blue} En la \emph{prueba fija} (mayo), la v5 no mejoró: sin la hoja sana obtuvo un mAP@0.5 de 17.6--21.3\% frente a 19.2\% de la v4, y todas las diferencias pareadas tuvieron un IC 95\% que incluye el cero (por ejemplo, con las cinco clases, YOLOv8n semilla 2 menos v4:} {\color{blue} $-2.5$ puntos, IC $-7.5$ a $+2.3$).} {\color{blue} En las \emph{imágenes nuevas} (julio), que la v4 nunca vio, la v5 pasó de 25.8\% a 32.1--44.4\%.} {\color{blue} El IC 95\% del mAP@0.5 de un modelo en la prueba fija mide unos $\pm$6--8 puntos, por lo que las diferencias entre arquitecturas (de 0.5 a 3.7 puntos en promedio) quedan dentro de la incertidumbre.}
+
+\begin{table}[H]\color{blue}
+\caption{mAP@0.5 (\%) con las etiquetas v5 en los tres subconjuntos de prueba; v5 como media $\pm$ DE de 3 semillas. ``4 clases'' excluye la hoja sana.\label{tab:v4v5}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\begin{tabularx}{\fulllength}{lCCCCCC}
+\toprule
+& \multicolumn{2}{c}{\textbf{Prueba fija (97)}} & \multicolumn{2}{c}{\textbf{Imágenes nuevas (83)}} & \multicolumn{2}{c}{\textbf{Prueba completa (180)}}\\
+\textbf{Modelo} & \textbf{5 clases} & \textbf{4 clases} & \textbf{5 clases} & \textbf{4 clases} & \textbf{5 clases} & \textbf{4 clases}\\
+\midrule
+v4: YOLO11n, s1 & 26.6 & 19.2 & 32.1 & 25.8 & 27.9 & 21.9\\
+v5: YOLOv8n & $25.1 \pm 0.6$ & $17.6 \pm 2.9$ & $46.8 \pm 5.4$ & $39.5 \pm 7.4$ & $33.6 \pm 2.5$ & $25.8 \pm 3.4$\\
+v5: YOLO11n & $24.6 \pm 0.8$ & $18.4 \pm 1.0$ & $41.7 \pm 8.7$ & $32.1 \pm 11.7$ & $32.2 \pm 3.9$ & $24.0 \pm 4.9$\\
+v5: YOLOv10n & $28.3 \pm 0.9$ & $21.3 \pm 0.9$ & $49.6 \pm 5.3$ & $44.4 \pm 6.4$ & $36.3 \pm 1.1$ & $29.8 \pm 1.3$\\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+\begin{figure}[H]\color{blue}
+\centering
+\includegraphics[width=0.92\textwidth]{fig_v4_v5_modelos.png}
+\caption{mAP@0.5 sin la hoja sana con las mismas imágenes y etiquetas: la v5 iguala a la v4 en las fotos de mayo y la supera en las de julio.\label{fig:modelos}}
+\end{figure}
+
+{\color{blue} Por clase (Figura~\ref{fig:clases}), en la prueba completa la v5 obtuvo el mayor AP@0.5 en la polilla (38--62\% según la arquitectura) y la mosca blanca (24--33\%); el mildiu quedó en 20--26\% y el oídio en 5--8\%.} {\color{blue} Las imágenes nuevas no contienen ninguna caja de oídio (Sección~\ref{sec:auditoria}).} {\color{blue} El mejor punto de validación se alcanzó entre las épocas 24 y 79; después, la pérdida de clasificación en validación aumentó.}
+
+\begin{figure}[H]\color{blue}
+\centering
+\includegraphics[width=0.92\textwidth]{fig_v4_v5_clases.png}
+\caption{AP@0.5 por clase en la prueba completa (180 imágenes; 29 cajas de polilla, 34 de mosca blanca, 89 de oídio).\label{fig:clases}}
+\end{figure}
+
+\subsection{\color{blue} P3: Exposición Solar}
+
+{\color{blue} Al mediodía, la mediana de píxeles saturados fue de 3.6\% frente a 0.8\% en la mañana y 1.0\% en la tarde, y el contraste fue mayor (58.8 frente a 48.7 y 51.0;} {\color{blue} Figura~\ref{fig:exposicion}).} {\color{blue} En prueba, el acierto de la clase principal (9 modelos v5) bajó del 67\% en el tercil de menor saturación al 57\% y 55\% en los terciles medio y alto, con intervalos superpuestos.} {\color{blue} Con la sesión y el modelo como controles, la razón de momios por desviación estándar de saturación fue 0.82 (IC 95\%:} {\color{blue} 0.65--1.04;} {\color{blue} $p = 0.11$); el brillo (OR = 1.00) y el indicador de reflejos (OR = 0.98) no se asociaron con el acierto.} {\color{blue} El tercil alto de saturación proviene casi por completo (55 de 60 imágenes) de la sesión de mayo, de modo que, con las fotos reales, la exposición no puede separarse de la sesión.}
+
+\begin{figure}[H]\color{blue}
+\centering
+\includegraphics[width=0.92\textwidth]{fig_exposicion.png}
+\caption{Izquierda: píxeles saturados por franja horaria. Derecha: acierto de la clase principal por tercil de saturación en prueba, con IC 95\% por bootstrap agrupado.\label{fig:exposicion}}
+\end{figure}
+
+{\color{blue} La prueba de estrés sí separa el efecto, porque compara la misma foto con distinta exposición (Figura~\ref{fig:estres}, curvas de la base).} {\color{blue} Con los modelos v6 base, el mAP@0.5 pasó de 26.3\% con la exposición original a 23.0\% con +0.5 EV, 17.9\% con +1 EV y 7.5\% con +2 EV.} {\color{blue} El efecto es gradual y solo ocurre con exceso de luz: con $-1$ EV el mAP@0.5 no cambió (25.6\%).} {\color{blue} Las clases blancas son las más sensibles.} {\color{blue} La mosca blanca bajó de 30.6\% a 22.2\% con +0.5 EV y a 9.8\% con +1 EV, y el oídio, de 6.4\% a 2.7\% con +1 EV.} {\color{blue} La polilla, de lesiones oscuras, resistió hasta +1 EV (de 47.6\% a 42.3\%).} {\color{blue} El falso sano subió de 44\% a 51\% con +1 EV y a 65\% con +2 EV.} {\color{blue} Los nueve modelos v5, con cinco clases, mostraron la misma curva.} {\color{blue} Las fotos reales se sitúan al inicio de la curva: la mediana de saturación del mediodía (3.6\%) está entre 0 y +0.5 EV, y el máximo (12.8\%), entre +0.5 y +1 EV.}
+
+\subsection{\color{blue} P4: Mitigación de la Sobreexposición}
+
+{\color{blue} Con las etiquetas corregidas y cuatro clases (v6), el modelo base obtuvo un mAP@0.5 en prueba de $26.5 \pm 3.8\%$.} {\color{blue} Por arquitectura, YOLOv8n obtuvo $29.8 \pm 3.2$, YOLO11n $26.4 \pm 1.0$ y YOLOv10n $23.4 \pm 3.9$, frente a 25.8, 24.0 y 29.8 de la v5 sin hoja sana.} {\color{blue} Por clase, la polilla obtuvo 47.7\%, la mosca blanca 31.5\%, el mildiu 20.6\% y el oídio 6.4\%.} {\color{blue} En promedio, corregir las etiquetas y quitar la hoja sana no cambió el nivel global; la prueba cambió también sus etiquetas, por lo que la comparación con la v5 es aproximada.}
+
+{\color{blue} La Tabla~\ref{tab:mitigacion} y la Figura~\ref{fig:estres} comparan las estrategias.} {\color{blue} El aumento fotométrico redujo la pérdida por sobreexposición de forma consistente: con +2 EV, las nueve corridas retuvieron más que su par base (42\% frente a 29\%;} {\color{blue} $+13.3$ puntos, $p = 0.004$).} {\color{blue} Con +1.5 EV, siete de nueve corridas retuvieron más que la base ($p = 0.074$).} {\color{blue} Con +1 EV y más, su mAP@0.5 absoluto fue el más alto.} {\color{blue} Este aumento tuvo un costo con luz normal.} {\color{blue} Bajó en validación ($-3.4$ puntos, $p = 0.008$) y en la prueba fija ($-2.4$, $p = 0.039$), y declaró sanas más imágenes afectadas ($+8.5$ puntos, $p = 0.16$).} {\color{blue} La ganancia de robustez se concentró en YOLOv8n y YOLO11n: su retención con +1 EV fue de 80\%, frente a 70\% y 67\% en la base.} {\color{blue} En YOLOv10n fue de 69\% frente a 67\%.} {\color{blue} CLAHE no mejoró ninguna métrica de forma significativa.} {\color{blue} Ninguna estrategia rescató la mosca blanca con +1.5 EV o más (AP@0.5 de 3\% en los tres casos).}
+
+{\color{blue} El aviso de ``mucha luz'' de la aplicación no apareció en ninguna de las 180 fotos reales de prueba.} {\color{blue} Apareció en el 8\% de las imágenes con +0.5 EV, en el 61\% con +1 EV y en el 98--99\% con +1.5 y +2 EV.} {\color{blue} Entre las 280 combinaciones de imagen y nivel sobreexpuesto que el modelo acertaba con la exposición original, 110 pasaron a fallar.} {\color{blue} El aviso detectó el 79\% de esas fallas inducidas por la luz (especificidad de 44\%).} {\color{blue} Con aviso, la tasa de falla fue de 48\%, frente a 24\% sin aviso.} {\color{blue} Bajar el umbral de píxeles $> 240$ al 5\% elevaría la detección al 92\%, pero el aviso aparecería en el 3\% de las fotos normales.} {\color{blue} Con 25\%, el índice de Youden mejora poco ($J = 0.28$ frente a 0.23).}
+
+\begin{table}[H]\color{blue}
+\caption{Experimentos de mitigación con la v6 (cuatro clases): media $\pm$ DE de 9 corridas (3 arquitecturas $\times$ 3 semillas). Retención: mAP@0.5 con sobreexposición dividido por el mAP@0.5 original de la misma corrida.\label{tab:mitigacion}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\begin{tabularx}{\fulllength}{lCCCCCCC}
+\toprule
+& \multicolumn{3}{c}{\textbf{Luz normal}} & \multicolumn{4}{c}{\textbf{Prueba de estrés}}\\
+\cmidrule(lr){2-4}\cmidrule(lr){5-8}
+\textbf{Experimento} & \textbf{mAP@0.5 prueba} & \textbf{mAP@0.5 prueba fija} & \textbf{Falso sano} & \textbf{mAP@0.5, +1 EV} & \textbf{Retención +1 EV} & \textbf{Retención +2 EV} & \textbf{AP mosca blanca, +1 EV}\\
+\midrule
+Base & $26.5 \pm 3.8$ & $20.2 \pm 2.8$ & $44.4 \pm 8.6$ & $17.9 \pm 3.1$ & $68 \pm 9$ & $29 \pm 5$ & $9.8 \pm 4.3$\\
+Aumento fotométrico & $25.1 \pm 4.1$ & $17.8 \pm 2.4$ & $52.9 \pm 16.8$ & $19.1 \pm 5.0$ & $76 \pm 11$ & $42 \pm 10$ & $14.5 \pm 9.3$\\
+CLAHE & $24.6 \pm 3.7$ & $18.0 \pm 3.5$ & $45.4 \pm 12.5$ & $17.2 \pm 3.7$ & $69 \pm 7$ & $31 \pm 8$ & $11.2 \pm 7.3$\\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+\begin{figure}[H]\color{blue}
+\begin{adjustwidth}{-\extralength}{0cm}
+\centering
+\includegraphics[width=\linewidth]{fig_estres_v6.png}
+\end{adjustwidth}
+\caption{Prueba de estrés: las 180 fotos de prueba sobreexpuestas sintéticamente (pasos de exposición añadidos). Media de 9 corridas por experimento; la banda es $\pm 1$ DE entre corridas.\label{fig:estres}}
+\end{figure}
+
+\subsection{\color{blue} P5: Utilidad para el Diagnóstico y Desempeño en el Teléfono}
+
+{\color{blue} La Tabla~\ref{tab:imagen} muestra las métricas por imagen.} {\color{blue} El modelo instalado (YOLOv8n semilla 2) no detectó ninguna plaga en el 28\% de las imágenes afectadas (falso sano;} {\color{blue} 40 de 144), frente al 22\% de la v4 (32 de 144); entre los nueve modelos v5 este valor osciló entre 27\% y 52\%.} {\color{blue} En la prueba fija, responder siempre ``mildiu'' acierta la clase principal en el 60.8\% de las imágenes, un valor similar al de los modelos; en la prueba completa, los modelos (51--67\%) sí superan las líneas base (41.1\% y 26.7\%).} {\color{blue} En la prueba fija, tres de los nueve modelos v5 acertaron significativamente menos que la v4 (McNemar, $p < 0.01$); el modelo instalado no difirió de ella ($p = 0.29$).} {\color{blue} Con la v6 base (cuatro clases, mismas reglas), el falso sano fue de $44.4 \pm 8.6\%$ (33--60\% entre corridas;} {\color{blue} 38\% en el YOLOv8n elegido por validación): corregir las etiquetas no redujo este error.}
+
+\begin{table}[H]\color{blue}
+\caption{Métricas por imagen en la prueba completa (180 imágenes; 144 con alguna plaga o enfermedad), con las reglas de la aplicación. Entre corchetes, IC 95\% de Wilson.\label{tab:imagen}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\begin{tabularx}{\fulllength}{lCCCCCC}
+\toprule
+\textbf{Modelo} & \textbf{Acierto clase principal} & \textbf{Falso sano} & \textbf{Sens. mildiu} & \textbf{Sens. mosca blanca} & \textbf{Sens. oídio} & \textbf{Sens. polilla}\\
+\midrule
+v4: YOLO11n, s1 & 66.1\% [58.9--72.6] & 22.2\% [16.2--29.7] & 71\% & 37\% & 59\% & 55\%\\
+v5: YOLOv8n, s2 & 63.9\% [56.6--70.5] & 27.8\% [21.1--35.6] & 64\% & 37\% & 41\% & 52\%\\
+v5: rango de 9 modelos & 51--67\% & 27--52\% & 40--73\% & 13--43\% & 6--59\% & 21--59\%\\
+Línea base ``siempre mildiu'' & 41.1\% & 0\% & 100\% & 0\% & 0\% & 0\%\\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}
+
+{\color{blue} En el teléfono, el modelo de la v4 procesó una foto en $501 \pm 120$~ms y asignó la misma clase principal que el servidor en el 83.9\% de 192 imágenes (IC 95\%:} {\color{blue} 78.0--88.4); el 80.4\% de las cajas del servidor fueron reproducidas.} {\color{blue} Con la misma entrada, la versión TFLite y la ONNX coinciden en la detección principal en 96 de 96 imágenes (diferencia máxima de confianza de 0.004 para la v4 y de 0.014 para la v5), por lo que la discordancia con el servidor proviene sobre todo de la diferencia de interpolación al reducir la foto, que cambia la detección ganadora cuando las confianzas están cerca del umbral de 0.30.} {\color{blue} El modelo v6 (YOLOv8n base, cuatro clases) reemplazó a la v5 en el servidor y en la aplicación.} {\color{blue} Convertido a TFLite float16 (6.1~MB), coincide con la versión ONNX en la detección principal en 96 de 96 imágenes, con una diferencia máxima de confianza de 0.004.} {\color{blue} En el teléfono, con las mismas 192 imágenes, el modelo v6 procesó una foto en $574 \pm 186$~ms (mediana 596~ms) en una segunda corrida.} {\color{blue} La primera, recién instalada la aplicación, dio $756 \pm 497$~ms (mediana 673~ms), y las detecciones fueron idénticas en ambas.} {\color{blue} La mayor parte del tiempo corresponde a decodificar y reducir la foto: la mediana fue de 271~ms en imágenes de menos de 1~MP y de 678~ms en las fotos de 50~MP.} {\color{blue} El modelo v6 asignó la misma clase principal que el servidor en el 82.8\% de las imágenes (IC 95\%:} {\color{blue} 76.8--87.5), un valor similar al de la v4.} {\color{blue} Reprodujo el 77.0\% de las cajas del servidor, y el 82.0\% de sus propias cajas coincidieron con las del servidor.} {\color{blue} La Figura~\ref{fig:app} muestra la aplicación; las capturas se tomaron apuntando a fotos de campo mostradas en un monitor.}
+
+\begin{figure}[H]\color{blue}
+\centering
+\includegraphics[width=0.9\textwidth]{fig_app_capturas.png}
+\caption{Aplicación en el Samsung Galaxy A56 (modelo v4), con fotos de campo mostradas en un monitor: (a) modo en vivo; (b) resultado de una foto; (c) historial sincronizado.\label{fig:app}}
+\end{figure}
+
+\subsection{\color{blue} Auditoría de las Etiquetas}\label{sec:auditoria}
+
+{\color{blue} Para buscar errores de etiquetado se usaron los nueve modelos v5 como revisores en validación y prueba (561 imágenes), y una revisión estructural en las 1966 imágenes (Figura~\ref{fig:auditoria}).} {\color{blue} Se encontraron cuatro problemas:} {\color{blue} (i) el oídio está etiquetado casi solo en mayo:} {\color{blue} 869 cajas en las imágenes de la v4 frente a 20 en las 944 imágenes nuevas, y 118 de sus 295 cajas de validación y prueba no las detecta ningún modelo;} {\color{blue} (ii) el criterio del mildiu cambia por sesión: el área mediana de la caja es de 0.20\% de la imagen el 12 de julio y de 1.49\% el 29 de julio (una mancha frente a la hoja afectada);} {\color{blue} (iii) la hoja sana está etiquetada solo en parte: en 212 casos los nueve modelos coinciden en una hoja sana sin caja; y (iv) el 87\% de las cajas de mosca blanca (302 de 349) mide menos de 16~px a 640~px.} {\color{blue} Solo dos cajas tendrían la clase equivocada y no hay cajas duplicadas: el problema no es la clase asignada, sino cuánto y cómo se encierra cada objeto.} {\color{blue} En la v6 se completó el mildiu faltante, lo que corrige en parte el problema (ii), y se eliminó la hoja sana, lo que resuelve el (iii) (Sección~\ref{sec:anotacion}); el (i) y el (iv) requieren nuevas capturas.}
+
+\begin{figure}[H]\color{blue}
+\centering
+\includegraphics[width=0.95\textwidth]{fig_auditoria.jpg}
+\caption{Ejemplos de la auditoría: en verde, las cajas etiquetadas; en rojo, objetos que los nueve modelos detectan sin caja (hojas sanas y una lesión de mildiu).\label{fig:auditoria}}
+\end{figure}
+
+%=================================================================
+\section{Discusión}
+
+{\color{blue} \textbf{Ampliar el conjunto mejoró la generalización a sesiones nuevas, no el desempeño en las condiciones originales.} Con las mismas imágenes y etiquetas, la v5 no superó a la v4 en las fotos de mayo, pero sí en las de julio.} {\color{blue} La lección práctica es que capturar en fechas y plantas distintas aporta más que añadir fotos de las mismas condiciones.} {\color{blue} Como entre v4 y v5 también cambiaron algunos hiperparámetros (Tabla~\ref{tab:entorno}) y solo se conservó un modelo de la v4, esta comparación debe confirmarse reentrenando la v4 con la configuración de la v5.}
+
+{\color{blue} \textbf{Las arquitecturas son equivalentes a esta escala.} Entre los tres detectores ligeros evaluados a 640~px, las diferencias entre arquitecturas fueron menores que la variación entre semillas y que el IC del conjunto de prueba.} {\color{blue} Se mantiene YOLOv8n porque gana en validación, es el más rápido de entrenar y la aplicación ya procesa su formato de salida; elegir YOLOv10n porque gana en la prueba de la v5 sesgaría la estimación~\cite{Kapoor2023}.} {\color{blue} En la v6, YOLOv8n fue el mejor en validación y en prueba, y YOLOv10n, el peor.} {\color{blue} La conclusión se limita a modelos nano, que son los que caben en el teléfono.}
+
+{\color{blue} \textbf{Las clases que mejoraron fueron las que recibieron más ejemplos nuevos, pero ese efecto no se separa del tamaño ni de la calidad de las etiquetas.} La polilla y la mosca blanca, con más cajas nuevas, subieron en las imágenes de julio; el oídio no, y la auditoría muestra que casi no se etiquetó en julio.} {\color{blue} La mosca blanca queda por debajo del tamaño que un detector resuelve a 640~px;} {\color{blue} \citet{Zhao2025} lograron contarla con imágenes de 50~MP e inferencia por cortes, una alternativa a aumentar la resolución de entrada.} {\color{blue} El mAP@0.5 de 23--30\% en cuatro clases es bajo frente a los trabajos de la Tabla~\ref{tab:relacionados}, que usan imágenes de laboratorio, un solo tipo de objeto o divisiones que no controlan la fuga~\cite{Gerz2025}.}
+
+{\color{blue} \textbf{La sobreexposición degrada al detector de forma gradual, y sobre todo en los objetos blancos.} En las fotos reales, el acierto tendió a bajar con la saturación, sin alcanzar significancia, porque la exposición estaba confundida con la sesión.} {\color{blue} La prueba de estrés eliminó esa confusión y mostró una relación dosis-respuesta.} {\color{blue} Un paso de exposición, que deja el 20\% de los píxeles saturados, quitó un tercio del mAP@0.5 y dos tercios del AP de la mosca blanca.} {\color{blue} Esto respalda la hipótesis de partida: el cuerpo blanco del insecto y el micelio del oídio se confunden con las zonas quemadas, mientras que las lesiones oscuras de la polilla resisten.} {\color{blue} Las fotos actuales del mediodía ya están en el tramo donde la mosca blanca empieza a perderse.}
+
+{\color{blue} \textbf{El aumento fotométrico compra robustez a cambio de exactitud con luz normal; CLAHE no sirve para este problema.} Entrenar con copias sobreexpuestas enseñó al modelo a tolerar fotos quemadas: la retención con +2 EV mejoró en todas las corridas.} {\color{blue} Pero con fotos normales el modelo rinde algo menos y declara sanas más plantas afectadas.} {\color{blue} La elección depende de la luz real de uso.} {\color{blue} Con la distribución actual de saturación, cerca de 0 a +0.5 EV, conviene el modelo base.} {\color{blue} Si la prueba de campo muestra muchas fotos por encima de +1 EV, conviene el modelo fotométrico.} {\color{blue} CLAHE redistribuye el contraste, pero no recupera píxeles saturados, cuya información ya se perdió.}
+
+{\color{blue} \textbf{Por encima de 1.5 pasos, la mitigación tiene que ocurrir al tomar la foto.} Ninguna estrategia de entrenamiento o preprocesado recuperó la mosca blanca cuando el insecto quedó saturado.} {\color{blue} La mitigación práctica es dar sombra a la hoja con el cuerpo o un paraguas, corregir la exposición del teléfono o advertir al usuario.} {\color{blue} El aviso de ``mucha luz'' de la aplicación cumple esa función.} {\color{blue} No aparece en las fotos normales, se activa desde alrededor de +1 EV y, cuando aparece, el modelo falla el doble.} {\color{blue} Por eso se mantuvieron sus umbrales y se añadió al mensaje la indicación de dar sombra.} {\color{blue} Su especificidad es baja (44\%) porque muchas fotos sobreexpuestas se siguen acertando.} {\color{blue} Además, cubre mal el tramo de +0.5 EV, donde la mosca blanca ya empieza a perderse.} {\color{blue} La prueba pareada de sol y sombra en campo debe confirmar si dar sombra recupera el acierto.}
+
+{\color{blue} \textbf{Corregir las etiquetas no subió el techo; lo ponen los datos.} Tras añadir el mildiu faltante y quitar la hoja sana, el mAP@0.5 promedio no cambió.} {\color{blue} El oídio sigue casi sin ejemplos en julio, con un AP de 6\%, y la mosca blanca sigue siendo diminuta.} {\color{blue} Mejorar requiere más ejemplos de esas clases con un criterio único, no más ajustes del entrenamiento.}
+
+{\color{blue} \textbf{El error más costoso para el agricultor es el falso sano.} Entre una cuarta parte y casi la mitad de los casos con plaga se declaran sanos, según el modelo.} {\color{blue} Por eso, antes de usar la aplicación para decidir un tratamiento, conviene que muestre la confianza y pida revisar cuando no detecta nada en una planta con síntomas.}
+
+\subsection{\color{blue} Limitaciones}\label{sec:limitaciones}
+
+{\color{blue} (i) las clases se identificaron por síntomas visibles, sin confirmación de laboratorio; la experiencia de campo del anotador principal no sustituye una validación independiente; la auditoría encontró criterios inconsistentes; y los resultados del acuerdo entre anotadores y de la validación externa (Sección~\ref{sec:acuerdo}) se incorporarán al completarse;} {\color{blue} (ii) el grupo de captura se define por tiempo y no por identidad de la planta, por lo que no se descarta la fuga entre ráfagas de la misma planta;} {\color{blue} (iii) la prueba tiene 180 imágenes y pocas cajas de polilla (29) y mosca blanca (34);} {\color{blue} (iv) el mediodía solo se capturó en una sesión, y la sobreexposición sintética no reproduce reflejos especulares ni sombras duras, por lo que falta una prueba pareada en campo (mismas hojas al sol y a la sombra, con irradiancia medida);} {\color{blue} (v) de la v4 solo se conservó un modelo y entre v4 y v5 cambiaron hiperparámetros, y el experimento controlado de fuga (división aleatoria frente a división por grupo con las mismas etiquetas) quedó preparado pero no ejecutado;} {\color{blue} (vi) con tres semillas, la DE entre corridas es del mismo orden que varias diferencias entre experimentos;} {\color{blue} (vii) la latencia en el teléfono se midió con imágenes servidas desde una PC y no con la cámara, la interpolación del redimensionado aún difiere entre servidor y teléfono, el aviso de luz se validó con sobreexposición sintética y no con fotos de campo, y la prueba de la aplicación no se hizo en el campo.}
+
+%=================================================================
+\section{Conclusiones}
+
+{\color{blue} Se construyó y publicó un conjunto de 1966 imágenes de campo de tomate de una zona de alta radiación solar.} {\color{blue} Está dividido por grupo de captura, sin imágenes duplicadas entre subconjuntos, y tiene las etiquetas corregidas tras una auditoría.} {\color{blue} Los detectores YOLO ligeros alcanzaron un mAP@0.5 de 23--30\% en cuatro plagas y enfermedades, con diferencias entre arquitecturas menores que la incertidumbre.} {\color{blue} Ampliar el conjunto con nuevas sesiones mejoró el desempeño en esas sesiones, pero no en las condiciones originales.}
+
+{\color{blue} La sobreexposición degrada al detector de forma gradual y, sobre todo, en la mosca blanca y el oídio.} {\color{blue} El aumento de datos fotométrico reduce esa pérdida a cambio de algo de exactitud con luz normal, y CLAHE no la reduce.} {\color{blue} Más allá de 1.5 pasos de exposición, solo una mejor captura puede evitar la pérdida.} {\color{blue} El sistema funciona sin conexión en un teléfono de gama media.}
+
+{\color{blue} El trabajo siguiente es:}
+{\color{blue}
+\begin{itemize}[leftmargin=*,labelsep=4.9mm]
+\item realizar la prueba pareada de campo (mismas hojas en tres franjas horarias, con luxómetro y sombra al mediodía) para validar la curva de estrés y el aviso de la aplicación;
+\item validar las clases con un especialista y medir el acuerdo entre anotadores;
+\item ejecutar el experimento controlado de fuga;
+\item probar una resolución mayor o la inferencia por cortes para la mosca blanca;
+\item igualar el redimensionado entre servidor y teléfono y probar la aplicación en el campo.
+\end{itemize}
+}
+
+%=================================================================
+\vspace{6pt}
+
+\authorcontributions{Conceptualización, F.B.K.C. y H.J.C.C.; metodología, F.B.K.C. y H.J.C.C.; software, F.B.K.C.; investigación y curación de datos, F.B.K.C. y H.J.C.C.; redacción---borrador original, F.B.K.C.; redacción---revisión y edición, H.J.C.C. y A.R.C.C.; supervisión, A.R.C.C. Todos los autores han leído y aceptado la versión del manuscrito.}
+
+\funding{Esta investigación no recibió financiamiento externo.}
+
+\institutionalreview{\color{blue} No aplica: el estudio no involucra personas ni animales.}
+
+\informedconsent{No aplica.}
+
+\dataavailability{\color{blue} El conjunto de datos está disponible en Roboflow Universe con licencia CC~BY~4.0 (\url{https://universe.roboflow.com/fray-hxtls/plagas-tomate-majes-v2}). El código, las listas de cada subconjunto de prueba, las métricas y los modelos están en \url{https://github.com/fraykanachullo/trabajoinvestigacionTomate}; el código del servidor y de la aplicación, en los repositorios de la Tabla~\ref{tab:repro}.}
+
+\acknowledgments{\color{blue} Agradecemos a los propietarios del Fundo El Pedregal (Majes) por el acceso al campo. En la preparación del manuscrito y del código de análisis se usó un asistente de inteligencia artificial (Claude, Anthropic); los autores revisaron todo el contenido y asumen la responsabilidad.}
+
+\conflictsofinterest{Los autores declaran no tener conflictos de interés.}
+
+%=================================================================
+\begin{adjustwidth}{-\extralength}{0cm}
+\reftitle{Referencias}
+\begin{thebibliography}{999}
+
+\bibitem[Fuentes et~al.(2017)]{Fuentes2017}
+Fuentes, A.; Yoon, S.; Kim, S.C.; Park, D.S. A robust deep-learning-based detector for real-time tomato plant diseases and pests recognition. {\em Sensors} {\bf 2017}, {\em 17}, 2022. \url{https://doi.org/10.3390/s17092022}.
+
+\bibitem[Zhong(2024)]{Zhong2024}
+Zhong, Y. Tomato leaf disease identification based on YOLOv8. {\em Int. J. Comput. Sci. Inf. Technol.} {\bf 2024}, {\em 3}, 265--276. \url{https://doi.org/10.62051/ijcsit.v3n2.30}.
+
+\bibitem[Wang and Liu(2025)]{Wang2025}
+Wang, X.; Liu, J. TomatoGuard-YOLO: A novel efficient tomato disease detection method. {\em Front. Plant Sci.} {\bf 2025}, {\em 15}, 1499278. \url{https://doi.org/10.3389/fpls.2024.1499278}.
+
+\bibitem[Mohanty et~al.(2016)]{Mohanty2016}
+Mohanty, S.P.; Hughes, D.P.; Salath\'e, M. Using deep learning for image-based plant disease detection. {\em Front. Plant Sci.} {\bf 2016}, {\em 7}, 1419. \url{https://doi.org/10.3389/fpls.2016.01419}.
+
+\bibitem[Jelali(2024)]{Jelali2024}
+Jelali, M. Deep learning networks-based tomato disease and pest detection: A first review of research studies using real field datasets. {\em Front. Plant Sci.} {\bf 2024}, {\em 15}, 1493322. \url{https://doi.org/10.3389/fpls.2024.1493322}.
+
+\bibitem[Kapoor and Narayanan(2023)]{Kapoor2023}
+Kapoor, S.; Narayanan, A. Leakage and the reproducibility crisis in machine-learning-based science. {\em Patterns} {\bf 2023}, {\em 4}, 100804. \url{https://doi.org/10.1016/j.patter.2023.100804}.
+
+\bibitem[Gerz and Jelali(2025)]{Gerz2025}
+{\color{blue} Gerz, F.; Jelali, M. Towards reliable data augmentation in machine learning: Practices to prevent data leakage [datos y código]. Mendeley Data, versión 1, 2025. \url{https://doi.org/10.17632/f9k79z29rp.1}.}
+
+\bibitem[Zhang et~al.(2024)]{Zhang2024Jute}
+{\color{blue} Zhang, S.; Wang, H.; Zhang, C.; Liu, Z.; Jiang, Y.; Yu, L. JutePest-YOLO: A deep learning network for jute pest identification and detection. {\em IEEE Access} {\bf 2024}, {\em 12}, 72938--72956. \url{https://doi.org/10.1109/ACCESS.2024.3403491}.}
+
+\bibitem[Zhao et~al.(2025)]{Zhao2025}
+{\color{blue} Zhao, S.; Lyu, J.; Liu, S.; Feng, Z.; Ling, H.; Jiao, J.; Ni, Z.; Yang, B.; Yao, Q.; Luo, J. A counting method of whiteflies on crop leave images captured by AR glasses based on segmentation and improved YOLOv11 models. {\em Front. Plant Sci.} {\bf 2025}, {\em 16}, 1687282. \url{https://doi.org/10.3389/fpls.2025.1687282}.}
+
+\bibitem[Debnath et~al.(2023)]{Debnath2023}
+{\color{blue} Debnath, A.; Hasan, M.M.; Raihan, M.; Samrat, N.; Alsulami, M.M.; Masud, M.; Bairagi, A.K. A smartphone-based detection system for tomato leaf disease using EfficientNetV2B2 and its explainability with artificial intelligence (AI). {\em Sensors} {\bf 2023}, {\em 23}, 8685. \url{https://doi.org/10.3390/s23218685}.}
+
+\bibitem[Shehu et~al.(2025)]{Shehu2025}
+{\color{blue} Shehu, H.A.; Ackley, A.; Mark, M.; Eteng, O.E.; Sharif, M.H.; Kusetogullari, H. YOLO for early detection and management of \emph{Tuta absoluta}-induced tomato leaf diseases. {\em Front. Plant Sci.} {\bf 2025}, {\em 16}, 1524630. \url{https://doi.org/10.3389/fpls.2025.1524630}.}
+
+\bibitem[Jocher et~al.(2023)]{Jocher2023}
+Jocher, G.; Chaurasia, A.; Qiu, J. Ultralytics YOLOv8, 2023. Disponible en: \url{https://github.com/ultralytics/ultralytics}.
+
+\bibitem[Jocher and Qiu(2024)]{Jocher2024}
+Jocher, G.; Qiu, J. Ultralytics YOLO11, 2024. Disponible en: \url{https://github.com/ultralytics/ultralytics}.
+
+\bibitem[Wang et~al.(2024)]{Wang2024v10}
+Wang, A.; Chen, H.; Liu, L.; Chen, K.; Lin, Z.; Han, J.; Ding, G. YOLOv10: Real-time end-to-end object detection. En {\em Advances in Neural Information Processing Systems 37 (NeurIPS 2024)}, 2024. \url{https://arxiv.org/abs/2405.14458}.
+
+\bibitem[Kana Chullo(2026)]{Dataset2026}
+Kana Chullo, F.B. plagas-tomate-majes-v2 Dataset. Roboflow Universe, 2026. Licencia CC BY 4.0. Disponible en: \url{https://universe.roboflow.com/fray-hxtls/plagas-tomate-majes-v2}.
+
+\end{thebibliography}
+\end{adjustwidth}
+\end{document}
