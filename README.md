@@ -55,7 +55,7 @@ El experimento de control de fuga (`entrenamiento/entrenar_control.py`) está li
 | `conversion/` | Verificación ONNX vs TFLite y comparación servidor vs celular. |
 | `documentacion/` | Bitácora, reglas de etiquetado, guías y resultados de cada etapa (01–15), corrección de etiquetas y plan de radiación. |
 | `resultados/` | Métricas y mejor modelo de la v4, la v5 y la v6 (en la v6, el mejor de cada experimento y el `results.csv` de las 27 corridas). |
-| `articulo/` | Avance corregido en formato MDPI (LaTeX + PDF), respuesta a la revisión y matriz de respuesta. |
+| `articulo/` | Avance corregido en formato MDPI, en español (`main.tex`) y en inglés (`main_en.tex`), con PDF, respuesta a la revisión y matriz de respuesta. |
 
 ## Resultados principales
 
